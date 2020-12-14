@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("lib_func1" function
+               (:prototype-flag t
+                :type "void")
+                nil [1 18])
+            ("lib_func2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [33 39]))                  
+                :type "int")
+                nil [19 40])
+            ("lib_func3" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [55 61])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [62 68]))                  
+                :type "int")
+                nil [41 69]))          
+      :file "lib1.h"
+      :pointmax 70
+      :fsize 69
+      :lastmodtime '(24526 45176 388884 73000)
+      :unmatched-syntax nil))
+  :file "!home!max!TestProject!c-demo-project!include1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

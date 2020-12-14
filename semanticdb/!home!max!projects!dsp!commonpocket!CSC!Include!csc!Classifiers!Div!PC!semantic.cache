@@ -1,0 +1,891 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_DIV_PC_CLASSIFIER_H" variable (:constant-flag t) nil [114 137])
+            ("csc/Classifiers/Div/Classifier.h" include (:system-flag t) nil [139 182])
+            ("csc/Classifiers/Div/PC/wavclass.h" include (:system-flag t) nil [183 227])
+            ("CSC" type
+               (:members 
+                  ( ("Div" type
+                       (:members 
+                          ( ("PC" type
+                               (:members 
+                                  ( ("Classifier" type
+                                       (:superclasses 
+                                          ( ("CSC::Div::Classifier" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [326 333])
+                                            ("Classifier" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("libname" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [349 376]))                                                  
+                                                :type ("Classifier" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [338 377])
+                                            ("Classifier" function
+                                               (:prototype-flag t
+                                                :destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [382 404])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [442 451])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [507 516])
+                                            ("override" variable (:type "int") (reparse-symbol classsubparts) [571 580])
+                                            ("private" label nil (reparse-symbol classsubparts) [582 590])
+                                            ("FormResult" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [595 613])
+                                            ("lib" variable
+                                               (:pointer 1
+                                                :default-value "nullptr"
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [619 639])
+                                            ("SystemsGlobal" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("sysLocal" variable (:type ("systems::Standard" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [674 701]))                                                  
+                                                :type ("Systems::Types" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [645 702])
+                                            ("ModulationGlobal" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("modLocal" variable (:type ("dsp::Modulation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [735 760]))                                                  
+                                                :type ("Modulation" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [707 761])
+                                            ("EquipGlobal" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("eqLocal" variable (:type ("systems::Equipment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [797 824]))                                                  
+                                                :type ("Systems::Equipment" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [766 825])
+                                            ("implementation" variable
+                                               (:pointer 1
+                                                :type ("wavclassifier::WavClassifier" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [831 876]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [277 879]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [261 882]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [245 893]))                  
+                :type "namespace")
+                nil [229 905]))          
+      :file "Classifier.h"
+      :pointmax 954
+      :fsize 953
+      :lastmodtime '(24531 21336 374833 660000)
+      :unmatched-syntax '((semantic-list 533 . 570) (symbol 526 . 533) (VOID 521 . 525) (semantic-list 469 . 506) (symbol 462 . 469) (VOID 457 . 461) (semantic-list 419 . 441) (symbol 415 . 419) (VOID 410 . 414) (semantic-list 548 . 585) (symbol 541 . 548) (VOID 536 . 540) (semantic-list 484 . 521) (symbol 477 . 484) (VOID 472 . 476) (semantic-list 434 . 456) (symbol 430 . 434) (VOID 425 . 429))
+      :lexical-table 
+        '(("CSC_DIV_PC_CLASSIFIER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WAVCLASSH_" variable (:constant-flag t) nil [28 38])
+            ("wavclass_defs.h" include nil nil [42 68])
+            ("wavclass_systeminfo.h" include nil nil [69 101])
+            ("wavclass_signalinfo.h" include nil nil [102 134])
+            ("wavclass_localizationinfo.h" include nil nil [135 173])
+            ("__cdecl" variable (:constant-flag t) nil [229 236])
+            ("wavclassifier" type
+               (:members 
+                  ( ("Status" type
+                       (:superclasses 
+                          ( ("int32_t" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [278 445])
+                    ("AnalysisSettings" type
+                       (:members 
+                          ( ("analysis_types" variable (:type ("wavclassifier::AnalysisType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [500 544])
+                            ("analysis_quality" variable (:type ("wavclassifier::AnalysisQuality" type (:type "class") nil nil)) (reparse-symbol classsubparts) [547 595])
+                            ("localization_types" variable (:type ("LocalizationType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [599 638])
+                            ("localization_options" variable (:type ("LocalizationOptions" type (:type "class") nil nil)) (reparse-symbol classsubparts) [641 685])
+                            ("radio_bands" variable (:type ("systems::RadioBand" type (:type "class") nil nil)) (reparse-symbol classsubparts) [689 723])
+                            ("source_types" variable (:type ("systems::SourceType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [726 762]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [471 794])
+                    ("SignalSettings" type
+                       (:members 
+                          ( ("sample_rate" variable (:type "double") (reparse-symbol classsubparts) [865 887])
+                            ("freq_central" variable (:type "double") (reparse-symbol classsubparts) [912 935])
+                            ("freq_start" variable (:type "double") (reparse-symbol classsubparts) [949 970])
+                            ("freq_end" variable (:type "double") (reparse-symbol classsubparts) [1010 1029]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [838 1098])
+                    ("WavClassifier" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1166 1173])
+                            ("WavClassifier" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1176 1213])
+                            ("Initialize" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("settings_analysis" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("AnalysisSettings" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1255 1297])
+                                    ("settings_signal" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SignalSettings" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1298 1336])
+                                    ("max_thread_count" variable
+                                       (:default-value "1"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1337 1366]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1220 1373])
+                            ("Process" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("int16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1410 1434])
+                                    ("samples_count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1439 1460])
+                                    ("is_last_block" variable (:type "bool") (reparse-symbol arg-sub-list) [1461 1481]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1377 1486])
+                            ("Process" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [1522 1546])
+                                    ("samples_count" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1551 1572])
+                                    ("is_last_block" variable (:type "bool") (reparse-symbol arg-sub-list) [1573 1593]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1489 1598])
+                            ("SystemsInfoUpdated" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1602 1655])
+                            ("GetSystemsCount" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1658 1711])
+                            ("GetSystem" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1754 1765]))                                  
+                                :type ("SystemInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1714 1770])
+                            ("DeleteSystemInfo" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("system" variable
+                                       (:pointer 1
+                                        :type ("SystemInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1812 1832]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1773 1837])
+                            ("SignalsInfoUpdated" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1843 1896])
+                            ("GetSignalsInfoCount" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1899 1955])
+                            ("GetSignalsInfo" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2002 2013]))                                  
+                                :type ("SignalInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1958 2018])
+                            ("DeleteSignalsInfo" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("modulation" variable
+                                       (:pointer 1
+                                        :type ("SignalInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2061 2085]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2021 2090])
+                            ("LocalizationInfoUpdated" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2094 2151])
+                            ("GetLocalizationInfoCount" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2154 2213])
+                            ("GetLocalizationInfo" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("id" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2268 2279]))                                  
+                                :type ("LocalizationInfo" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2216 2284])
+                            ("DeleteLocalizationInfo" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("localization" variable
+                                       (:pointer 1
+                                        :type ("LocalizationInfo" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2331 2363]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2287 2368])
+                            ("status" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Status" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2375 2422]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1142 2426]))                  
+                :type "namespace")
+                nil [246 2446])
+            ("CreateWavClassifierType" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :type ("wavclassifier::WavClassifier" type (:type "class") nil nil))
+                nil [2456 2526])
+            ("DeleteWavClassifierType" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("classifier" variable
+                       (:pointer 1
+                        :type ("wavclassifier::WavClassifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2584 2626]))                  
+                :type "bool")
+                nil [2535 2627]))          
+      :file "wavclass.h"
+      :pointmax 2648
+      :fsize 2691
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((TYPEDEF 2527 . 2534) (TYPEDEF 2448 . 2455) (semantic-list 2439 . 2444) (symbol 2435 . 2439) (symbol 2428 . 2434) (punctuation 2427 . 2428) (semantic-list 1546 . 1549) (semantic-list 1536 . 1546) (semantic-list 1434 . 1437) (semantic-list 1424 . 1434) (semantic-list 1131 . 1140) (symbol 1127 . 1131) (number 1138 . 1139) (semantic-list 1546 . 1549) (semantic-list 1536 . 1546) (semantic-list 1434 . 1437) (semantic-list 1424 . 1434) (semantic-list 1546 . 1549) (semantic-list 1536 . 1546) (semantic-list 1434 . 1437) (semantic-list 1424 . 1434) (symbol 1120 . 1126) (number 1138 . 1139) (semantic-list 1546 . 1549) (semantic-list 1536 . 1546) (semantic-list 1434 . 1437) (semantic-list 1424 . 1434) (semantic-list 1546 . 1549) (semantic-list 1536 . 1546) (semantic-list 1434 . 1437) (semantic-list 1424 . 1434) (punctuation 1119 . 1120) (semantic-list 1111 . 1116) (symbol 1107 . 1111) (symbol 1100 . 1106) (punctuation 1099 . 1100) (punctuation 1093 . 1094) (CONST 1088 . 1093) (semantic-list 1084 . 1087) (BOOL 1080 . 1084) (OPERATOR 1071 . 1079) (semantic-list 827 . 836) (symbol 823 . 827) (number 834 . 835) (punctuation 1093 . 1094) (CONST 1088 . 1093) (semantic-list 1084 . 1087) (BOOL 1080 . 1084) (OPERATOR 1071 . 1079) (punctuation 1093 . 1094) (CONST 1088 . 1093) (semantic-list 1084 . 1087) (BOOL 1080 . 1084) (OPERATOR 1071 . 1079) (symbol 816 . 822) (number 834 . 835) (punctuation 1093 . 1094) (CONST 1088 . 1093) (semantic-list 1084 . 1087) (BOOL 1080 . 1084) (OPERATOR 1071 . 1079) (punctuation 1093 . 1094) (CONST 1088 . 1093) (semantic-list 1084 . 1087) (BOOL 1080 . 1084) (OPERATOR 1071 . 1079) (punctuation 815 . 816) (semantic-list 807 . 812) (symbol 803 . 807) (symbol 796 . 802) (punctuation 795 . 796) (punctuation 789 . 790) (CONST 784 . 789) (semantic-list 780 . 783) (BOOL 776 . 780) (OPERATOR 767 . 775) (semantic-list 460 . 469) (symbol 456 . 460) (number 467 . 468) (punctuation 789 . 790) (CONST 784 . 789) (semantic-list 780 . 783) (BOOL 776 . 780) (OPERATOR 767 . 775) (punctuation 789 . 790) (CONST 784 . 789) (semantic-list 780 . 783) (BOOL 776 . 780) (OPERATOR 767 . 775) (symbol 449 . 455) (number 467 . 468) (punctuation 789 . 790) (CONST 784 . 789) (semantic-list 780 . 783) (BOOL 776 . 780) (OPERATOR 767 . 775) (punctuation 789 . 790) (CONST 784 . 789) (semantic-list 780 . 783) (BOOL 776 . 780) (OPERATOR 767 . 775) (punctuation 448 . 449) (punctuation 440 . 441) (number 439 . 440) (punctuation 437 . 438) (symbol 422 . 435) (punctuation 392 . 393) (number 391 . 392) (punctuation 389 . 390) (symbol 379 . 385) (punctuation 341 . 342) (number 340 . 341) (punctuation 338 . 339) (symbol 324 . 335) (punctuation 320 . 321) (number 319 . 320) (punctuation 317 . 318) (symbol 305 . 314) (ENUM 273 . 277))
+      :lexical-table 
+        '(("WAVCLASSH_" . ((number "1" 39 . 40)))
+          ("__cdecl")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("WAVCLASS_DEFS_H_" variable (:constant-flag t) nil [34 50])
+            ("stdint.h" include (:system-flag t) nil [54 73])
+            ("csc/Classifiers/Div/PC/modulation_defs.h" include (:system-flag t) nil [75 126])
+            ("csc/Classifiers/Div/PC/defs_radioband.h" include (:system-flag t) nil [128 178])
+            ("csc/Classifiers/Div/PC/defs_sourcetype.h" include (:system-flag t) nil [179 230])
+            ("csc/Classifiers/Div/PC/defs_manufacturer.h" include (:system-flag t) nil [231 284])
+            ("csc/Classifiers/Div/PC/defs_equipment.h" include (:system-flag t) nil [285 335])
+            ("csc/Classifiers/Div/PC/defs_accesstype.h" include (:system-flag t) nil [336 387])
+            ("csc/Classifiers/Div/PC/defs_codingtype.h" include (:system-flag t) nil [388 439])
+            ("csc/Classifiers/Div/PC/defs_standard.h" include (:system-flag t) nil [440 489])
+            ("wavclassifier" type
+               (:members 
+                  ( ("uint64_t" variable (:type "int") (reparse-symbol namespacesubparts) [538 668])
+                    ("uint64_t" variable (:type "int") (reparse-symbol namespacesubparts) [693 776])
+                    ("uint64_t" variable (:type "int") (reparse-symbol namespacesubparts) [803 1171])
+                    ("uint64_t" variable (:type "int") (reparse-symbol namespacesubparts) [1200 1486]))                  
+                :type "namespace")
+                nil [492 1488]))          
+      :file "wavclass_defs.h"
+      :pointmax 1516
+      :fsize 1580
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((punctuation 1198 . 1199) (symbol 1179 . 1198) (ENUM 1174 . 1178) (punctuation 801 . 802) (symbol 785 . 801) (ENUM 780 . 784) (punctuation 691 . 692) (symbol 676 . 691) (ENUM 671 . 675) (punctuation 536 . 537) (symbol 524 . 536) (ENUM 519 . 523))
+      :lexical-table 
+        '(("WAVCLASS_DEFS_H_" . ((number "1" 51 . 52)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WAVCLASS_SIGNALINFO_H_" variable (:constant-flag t) nil [40 62])
+            ("csc/Classifiers/Div/PC/wavclass_defs.h" include (:system-flag t) nil [66 115])
+            ("wavclassifier" type
+               (:members 
+                  ( ("SignalInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [188 195])
+                            ("SignalInfo" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [198 235])
+                            ("Probability" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [241 291])
+                            ("FreqCarrier" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [308 358])
+                            ("Bandwidth" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [370 418])
+                            ("SymbolRate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [430 479])
+                            ("ModulationID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("dsp::Modulation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [492 549])
+                            ("Modulation" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [552 604])
+                            ("xml" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [608 655]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [167 686]))                  
+                :type "namespace")
+                nil [118 706]))          
+      :file "wavclass_signalinfo.h"
+      :pointmax 740
+      :fsize 715
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((semantic-list 699 . 704) (symbol 695 . 699) (symbol 688 . 694) (punctuation 687 . 688) (punctuation 235 . 236) (semantic-list 156 . 165) (symbol 152 . 156) (number 163 . 164) (punctuation 235 . 236) (punctuation 235 . 236) (symbol 145 . 151) (number 163 . 164) (punctuation 235 . 236) (punctuation 235 . 236) (punctuation 144 . 145))
+      :lexical-table 
+        '(("WAVCLASS_SIGNALINFO_H_" . ((number "1" 63 . 64)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WAVCLASS_SYSTEMINFO_H_" variable (:constant-flag t) nil [40 62])
+            ("csc/Classifiers/Div/PC/wavclass_defs.h" include (:system-flag t) nil [64 113])
+            ("cstdint" include (:system-flag t) nil [115 133])
+            ("utility" include (:system-flag t) nil [134 152])
+            ("string" include (:system-flag t) nil [153 170])
+            ("vector" include (:system-flag t) nil [171 188])
+            ("map" include (:system-flag t) nil [189 203])
+            ("wavclassifier" type
+               (:members 
+                  ( ("SystemInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [276 283])
+                            ("SystemInfo" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [286 325])
+                            ("Probability" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [331 383])
+                            ("Standard" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [408 460])
+                            ("StandardID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("systems::Standard" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [463 522])
+                            ("Manufacturer" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [525 580])
+                            ("ManufacturerID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("systems::Manufacturer" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [610 675])
+                            ("Equipment" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [678 731])
+                            ("EquipmentID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("systems::Equipment" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [785 846])
+                            ("ModulationInfo" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("modulation_id" variable
+                                       (:constant-flag t
+                                        :type ("dsp::Modulation" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [895 932]))                                  
+                                :type "char")
+                                (reparse-symbol classsubparts) [850 943])
+                            ("ModulationsCount" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [946 999])
+                            ("ModulationIDs" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("dsp::Modulation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1239 1303])
+                            ("ModulationNames" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 2
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1306 1369])
+                            ("FreqCarrier" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [1373 1425])
+                            ("Bandwidth" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [1437 1487])
+                            ("SymbolRate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [1499 1550])
+                            ("Inversion" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1564 1612])
+                            ("SNR" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1642 1691])
+                            ("CodingType" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1724 1778])
+                            ("Pilots" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1831 1882])
+                            ("CodingTypeID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("systems::CodingType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1928 1990])
+                            ("AccessType" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1993 2047])
+                            ("AccessTypeID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("systems::AccessType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2077 2139])
+                            ("CodeRate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2142 2194])
+                            ("IsBursting" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2223 2272])
+                            ("GSM_MCC" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2508 2555])
+                            ("GSM_MNC" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2586 2633])
+                            ("GSM_LAC" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2664 2711])
+                            ("GSM_CellID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2738 2787])
+                            ("GSM_BSIC" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2806 2853])
+                            ("GSM_NCC" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2891 2938])
+                            ("GSM_Country" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2968 3023])
+                            ("GSM_Operator" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3047 3102])
+                            ("SourceType" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3128 3182])
+                            ("SourceTypeID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("systems::SourceType" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3185 3247])
+                            ("xml" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [3252 3301]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [255 3333]))                  
+                :type "namespace")
+                nil [206 3353]))          
+      :file "wavclass_systeminfo.h"
+      :pointmax 3387
+      :fsize 3238
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((semantic-list 3346 . 3351) (symbol 3342 . 3346) (symbol 3335 . 3341) (punctuation 3334 . 3335) (punctuation 325 . 326) (semantic-list 244 . 253) (symbol 240 . 244) (number 251 . 252) (punctuation 325 . 326) (punctuation 325 . 326) (symbol 233 . 239) (number 251 . 252) (punctuation 325 . 326) (punctuation 325 . 326) (punctuation 232 . 233))
+      :lexical-table 
+        '(("WAVCLASS_SYSTEMINFO_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WAVCLASS_LOCALIZATIONINFO_H_" variable (:constant-flag t) nil [46 74])
+            ("csc/Classifiers/Div/PC/wavclass_defs.h" include (:system-flag t) nil [78 127])
+            ("wavclassifier" type
+               (:members 
+                  ( ("LocalizationInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [206 213])
+                            ("LocalizationInfo" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [216 257])
+                            ("FreqCarrier" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [263 313])
+                            ("Bandwidth" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [325 373])
+                            ("SymbolRate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [385 434])
+                            ("StartTime" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [446 494])
+                            ("Duration" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [507 554])
+                            ("xml" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [568 615]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [179 646]))                  
+                :type "namespace")
+                nil [130 666]))          
+      :file "wavclass_localizationinfo.h"
+      :pointmax 706
+      :fsize 681
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((semantic-list 659 . 664) (symbol 655 . 659) (symbol 648 . 654) (punctuation 647 . 648) (punctuation 257 . 258) (semantic-list 168 . 177) (symbol 164 . 168) (number 175 . 176) (punctuation 257 . 258) (punctuation 257 . 258) (symbol 157 . 163) (number 175 . 176) (punctuation 257 . 258) (punctuation 257 . 258) (punctuation 156 . 157))
+      :lexical-table 
+        '(("WAVCLASS_LOCALIZATIONINFO_H_" . ((number "1" 75 . 76)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEFS_ACCESSTYPE_H_" variable (:constant-flag t) nil [36 54])
+            ("cstdint" include (:system-flag t) nil [58 76])
+            ("limits" include (:system-flag t) nil [77 94])
+            ("string" include (:system-flag t) nil [95 112])
+            ("systems" type
+               (:members 
+                  ( ("AccessType" type
+                       (:superclasses 
+                          ( ("uint32_t" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [140 502])
+                    ("to_string" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("accesstype_id" variable
+                               (:constant-flag t
+                                :type ("AccessType" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [529 561]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [505 562]))                  
+                :type "namespace")
+                nil [114 564]))          
+      :file "defs_accesstype.h"
+      :pointmax 595
+      :fsize 553
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((punctuation 496 . 497) (number 493 . 496) (punctuation 491 . 492) (symbol 482 . 487) (punctuation 475 . 476) (number 472 . 475) (punctuation 470 . 471) (symbol 461 . 466) (punctuation 456 . 457) (number 453 . 456) (punctuation 451 . 452) (symbol 442 . 447) (punctuation 437 . 438) (number 434 . 437) (punctuation 432 . 433) (symbol 421 . 429) (punctuation 417 . 418) (number 414 . 417) (punctuation 412 . 413) (symbol 402 . 408) (punctuation 398 . 399) (number 395 . 398) (punctuation 393 . 394) (symbol 382 . 390) (punctuation 378 . 379) (number 375 . 378) (punctuation 373 . 374) (symbol 362 . 370) (punctuation 358 . 359) (number 355 . 358) (punctuation 353 . 354) (symbol 344 . 349) (punctuation 339 . 340) (number 336 . 339) (punctuation 334 . 335) (symbol 323 . 331) (punctuation 319 . 320) (number 316 . 319) (punctuation 314 . 315) (symbol 304 . 310) (punctuation 300 . 301) (number 297 . 300) (punctuation 295 . 296) (symbol 286 . 291) (punctuation 281 . 282) (number 278 . 281) (punctuation 276 . 277) (symbol 267 . 272) (punctuation 263 . 264) (number 260 . 263) (punctuation 258 . 259) (symbol 247 . 255) (punctuation 243 . 244) (number 240 . 243) (punctuation 238 . 239) (symbol 228 . 234) (punctuation 224 . 225) (number 221 . 224) (punctuation 219 . 220) (symbol 210 . 215) (punctuation 206 . 207) (number 203 . 206) (punctuation 201 . 202) (symbol 192 . 197) (punctuation 187 . 188) (number 186 . 187) (punctuation 184 . 185) (symbol 173 . 181) (ENUM 135 . 139))
+      :lexical-table 
+        '(("DEFS_ACCESSTYPE_H_" . ((number "1" 55 . 56)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("DEFS_EQUIPMENT_H_" variable (:constant-flag t) nil [35 52])
+            ("cstdint" include (:system-flag t) nil [56 74])
+            ("string" include (:system-flag t) nil [75 92])
+            ("systems" type
+               (:members 
+                  ( ("Equipment" type
+                       (:superclasses 
+                          ( ("uint64_t" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [120 1681])
+                    ("to_string" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("equipment_id" variable
+                               (:constant-flag t
+                                :type ("Equipment" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1709 1739]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1685 1740]))                  
+                :type "namespace")
+                nil [94 1742]))          
+      :file "defs_equipment.h"
+      :pointmax 1771
+      :fsize 892
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((number 1671 . 1676) (punctuation 1669 . 1670) (symbol 1655 . 1662) (punctuation 1650 . 1651) (number 1645 . 1650) (punctuation 1643 . 1644) (symbol 1629 . 1637) (punctuation 1622 . 1623) (number 1617 . 1622) (punctuation 1615 . 1616) (symbol 1596 . 1610) (punctuation 1545 . 1546) (number 1540 . 1545) (punctuation 1538 . 1539) (symbol 1520 . 1533) (punctuation 1516 . 1517) (number 1511 . 1516) (punctuation 1509 . 1510) (symbol 1492 . 1504) (punctuation 1488 . 1489) (number 1483 . 1488) (punctuation 1481 . 1482) (symbol 1461 . 1477) (punctuation 1457 . 1458) (number 1452 . 1457) (punctuation 1450 . 1451) (symbol 1430 . 1445) (punctuation 1426 . 1427) (number 1421 . 1426) (punctuation 1419 . 1420) (symbol 1399 . 1414) (punctuation 1367 . 1368) (number 1362 . 1367) (punctuation 1360 . 1361) (symbol 1346 . 1354) (punctuation 1342 . 1343) (number 1337 . 1342) (punctuation 1335 . 1336) (symbol 1318 . 1330) (punctuation 1314 . 1315) (number 1309 . 1314) (punctuation 1307 . 1308) (symbol 1293 . 1300) (punctuation 1289 . 1290) (number 1284 . 1289) (punctuation 1282 . 1283) (symbol 1268 . 1275) (punctuation 1264 . 1265) (number 1259 . 1264) (punctuation 1257 . 1258) (symbol 1242 . 1251) (punctuation 1238 . 1239) (number 1233 . 1238) (punctuation 1231 . 1232) (symbol 1219 . 1224) (punctuation 1215 . 1216) (number 1210 . 1215) (punctuation 1208 . 1209) (symbol 1193 . 1202) (punctuation 1189 . 1190) (number 1184 . 1189) (punctuation 1182 . 1183) (symbol 1170 . 1175) (punctuation 1130 . 1131) (number 1126 . 1130) (punctuation 1124 . 1125) (symbol 1107 . 1118) (punctuation 1083 . 1084) (number 1079 . 1083) (punctuation 1077 . 1078) (symbol 1063 . 1070) (punctuation 1058 . 1059) (number 1054 . 1058) (punctuation 1052 . 1053) (symbol 1038 . 1046) (punctuation 1034 . 1035) (number 1030 . 1034) (punctuation 1028 . 1029) (symbol 1013 . 1022) (punctuation 1009 . 1010) (number 1005 . 1009) (punctuation 1003 . 1004) (symbol 983 . 999) (punctuation 979 . 980) (number 975 . 979) (punctuation 973 . 974) (symbol 953 . 969) (punctuation 932 . 933) (number 928 . 932) (punctuation 926 . 927) (symbol 912 . 919) (punctuation 908 . 909) (number 904 . 908) (punctuation 902 . 903) (symbol 888 . 895) (punctuation 841 . 842) (number 837 . 841) (punctuation 835 . 836) (symbol 819 . 829) (punctuation 815 . 816) (number 811 . 815) (punctuation 809 . 810) (symbol 795 . 802) (punctuation 791 . 792) (number 787 . 791) (punctuation 785 . 786) (symbol 771 . 778) (punctuation 767 . 768) (number 763 . 767) (punctuation 761 . 762) (symbol 747 . 755) (punctuation 721 . 722) (number 717 . 721) (punctuation 715 . 716) (symbol 701 . 709) (punctuation 697 . 698) (number 693 . 697) (punctuation 691 . 692) (symbol 677 . 685) (punctuation 673 . 674) (number 669 . 673) (punctuation 667 . 668) (symbol 650 . 661) (punctuation 646 . 647) (number 642 . 646) (punctuation 640 . 641) (symbol 623 . 635) (punctuation 619 . 620) (number 615 . 619) (punctuation 613 . 614) (symbol 597 . 607) (punctuation 562 . 563) (number 558 . 562) (punctuation 556 . 557) (symbol 542 . 550) (punctuation 538 . 539) (number 534 . 538) (punctuation 532 . 533) (symbol 521 . 525) (punctuation 517 . 518) (number 513 . 517) (punctuation 511 . 512) (symbol 490 . 507) (punctuation 486 . 487) (number 482 . 486) (punctuation 480 . 481) (symbol 450 . 479) (punctuation 446 . 447) (number 442 . 446) (punctuation 440 . 441) (symbol 419 . 436) (punctuation 386 . 387) (number 382 . 386) (punctuation 380 . 381) (symbol 363 . 374) (punctuation 359 . 360) (number 355 . 359) (punctuation 353 . 354) (symbol 335 . 348) (punctuation 331 . 332) (number 327 . 331) (punctuation 325 . 326) (symbol 307 . 320) (punctuation 303 . 304) (number 299 . 303) (punctuation 297 . 298) (symbol 279 . 292) (punctuation 259 . 260) (number 255 . 259) (punctuation 253 . 254) (symbol 241 . 246) (punctuation 237 . 238) (number 233 . 237) (punctuation 231 . 232) (symbol 215 . 225) (punctuation 211 . 212) (number 207 . 211) (punctuation 205 . 206) (symbol 190 . 199) (punctuation 169 . 170) (number 168 . 169) (punctuation 166 . 167) (symbol 152 . 160) (ENUM 115 . 119))
+      :lexical-table 
+        '(("DEFS_EQUIPMENT_H_" . ((number "1" 53 . 54)))
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Include!csc!Classifiers!Div!PC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

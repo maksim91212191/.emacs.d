@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("COMMON_BITSTRING_H" variable (:constant-flag t) nil [36 54])
+            ("types.h" include nil nil [56 74])
+            ("extract_num_from_bitstring" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [113 133])
+                    ("Offset" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [134 150])
+                    ("Size" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [151 165]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [76 166])
+            ("bitstring_copy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("inStr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190 212])
+                    ("inOffset" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [213 231])
+                    ("outStr" variable
+                       (:pointer 1
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [241 258])
+                    ("outOffset" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [259 278])
+                    ("Size" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [279 294]))                  
+                :type "void")
+                nil [167 295]))          
+      :file "common_bitstring.h"
+      :pointmax 304
+      :fsize 303
+      :lastmodtime '(23965 57561 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COMMON_BITSTRING_H")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!ProcLibsLevel2!Umts!Include!common_umts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

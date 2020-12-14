@@ -1,0 +1,416 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/DmrChecker.h" include (:system-flag t) nil [70 97])
+            ("csc/Classifiers/Classifier.h" include (:system-flag t) nil [98 137])
+            ("csc/Server.h" include (:system-flag t) nil [138 161])
+            ("csc/Client.h" include (:system-flag t) nil [162 185])
+            ("csc/Router/Router.h" include (:system-flag t) nil [186 216])
+            ("csc/Messages.h" include (:system-flag t) nil [217 242])
+            ("GnuPlot.h" include nil nil [243 263])
+            ("Usage.h" include nil nil [264 282])
+            ("Utils.h" include nil nil [283 301])
+            ("Common/Buffer.h" include (:system-flag t) nil [302 328])
+            ("iostream" include (:system-flag t) nil [329 348])
+            ("IntMath/Complex.h" include (:system-flag t) nil [349 377])
+            ("System/Supervisor.h" include (:system-flag t) nil [378 408])
+            ("math.h" include (:system-flag t) nil [409 426])
+            ("ctime" include (:system-flag t) nil [427 443])
+            ("utility" include (:system-flag t) nil [444 462])
+            ("Ipc/NameServer.h" include (:system-flag t) nil [463 490])
+            ("unistd.h" include (:system-flag t) nil [491 510])
+            ("signal.h" include (:system-flag t) nil [511 530])
+            ("System/DebugInfo.h" include (:system-flag t) nil [531 560])
+            ("System/FileConfig.h" include (:system-flag t) nil [561 591])
+            ("Common/Configuration.h" include (:system-flag t) nil [592 625])
+            ("SignalProcessing/FrequencyShift.h" include (:system-flag t) nil [626 670])
+            ("SignalProcessing/FFT/Magic.h" include (:system-flag t) nil [671 710])
+            ("Roles" type
+               (:enum-type "unsigned int"
+                :members 
+                  ( ("rServer" variable
+                       (:type "unsigned int"
+                        :default-value (750 751)
+                        :constant-flag t)
+                        (reparse-symbol enumsubparts) [740 752])
+                    ("rLocal" variable
+                       (:type "unsigned int"
+                        :constant-flag t)
+                        (reparse-symbol enumsubparts) [757 764])
+                    ("rClient" variable
+                       (:type "unsigned int"
+                        :constant-flag t)
+                        (reparse-symbol enumsubparts) [769 777])
+                    ("rolesNum" variable
+                       (:type "unsigned int"
+                        :constant-flag t)
+                        (reparse-symbol enumsubparts) [783 793]))                  
+                :type "enum")
+                nil [712 794])
+            ("roleNames" variable
+               (:dereference 1
+                :default-value "{\"server\", \"local\", \"client\"}"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [795 866])
+            ("SP" type
+               (:kind alias
+                :members 
+                  ( ("IntMath::SignalProcessing" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [868 909])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [920 929])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [930 943]))                  
+                :type "int")
+                nil [911 14101]))          
+      :file "main.cpp"
+      :pointmax 14102
+      :fsize 14101
+      :lastmodtime '(24530 18403 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Classifiers/Div/Jetson/Classifier.h" include (:system-flag t) nil [73 123])
+            ("csc/Classifiers/Khm/Classifier.h" include (:system-flag t) nil [124 167])
+            ("Common/Allocator.h" include (:system-flag t) nil [168 197])
+            ("IpcCommon/NameServer.h" include (:system-flag t) nil [198 231])
+            ("iostream" include (:system-flag t) nil [232 251])
+            ("_sys_assert" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("expr" variable (:type "int") (reparse-symbol arg-sub-list) [287 296])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :default-value "0"
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [297 320]))                  )
+                (reparse-symbol extern-c-contents) [270 405])
+            ("Arm" type
+               (:members 
+                  ( ("Allocator" type
+                       (:superclasses 
+                          ( ("Common::Allocator" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [476 483])
+                            ("Allocator" function
+                               (:constructor-flag t
+                                :type ("Allocator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [486 500])
+                            ("Allocator" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [503 526])
+                            ("Allocate" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [553 567]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [530 631])
+                            ("Free" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [654 664])
+                                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [665 679]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [635 725])
+                            ("Free" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [748 758]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [729 804])
+                            ("Stat" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Common::MemStat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [827 845]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [808 854]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [430 858]))                  
+                :type "namespace")
+                nil [409 861])
+            ("Common" type
+               (:members 
+                  ( ("Locate" function
+                       (:parent "AllocatorDefault"
+                        :type ("Allocator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [897 986])
+                    ("AllocatorWithParent" type
+                       (:template 
+                          ( ("Parent" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1059 1066])
+                            ("Allocate" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1092 1106]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1069 1138])
+                            ("Free" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [1160 1170])
+                                    ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1171 1185]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1142 1215])
+                            ("Free" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [1237 1247]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1219 1277])
+                            ("Stat" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("MemStat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1299 1309]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1281 1318]))                          
+                        :superclasses 
+                          ( ("Parent" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [989 1322])
+                    ("AllocatorHeapExt" function
+                       (:constructor-flag t
+                        :parent "AllocatorHeapExt"
+                        :type ("AllocatorHeapExt" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1325 1390])
+                    ("AllocatorHeapInt" function
+                       (:constructor-flag t
+                        :parent "AllocatorHeapInt"
+                        :type ("AllocatorHeapInt" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1393 1458])
+                    ("AllocatorHeapCached" function
+                       (:constructor-flag t
+                        :parent "AllocatorHeapCached"
+                        :type ("AllocatorHeapCached" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1461 1532])
+                    ("Locate" function
+                       (:parent "AllocatorHeapInt"
+                        :type ("AllocatorHeapInt" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1535 1652])
+                    ("Locate" function
+                       (:parent "AllocatorHeapExt"
+                        :type ("AllocatorHeapExt" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1655 1772])
+                    ("Locate" function
+                       (:parent "AllocatorHeapCached"
+                        :type ("AllocatorHeapCached" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1775 1901]))                  
+                :type "namespace")
+                nil [873 1904])
+            ("IpcCommon" type
+               (:members 
+                  ( ("Init" function
+                       (:parent "NameServer"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1946 2128])
+                    ("Create" function
+                       (:pointer 1
+                        :parent "IpcInterfaceFactory"
+                        :arguments 
+                          ( ("nameInput" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2180 2202])
+                            ("nameOutput" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2203 2226])
+                            ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2227 2240]))                          
+                        :type ("IpcInterfaceBase" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2134 2401])
+                    ("Create" function
+                       (:pointer 1
+                        :parent "IpcInterfaceFactory"
+                        :arguments 
+                          ( ("queueNum" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2453 2471])
+                            ("type" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2472 2485]))                          
+                        :type ("IpcInterfaceBase" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2407 2517])
+                    ("Release" function
+                       (:parent "IpcInterfaceFactory"
+                        :arguments 
+                          ( ("interface" variable
+                               (:pointer 1
+                                :type ("IpcInterfaceBase" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2557 2585]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2523 2691]))                  
+                :type "namespace")
+                nil [1919 2694])
+            ("IpcArm" type
+               (:members 
+                  ( ("MultiProc" type
+                       (:superclasses 
+                          ( ("Ipc::MultiProc" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2782 2789])
+                            ("MultiProc" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2798 2819])
+                            ("Id" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2829 2854])
+                            ("Name" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2863 2890])
+                            ("IsMasterId" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2899 2932])
+                            ("WaitCores" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2941 2973])
+                            ("SetId" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3008 3019]))                                  
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2982 3020])
+                            ("protected" label nil (reparse-symbol classsubparts) [3026 3036])
+                            ("id" variable (:type "int") (reparse-symbol classsubparts) [3045 3052])
+                            ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3061 3078])
+                            ("Ipc" friend nil (reparse-symbol classsubparts) [3088 3104])
+                            ("MultiProc" variable (:type "int") (reparse-symbol classsubparts) [3106 3116])
+                            ("MultiProc" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("MultiProc" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3125 3137]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2736 3144]))                  
+                :type "namespace")
+                nil [2712 3147])
+            ("Ipc" type
+               (:members 
+                  ( ("Locate" function
+                       (:parent "Ipc::MultiProc"
+                        :type ("MultiProc" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3183 3296])
+                    ("Number" function
+                       (:parent "Ipc::MultiProc"
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3302 3360])
+                    ("Id" function
+                       (:parent "Ipc::MultiProc"
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3393 3417]))                          
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3366 3443])
+                    ("Name" function
+                       (:parent "Ipc::MultiProc"
+                        :arguments 
+                          ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3482 3493]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3449 3537]))                  
+                :type "namespace")
+                nil [3162 3540])
+            ("IpcArm" type
+               (:members 
+                  ( ("MultiProc" function
+                       (:constructor-flag t
+                        :parent "MultiProc"
+                        :type ("MultiProc" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3577 3653])
+                    ("MultiProc" function
+                       (:destructor-flag t
+                        :parent "MultiProc"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3659 3685])
+                    ("Id" function
+                       (:parent "MultiProc"
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3691 3741])
+                    ("Name" function
+                       (:parent "MultiProc"
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3747 3805])
+                    ("IsMasterId" function
+                       (:parent "MultiProc"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [3811 3868])
+                    ("WaitCores" function
+                       (:parent "MultiProc"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3874 3904])
+                    ("SetId" function
+                       (:parent "MultiProc"
+                        :arguments 
+                          ( ("_id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3935 3947]))                          
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3910 3992]))                  
+                :type "namespace")
+                nil [3553 3995])
+            ("CSC" type
+               (:members 
+                  ( ("Create" function
+                       (:pointer 1
+                        :parent "ClassifierFactory"
+                        :arguments 
+                          ( ("type" variable (:type ("Classifier::Types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4070 4093]))                          
+                        :type ("Classifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4032 4523]))                  
+                :type "namespace")
+                nil [4011 4525]))          
+      :file "Factory.cpp"
+      :pointmax 4536
+      :fsize 4536
+      :lastmodtime '(24507 51463 0 0)
+      :unmatched-syntax '((punctuation 3105 . 3106) (punctuation 3104 . 3105))))
+  :file "!home!max!projects!dsp!commonpocket!CSC!JetServer!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

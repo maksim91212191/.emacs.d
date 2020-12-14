@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/projects/dsp/commonpocket/" "~/projects/dsp/commonpocket/LibTMS/" "~/projects/dsp/commonpocket/CSC/" "~/projects/dsp/commonpocket/LibTMS/CppUtest/repo/" "~/projects/dsp/buildscripts/" "~/text/.emacs.d/plugins/color-theme/")

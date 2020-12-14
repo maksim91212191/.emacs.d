@@ -1,0 +1,244 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_ROUTER_H" variable (:constant-flag t) nil [99 111])
+            ("csc/Messages.h" include (:system-flag t) nil [113 138])
+            ("csc/Router/EthInterface.h" include (:system-flag t) nil [139 175])
+            ("csc/Router/MessageHandler.h" include (:system-flag t) nil [176 214])
+            ("Bios/Service.h" include (:system-flag t) nil [215 240])
+            ("map" include (:system-flag t) nil [241 255])
+            ("string" include (:system-flag t) nil [256 273])
+            ("CSC" type
+               (:members 
+                  ( ("Router" type
+                       (:superclasses 
+                          ( ("Bios::Service::ActionOwner" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("MessageHandler" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [381 388])
+                            ("name" variable
+                               (:dereference 1
+                                :constant-flag t
+                                :default-value "\"CSC::Router\""
+                                :type "char")
+                                (reparse-symbol classsubparts) [410 444])
+                            ("System::EthInterface::ProtocolType" variable (:type "int") (reparse-symbol classsubparts) [467 502])
+                            ("Common::Process::Pid" variable (:type "int") (reparse-symbol classsubparts) [519 540])
+                            ("Router" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("protocol" variable (:type ("Protocol" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [553 571])
+                                    ("portLocal" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [583 602])
+                                    ("ipRemote" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "Network::IpAddress()"
+                                        :type ("Network::IpAddress" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [614 671])
+                                    ("portRemote" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [684 707]))                                  
+                                :type ("Router" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [546 709])
+                            ("Router" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [714 732])
+                            ("final" variable (:type "int") (reparse-symbol classsubparts) [782 788])
+                            ("States" type
+                               (:members 
+                                  ( ("Idle" variable
+                                       (:constant-flag t
+                                        :default-value (959 960)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [952 960])
+                                    ("StatesNum" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [971 986]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [930 987])
+                            ("ParamsConsumerAdd" type
+                               (:members 
+                                  ( ("pid" variable (:type ("Pid" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1028 1036])
+                                    ("eventAnswer" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1045 1066]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [993 1073])
+                            ("Common::Process::BasicMsg" variable (:type "int") (reparse-symbol classsubparts) [1102 1168])
+                            ("private" label nil (reparse-symbol classsubparts) [1170 1178])
+                            ("Action" function
+                               (:template 
+                                  ( ("unsigned int" type (:typevar "event") nil nil))                                  
+                                :type ("Msg" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("msg" variable (:type ("Msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1223 1231]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [1183 1232])
+                            ("SendToEth" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("msg" variable (:type ("Msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1252 1260]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1238 1261])
+                            ("Bios::Service::ActionOwner" variable
+                               (:typemodifiers ("friend")
+                                :type "int")
+                                (reparse-symbol classsubparts) [1267 1301])
+                            ("pidMaster" variable (:type ("Pid" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1307 1321])
+                            ("consumers" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("Pid" type nil nil nil)
+                                      ("uint32_t" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1326 1360])
+                            ("ethernet" variable (:type ("EthInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1365 1387]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [292 1390]))                  
+                :type "namespace")
+                nil [275 1393]))          
+      :file "Router.h"
+      :pointmax 1431
+      :fsize 1430
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((punctuation 1100 . 1101) (symbol 1085 . 1099) (USING 1079 . 1084) (punctuation 923 . 924) (semantic-list 817 . 923) (UNSIGNED 808 . 816) (punctuation 806 . 807) (symbol 799 . 805) (ENUM 794 . 798) (semantic-list 755 . 781) (symbol 742 . 755) (INT 738 . 741) (punctuation 517 . 518) (symbol 513 . 516) (USING 507 . 512) (punctuation 465 . 466) (symbol 456 . 464) (USING 450 . 455) (symbol 400 . 409) (STATIC 393 . 399))
+      :lexical-table 
+        '(("CSC_ROUTER_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_ADAPTER_H" variable (:constant-flag t) nil [101 114])
+            ("Common/Process.h" include (:system-flag t) nil [116 143])
+            ("Common/Packet.h" include (:system-flag t) nil [144 170])
+            ("vector" include (:system-flag t) nil [171 188])
+            ("CSC" type
+               (:members 
+                  ( ("TransportData" type
+                       (:members 
+                          ( ("length" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [256 272]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [229 275])
+                    ("AdapterRx" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [313 320])
+                            ("AdapterRx" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("AdapterRx" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [325 337])
+                            ("AdapterRx" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [342 363])
+                            ("Push" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("packet" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Common::Packet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [382 411]))                                  
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [369 412])
+                            ("Pop" function
+                               (:prototype-flag t
+                                :type ("Common::Process::Msg" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [417 444])
+                            ("Free" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [449 461])
+                            ("private" label nil (reparse-symbol classsubparts) [463 471])
+                            ("firstPacket" variable (:type "bool") (reparse-symbol classsubparts) [476 493])
+                            ("msgOut" variable (:type ("Common::Process::Msg" type (:type "class") nil nil)) (reparse-symbol classsubparts) [498 526])
+                            ("buffer" variable (:type ("Common::Packet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [531 553])
+                            ("posCurr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [558 575])
+                            ("wordPrev" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [580 597])
+                            ("numPacket" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [602 621]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [295 624])
+                    ("AdapterTx" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [644 651])
+                            ("AdapterTx" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("AdapterTx" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [656 668])
+                            ("AdapterTx" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [673 694])
+                            ("GetNumSend" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [700 728])
+                            ("Push" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("packets" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Common::Packet" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [743 786]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [733 787])
+                            ("FillData" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("buffer" variable (:type ("Common::Packet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [806 828]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [792 829])
+                            ("private" label nil (reparse-symbol classsubparts) [831 839])
+                            ("packets" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Common::Packet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [844 880])
+                            ("packetCounter" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [886 909])
+                            ("packetSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [914 934])
+                            ("packetLengthFlag" variable (:type "bool") (reparse-symbol classsubparts) [940 966])
+                            ("size2Send" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [971 990])
+                            ("payloadCurr" variable (:type ("std::vector::iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [995 1045])
+                            ("packetCurr" variable (:type ("Common::Packet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1050 1099]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [626 1102]))                  
+                :type "namespace")
+                nil [190 1105]))          
+      :file "Adapter.h"
+      :pointmax 1151
+      :fsize 1150
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((semantic-list 288 . 293) (symbol 284 . 288) (symbol 277 . 283) (punctuation 276 . 277) (semantic-list 219 . 228) (symbol 215 . 219) (number 226 . 227) (symbol 208 . 214) (number 226 . 227) (punctuation 207 . 208) (semantic-list 288 . 293) (symbol 284 . 288) (symbol 277 . 283) (punctuation 276 . 277) (semantic-list 219 . 228) (symbol 215 . 219) (number 226 . 227) (symbol 208 . 214) (number 226 . 227) (punctuation 207 . 208) (punctuation 207 . 208))
+      :lexical-table 
+        '(("CSC_ADAPTER_H")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Include!csc!Router!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

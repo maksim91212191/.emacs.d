@@ -1,0 +1,389 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CppUTest/TestHarness.h" include nil nil [1605 1638])
+            ("CppUTest/CommandLineArguments.h" include nil nil [1639 1681])
+            ("CppUTest/PlatformSpecificFunctions.h" include nil nil [1682 1729])
+            ("CommandLineArguments" function
+               (:constructor-flag t
+                :parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [1774 1781])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1782 1804]))                  
+                :type ("CommandLineArguments" type (:type "class") nil nil))
+                nil [1731 2191])
+            ("CommandLineArguments" function
+               (:destructor-flag t
+                :parent "CommandLineArguments"
+                :type "void")
+                nil [2193 2542])
+            ("parse" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("plugin" variable
+                       (:pointer 1
+                        :type ("TestPlugin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2577 2596]))                  
+                :type "bool")
+                nil [2544 4830])
+            ("usage" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "CommandLineArguments"
+                :constant-flag t
+                :type "char")
+                nil [4832 5286])
+            ("help" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "CommandLineArguments"
+                :constant-flag t
+                :type "char")
+                nil [5288 7652])
+            ("needHelp" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [7654 7723])
+            ("isVerbose" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [7725 7794])
+            ("isVeryVerbose" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [7796 7873])
+            ("isColor" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [7875 7940])
+            ("isListingTestGroupNames" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [7942 8036])
+            ("isListingTestGroupAndCaseNames" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [8038 8146])
+            ("isRunIgnored" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [8148 8223])
+            ("runTestsInSeperateProcess" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [8225 8328])
+            ("getRepeatCount" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8331 8406])
+            ("isReversing" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [8408 8481])
+            ("isShuffling" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [8483 8556])
+            ("getShuffleSeed" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [8558 8638])
+            ("getGroupFilters" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "CommandLineArguments"
+                :constant-flag t
+                :type ("TestFilter" type (:type "class") nil nil))
+                nil [8640 8733])
+            ("getNameFilters" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "CommandLineArguments"
+                :constant-flag t
+                :type ("TestFilter" type (:type "class") nil nil))
+                nil [8735 8826])
+            ("setRepeatCount" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [8870 8877])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8878 8900])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [8901 8908]))                  
+                :type "void")
+                nil [8828 9220])
+            ("setShuffle" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [9260 9267])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9268 9291])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9292 9299]))                  
+                :type "bool")
+                nil [9222 9902])
+            ("getParameterField" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [9957 9964])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9965 9988])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [9989 9996])
+                    ("parameterName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9997 10031]))                  
+                :type ("SimpleString" type (:type "class") nil nil))
+                nil [9904 10254])
+            ("addGroupFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [10298 10305])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10306 10328])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10329 10336]))                  
+                :type "void")
+                nil [10256 10475])
+            ("addGroupDotNameFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [10526 10533])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10534 10556])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [10557 10564]))                  
+                :type "bool")
+                nil [10477 10962])
+            ("addStrictGroupFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [11012 11019])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11020 11042])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11043 11050]))                  
+                :type "void")
+                nil [10964 11225])
+            ("addExcludeGroupFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [11276 11283])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11284 11306])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11307 11314]))                  
+                :type "void")
+                nil [11227 11489])
+            ("addExcludeStrictGroupFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [11546 11553])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11554 11576])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11577 11584]))                  
+                :type "void")
+                nil [11491 11795])
+            ("addNameFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [11838 11845])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11846 11868])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11869 11876]))                  
+                :type "void")
+                nil [11797 12011])
+            ("addStrictNameFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [12060 12067])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12068 12090])
+                    ("index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12091 12102]))                  
+                :type "void")
+                nil [12013 12275])
+            ("addExcludeNameFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [12325 12332])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12333 12355])
+                    ("index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12356 12367]))                  
+                :type "void")
+                nil [12277 12540])
+            ("addExcludeStrictNameFilter" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [12596 12603])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12604 12626])
+                    ("index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12627 12638]))                  
+                :type "void")
+                nil [12542 12846])
+            ("addTestToRunBasedOnVerboseOutput" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [12908 12915])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12916 12938])
+                    ("index" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [12939 12950])
+                    ("parameterName" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12951 12977]))                  
+                :type "void")
+                nil [12848 13488])
+            ("setPackageName" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [13532 13539])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13540 13562])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13563 13570]))                  
+                :type "void")
+                nil [13490 13715])
+            ("setOutputType" function
+               (:parent "CommandLineArguments"
+                :arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [13758 13765])
+                    ("av" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13766 13788])
+                    ("i" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [13789 13796]))                  
+                :type "bool")
+                nil [13717 14256])
+            ("isEclipseOutput" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [14258 14354])
+            ("isJUnitOutput" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [14356 14448])
+            ("isTeamCityOutput" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :type "bool")
+                nil [14450 14548])
+            ("getPackageName" function
+               (:methodconst-flag t
+                :parent "CommandLineArguments"
+                :constant-flag t
+                :type ("SimpleString" type (:type "class") nil nil))
+                nil [14550 14643]))          
+      :file "CommandLineArguments.cpp"
+      :pointmax 14645
+      :fsize 14644
+      :lastmodtime '(24443 16972 0 0)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!CppUtest!repo!src!CppUTest!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

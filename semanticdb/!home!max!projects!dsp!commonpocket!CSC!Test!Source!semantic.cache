@@ -1,0 +1,61 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/DmrChecker.h" include (:system-flag t) nil [1 28])
+            ("csc/Classifiers/Classifier.h" include (:system-flag t) nil [29 68])
+            ("csc/Server.h" include (:system-flag t) nil [69 92])
+            ("csc/Client.h" include (:system-flag t) nil [93 116])
+            ("csc/Router/Router.h" include (:system-flag t) nil [117 147])
+            ("csc/Messages.h" include (:system-flag t) nil [148 173])
+            ("GnuPlot.h" include nil nil [174 194])
+            ("Usage.h" include nil nil [195 213])
+            ("Utils.h" include nil nil [214 232])
+            ("Common/Buffer.h" include (:system-flag t) nil [233 259])
+            ("iostream" include (:system-flag t) nil [260 279])
+            ("IntMath/Complex.h" include (:system-flag t) nil [280 308])
+            ("System/Supervisor.h" include (:system-flag t) nil [309 339])
+            ("math.h" include (:system-flag t) nil [340 357])
+            ("ctime" include (:system-flag t) nil [358 374])
+            ("utility" include (:system-flag t) nil [375 393])
+            ("Ipc/NameServer.h" include (:system-flag t) nil [394 421])
+            ("unistd.h" include (:system-flag t) nil [422 441])
+            ("signal.h" include (:system-flag t) nil [442 461])
+            ("System/DebugInfo.h" include (:system-flag t) nil [462 491])
+            ("System/FileConfig.h" include (:system-flag t) nil [492 522])
+            ("Common/Configuration.h" include (:system-flag t) nil [523 556])
+            ("SignalProcessing/FrequencyShift.h" include (:system-flag t) nil [557 601])
+            ("SignalProcessing/FFT/Magic.h" include (:system-flag t) nil [602 641])
+            ("roleNames" variable
+               (:dereference 1
+                :default-value "{\"server\", \"client\", \"local\"}"
+                :type ("std::string" type (:type "class") nil nil))
+                nil [726 797])
+            ("SP" type
+               (:kind alias
+                :members 
+                  ( ("IntMath::SignalProcessing" type (:type "namespace") nil nil))                  
+                :type "namespace")
+                nil [799 840])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [851 860])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [861 874]))                  
+                :type "int")
+                nil [842 15266]))          
+      :file "main.cpp"
+      :pointmax 15267
+      :fsize 15266
+      :lastmodtime '(24531 29423 451104 711000)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Test!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

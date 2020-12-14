@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_TEST_UTILS_H" variable (:constant-flag t) nil [102 118])
+            ("Common/Buffer.h" include (:system-flag t) nil [120 146])
+            ("fstream" include (:system-flag t) nil [147 165])
+            ("iostream" include (:system-flag t) nil [166 185])
+            ("ReadBuffer" function
+               (:template 
+                  ( ("DataType" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [227 255])
+                    ("data" variable
+                       (:reference 1
+                        :type ("Common::Buffer" type
+                             (:template-specifier 
+                                ( ("DataType" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [256 287])
+                    ("position" variable
+                       (:default-value "0"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [288 309])
+                    ("lenSignal" variable
+                       (:default-value "0"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [311 333]))                  )
+                nil [187 1256])
+            ("WriteBuffer" function
+               (:template 
+                  ( ("DataType" type (:type "class") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("fileName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1299 1327])
+                    ("data" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Common::Buffer" type
+                             (:template-specifier 
+                                ( ("DataType" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1328 1365]))                  )
+                nil [1258 1698]))          
+      :file "Utils.h"
+      :pointmax 1730
+      :fsize 1729
+      :lastmodtime '(24507 48457 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CSC_TEST_UTILS_H")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Test!Include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

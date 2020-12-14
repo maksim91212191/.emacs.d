@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("add-to-list" code nil nil [76 193])
+            ("irony-additional-clang-options" variable nil nil [288 635])
+            ("custom-autoload" code nil nil [637 696])
+            ("irony-mode" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [698 819])
+            ("irony-version" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [821 1005])
+            ("irony-server-kill" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1007 1108])
+            ("irony-get-type" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1110 1198])
+            ("if" code nil nil [1200 1295])
+            ("irony-cdb-autosetup-compile-options" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1409 1486])
+            ("irony-cdb-menu" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [1488 1544])
+            ("if" code nil nil [1546 1649])
+            ("irony-cdb-clang-complete" function (:prototype-flag t) nil [1816 1918])
+            ("if" code nil nil [1920 2054])
+            ("irony-cdb-json" function (:prototype-flag t) nil [2191 2273])
+            ("irony-cdb-json-add-compile-commands-path" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2275 2715])
+            ("irony-cdb-json-select" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [2717 3136])
+            ("irony-cdb-json-select-most-recent" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [3138 3260])
+            ("if" code nil nil [3262 3376])
+            ("irony-cdb-libclang" function (:prototype-flag t) nil [3525 3615])
+            ("if" code nil nil [3617 3739])
+            ("irony-completion-at-point" function (:prototype-flag t) nil [3882 3958])
+            ("if" code nil nil [3960 4066])
+            ("if" code nil nil [4212 4331])
+            ("if" code nil nil [4454 4563])
+            ("if" code nil nil [4689 4800]))          
+      :file "irony-autoloads.el"
+      :pointmax 5027
+      :fsize 5026
+      :lastmodtime '(24530 12016 268029 715000)
+      :unmatched-syntax nil))
+  :file "!home!max!.emacs.d!elpa!irony-20201018.1707!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

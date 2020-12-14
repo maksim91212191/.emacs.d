@@ -1,0 +1,61 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Classifiers/Classifier.h" include (:system-flag t) nil [76 115])
+            ("CSC" type
+               (:members 
+                  ( ("Release" function
+                       (:parent "ClassifierFactory"
+                        :arguments 
+                          ( ("classifier" variable
+                               (:pointer 1
+                                :type ("Classifier" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [166 189]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [134 278])
+                    ("Classifier" function
+                       (:constructor-flag t
+                        :parent "Classifier"
+                        :type ("Classifier" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [280 329])
+                    ("Classifier" function
+                       (:destructor-flag t
+                        :parent "Classifier"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [331 361])
+                    ("Init" function
+                       (:parent "Classifier"
+                        :arguments 
+                          ( ("paramsNew" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Params" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [385 409]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [363 432])
+                    ("IsInit" function
+                       (:methodconst-flag t
+                        :parent "Classifier"
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [434 488])
+                    ("GetResult" function
+                       (:methodconst-flag t
+                        :parent "Classifier"
+                        :constant-flag t
+                        :type ("Classifier::Result" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [490 568]))                  
+                :type "namespace")
+                nil [117 572]))          
+      :file "Classifier.cpp"
+      :pointmax 583
+      :fsize 582
+      :lastmodtime '(24484 5677 618391 0)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Source!Classifiers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

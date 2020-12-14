@@ -1,0 +1,248 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("NETWORK_TCPCLIENT_H_" variable (:constant-flag t) nil [118 138])
+            ("sstream" include (:system-flag t) nil [140 158])
+            ("stdint.h" include (:system-flag t) nil [159 178])
+            ("Bios/Thread.h" include (:system-flag t) nil [180 204])
+            ("Bios/Semaphore.h" include (:system-flag t) nil [205 232])
+            ("Bios/Lock.h" include (:system-flag t) nil [233 255])
+            ("Network/Protocol.h" include (:system-flag t) nil [256 285])
+            ("sys/socket.h" include (:system-flag t) nil [349 372])
+            ("netinet/in.h" include (:system-flag t) nil [373 396])
+            ("netinet/ip.h" include (:system-flag t) nil [397 420])
+            ("Network" type
+               (:members 
+                  ( ("TcpClient" type
+                       (:superclasses 
+                          ( ("Protocol" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("Bios::Thread" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [513 520])
+                            ("maxSize" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "1468"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [524 561])
+                            ("numBuffers" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "32"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [563 601])
+                            ("numBuffersMask" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "numBuffers - 1"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [603 657])
+                            ("TcpClient" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("ipServer" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("IpAddress" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [670 696])
+                                    ("portServer" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [697 717])
+                                    ("portClient" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [718 738])
+                                    ("direction" variable
+                                       (:default-value "(in | out)"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [739 769]))                                  
+                                :type ("TcpClient" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [660 771])
+                            ("TcpClient" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [773 794])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [818 827])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [849 858])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [908 917])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [973 982])
+                            ("override" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1014 1029])
+                            ("private" label nil (reparse-symbol classsubparts) [1031 1039])
+                            ("Loop" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1041 1061])
+                            ("Prolog" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [1066 1087])
+                            ("Connect" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1092 1106])
+                            ("CreateSocket" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1108 1128])
+                            ("clientSocket" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1534 1555])
+                            ("hostAddr" variable (:type ("sockaddr_in" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1557 1578])
+                            ("readSem" variable (:type ("Bios::Semaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1588 1612])
+                            ("readSize" variable
+                               (:dereference 1
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1614 1643])
+                            ("cntTail" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1645 1662])
+                            ("cntHead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1664 1681])
+                            ("isConnected" variable (:type "bool") (reparse-symbol classsubparts) [1683 1700]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [457 1703])
+                    ("GetBufSize" function
+                       (:methodconst-flag t
+                        :parent "TcpClient"
+                        :typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1705 1771]))                  
+                :type "namespace")
+                nil [436 1774]))          
+      :file "TcpClient.h"
+      :pointmax 1834
+      :fsize 1833
+      :lastmodtime '(24519 41867 339999 225000)
+      :unmatched-syntax '((semantic-list 1011 . 1013) (symbol 1001 . 1011) (symbol 992 . 1000) (VIRTUAL 984 . 991) (semantic-list 940 . 972) (symbol 935 . 940) (symbol 927 . 934) (VIRTUAL 919 . 926) (semantic-list 880 . 907) (symbol 876 . 880) (symbol 868 . 875) (VIRTUAL 860 . 867) (semantic-list 846 . 848) (symbol 842 . 846) (VOID 837 . 841) (VIRTUAL 829 . 836) (semantic-list 815 . 817) (symbol 810 . 815) (VOID 805 . 809) (VIRTUAL 797 . 804))
+      :lexical-table 
+        '(("NETWORK_TCPCLIENT_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Network_Tcp_H_" variable (:constant-flag t) nil [99 113])
+            ("sstream" include (:system-flag t) nil [115 133])
+            ("stdint.h" include (:system-flag t) nil [134 153])
+            ("Bios/Thread.h" include (:system-flag t) nil [155 179])
+            ("Bios/Semaphore.h" include (:system-flag t) nil [180 207])
+            ("Bios/Lock.h" include (:system-flag t) nil [208 230])
+            ("Network/Protocol.h" include (:system-flag t) nil [231 260])
+            ("sys/socket.h" include (:system-flag t) nil [324 347])
+            ("netinet/in.h" include (:system-flag t) nil [348 371])
+            ("netinet/ip.h" include (:system-flag t) nil [372 395])
+            ("Network" type
+               (:members 
+                  ( ("Tcp" type
+                       (:superclasses 
+                          ( ("Protocol" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("Bios::Thread" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [482 489])
+                            ("maxSize" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "1468"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [493 530])
+                            ("numBuffers" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "32"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [532 570])
+                            ("numBuffersMask" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "numBuffers - 1"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [572 626])
+                            ("Tcp" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("localPort" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [633 652])
+                                    ("direction" variable
+                                       (:default-value "(in | out)"
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [653 683])
+                                    ("dstIp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :default-value "IpAddress()"
+                                        :type ("IpAddress" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [685 721])
+                                    ("remotePort" variable
+                                       (:default-value "0"
+                                        :type ("uint16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [723 749]))                                  
+                                :type ("Tcp" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [629 751])
+                            ("Tcp" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [753 768])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [792 801])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [823 832])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [882 891])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [947 956])
+                            ("override" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [988 1003])
+                            ("private" label nil (reparse-symbol classsubparts) [1005 1013])
+                            ("Loop" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1015 1035])
+                            ("serverSocket" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1443 1464])
+                            ("clientSocket" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1466 1487])
+                            ("hostAddr" variable (:type ("sockaddr_in" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1489 1510])
+                            ("readSem" variable (:type ("Bios::Semaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1520 1544])
+                            ("lockWrite" variable (:type ("Bios::Lock" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1546 1567])
+                            ("readSize" variable
+                               (:dereference 1
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1569 1598])
+                            ("cntTail" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1600 1617])
+                            ("cntHead" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1619 1636]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [432 1639])
+                    ("GetBufSize" function
+                       (:methodconst-flag t
+                        :parent "Tcp"
+                        :typemodifiers ("inline")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1641 1701]))                  
+                :type "namespace")
+                nil [411 1704]))          
+      :file "Tcp.h"
+      :pointmax 1752
+      :fsize 1751
+      :lastmodtime '(24519 41842 643999 228000)
+      :unmatched-syntax '((semantic-list 985 . 987) (symbol 975 . 985) (symbol 966 . 974) (VIRTUAL 958 . 965) (semantic-list 914 . 946) (symbol 909 . 914) (symbol 901 . 908) (VIRTUAL 893 . 900) (semantic-list 854 . 881) (symbol 850 . 854) (symbol 842 . 849) (VIRTUAL 834 . 841) (semantic-list 820 . 822) (symbol 816 . 820) (VOID 811 . 815) (VIRTUAL 803 . 810) (semantic-list 789 . 791) (symbol 784 . 789) (VOID 779 . 783) (VIRTUAL 771 . 778) (symbol 901 . 908) (VIRTUAL 893 . 900) (semantic-list 854 . 881) (symbol 850 . 854) (symbol 842 . 849) (VIRTUAL 834 . 841) (semantic-list 820 . 822) (symbol 816 . 820) (VOID 811 . 815) (VIRTUAL 803 . 810) (semantic-list 789 . 791) (symbol 784 . 789) (VOID 779 . 783) (VIRTUAL 771 . 778))
+      :lexical-table 
+        '(("Network_Tcp_H_")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!Network!Include!Network!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

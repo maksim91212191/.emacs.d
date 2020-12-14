@@ -1,0 +1,381 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("JETSON_CLASSIFIER_API_H_" variable (:constant-flag t) nil [42 66])
+            ("definitions/modulation_defs.h" include nil nil [70 110])
+            ("definitions/standard_defs.h" include nil nil [111 149])
+            ("EXPORT" variable (:constant-flag t) nil [205 211])
+            ("IMPORT" variable (:constant-flag t) nil [260 266])
+            ("DeleteType" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("classifier" variable
+                       (:pointer 1
+                        :type ("jetson::JetsonClassifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2711 2748]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2688 2749])
+            ("CreateType" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("jetson::JetsonClassifier" type (:type "class") nil nil)
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2637 2678])
+            ("InitType" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2589 2627])
+            ("Delete" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "bool"
+                :arguments 
+                  ( ("classifier" variable
+                       (:pointer 1
+                        :type ("jetson::JetsonClassifier" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2538 2576]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2520 2577])
+            ("Create" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("jetson::JetsonClassifier" type (:type "class") nil nil)
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2475 2511])
+            ("Init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2433 2466])
+            ("jetson" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "namespace"
+                :members 
+                  ( ("Status" type
+                       (:superclasses 
+                          ( ("int32_t" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [398 751])
+                    ("AnalysisType" type
+                       (:superclasses 
+                          ( ("int32_t" type
+                               (:protection "unspecified"
+                                :type "class")
+                                nil nil))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [760 935])
+                    ("ClassifierSettings" type
+                       (:members 
+                          ( ("AnalysisType::kNothing" variable (:type "int") (reparse-symbol classsubparts) [1030 1053])
+                            ("fft_size" variable
+                               (:default-value "0"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1057 1089]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [963 1123])
+                    ("SignalSettings" type
+                       (:members 
+                          ( ("sample_rate" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol classsubparts) [1199 1225])
+                            ("tuner_frequency" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol classsubparts) [1229 1258])
+                            ("frequency_start" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol classsubparts) [1262 1291])
+                            ("frequency_end" variable
+                               (:default-value "0.0"
+                                :type "double")
+                                (reparse-symbol classsubparts) [1295 1322]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [1170 1357])
+                    ("JetsonClassifier" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1433 1440])
+                            ("JetsonClassifier" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1444 1466])
+                            ("Initialize" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("classifier_settings" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ClassifierSettings" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1502 1548])
+                                    ("signal_settings" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("SignalSettings" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1549 1588]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1472 1593])
+                            ("Process" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [1627 1648])
+                                    ("samples_count" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1654 1681])
+                                    ("is_last_block" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1682 1709]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1599 1714])
+                            ("Process" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:constant-flag t
+                                        :type ("int16_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1746 1769])
+                                    ("samples_count" variable
+                                       (:constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1774 1801])
+                                    ("is_last_block" variable
+                                       (:constant-flag t
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [1802 1829]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1718 1834])
+                            ("GetCurrentStatus" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Status" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1841 1889])
+                            ("GetModulationID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("signal::Modulation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1897 1959])
+                            ("GetStandardID" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type ("systems::Standard" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1964 2023])
+                            ("GetModulationName" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2028 2089])
+                            ("GetStandardName" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2094 2154])
+                            ("GetCarrierFrequency" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [2159 2218])
+                            ("GetSymbolRate" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [2223 2277])
+                            ("GetBandwidth" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "double")
+                                (reparse-symbol classsubparts) [2282 2335])
+                            ("GetProbability" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "float")
+                                (reparse-symbol classsubparts) [2340 2394]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1404 2400]))                  )
+                (reparse-symbol extern-c-contents) [371 2422]))          
+      :file "jetson_classifier_api.h"
+      :pointmax 2788
+      :fsize 3081
+      :lastmodtime '(24526 15255 631213 262000)
+      :unmatched-syntax '((TYPEDEF 2680 . 2687) (TYPEDEF 2629 . 2636) (TYPEDEF 2581 . 2588) (semantic-list 2414 . 2419) (symbol 2410 . 2414) (symbol 2403 . 2409) (punctuation 2402 . 2403) (semantic-list 1769 . 1772) (semantic-list 1759 . 1769) (semantic-list 1648 . 1651) (semantic-list 1638 . 1648) (semantic-list 1392 . 1401) (symbol 1388 . 1392) (number 1399 . 1400) (semantic-list 1769 . 1772) (semantic-list 1759 . 1769) (semantic-list 1648 . 1651) (semantic-list 1638 . 1648) (semantic-list 1769 . 1772) (semantic-list 1759 . 1769) (semantic-list 1648 . 1651) (semantic-list 1638 . 1648) (symbol 1381 . 1387) (number 1399 . 1400) (semantic-list 1769 . 1772) (semantic-list 1759 . 1769) (semantic-list 1648 . 1651) (semantic-list 1638 . 1648) (semantic-list 1769 . 1772) (semantic-list 1759 . 1769) (semantic-list 1648 . 1651) (semantic-list 1638 . 1648) (punctuation 1380 . 1381) (semantic-list 1371 . 1376) (symbol 1367 . 1371) (symbol 1360 . 1366) (punctuation 1359 . 1360) (punctuation 1351 . 1352) (CONST 1346 . 1351) (semantic-list 1342 . 1345) (BOOL 1337 . 1341) (OPERATOR 1328 . 1336) (semantic-list 1158 . 1167) (symbol 1154 . 1158) (number 1165 . 1166) (punctuation 1351 . 1352) (CONST 1346 . 1351) (semantic-list 1342 . 1345) (BOOL 1337 . 1341) (OPERATOR 1328 . 1336) (punctuation 1351 . 1352) (CONST 1346 . 1351) (semantic-list 1342 . 1345) (BOOL 1337 . 1341) (OPERATOR 1328 . 1336) (symbol 1147 . 1153) (number 1165 . 1166) (punctuation 1351 . 1352) (CONST 1346 . 1351) (semantic-list 1342 . 1345) (BOOL 1337 . 1341) (OPERATOR 1328 . 1336) (punctuation 1351 . 1352) (CONST 1346 . 1351) (semantic-list 1342 . 1345) (BOOL 1337 . 1341) (OPERATOR 1328 . 1336) (punctuation 1146 . 1147) (semantic-list 1137 . 1142) (symbol 1133 . 1137) (symbol 1126 . 1132) (punctuation 1125 . 1126) (punctuation 1117 . 1118) (CONST 1112 . 1117) (semantic-list 1108 . 1111) (BOOL 1103 . 1107) (OPERATOR 1094 . 1102) (punctuation 1028 . 1029) (symbol 1012 . 1025) (symbol 996 . 1008) (semantic-list 951 . 960) (symbol 947 . 951) (number 958 . 959) (punctuation 1117 . 1118) (CONST 1112 . 1117) (semantic-list 1108 . 1111) (BOOL 1103 . 1107) (OPERATOR 1094 . 1102) (punctuation 1028 . 1029) (symbol 1012 . 1025) (symbol 996 . 1008) (punctuation 1117 . 1118) (CONST 1112 . 1117) (semantic-list 1108 . 1111) (BOOL 1103 . 1107) (OPERATOR 1094 . 1102) (punctuation 1028 . 1029) (symbol 1012 . 1025) (symbol 996 . 1008) (symbol 940 . 946) (number 958 . 959) (punctuation 1117 . 1118) (CONST 1112 . 1117) (semantic-list 1108 . 1111) (BOOL 1103 . 1107) (OPERATOR 1094 . 1102) (punctuation 1028 . 1029) (symbol 1012 . 1025) (symbol 996 . 1008) (punctuation 1117 . 1118) (CONST 1112 . 1117) (semantic-list 1108 . 1111) (BOOL 1103 . 1107) (OPERATOR 1094 . 1102) (punctuation 1028 . 1029) (symbol 1012 . 1025) (symbol 996 . 1008) (punctuation 939 . 940) (number 896 . 897) (punctuation 894 . 895) (symbol 882 . 889) (punctuation 844 . 845) (number 843 . 844) (punctuation 841 . 842) (symbol 829 . 840) (punctuation 820 . 821) (number 819 . 820) (punctuation 817 . 818) (symbol 805 . 813) (ENUM 755 . 759) (number 692 . 693) (punctuation 690 . 691) (symbol 676 . 689) (punctuation 644 . 645) (number 643 . 644) (punctuation 641 . 642) (symbol 632 . 638) (punctuation 592 . 593) (number 591 . 592) (punctuation 589 . 590) (symbol 578 . 587) (punctuation 558 . 559) (number 557 . 558) (punctuation 555 . 556) (symbol 542 . 553) (punctuation 486 . 487) (number 485 . 486) (punctuation 483 . 484) (symbol 474 . 480) (punctuation 441 . 442) (number 440 . 441) (punctuation 438 . 439) (symbol 428 . 436) (ENUM 393 . 397))
+      :lexical-table 
+        '(("EXPORT" . ((symbol "__attribute__" 212 . 225) (semantic-list "((visibility(\"default\")))" 225 . 250)))
+          ("JETSON_CLASSIFIER_API_H_" . ((number "1" 67 . 68)))
+          ("IMPORT")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_DIV_JETSON_CLASSIFIER_H" variable (:constant-flag t) nil [118 145])
+            ("csc/Classifiers/Div/Classifier.h" include (:system-flag t) nil [147 190])
+            ("csc/Classifiers/Div/Jetson/jetson_classifier_api.h" include (:system-flag t) nil [191 252])
+            ("map" include (:system-flag t) nil [253 267])
+            ("CSC" type
+               (:members 
+                  ( ("Div" type
+                       (:members 
+                          ( ("Jetson" type
+                               (:members 
+                                  ( ("Classifier" type
+                                       (:superclasses 
+                                          ( ("CSC::Div::Classifier" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [370 377])
+                                            ("Classifier" function
+                                               (:prototype-flag t
+                                                :constructor-flag t
+                                                :arguments 
+                                                  ( ("libname" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("std::string" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [393 420]))                                                  
+                                                :type ("Classifier" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [382 421])
+                                            ("Classifier" function
+                                               (:prototype-flag t
+                                                :destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [426 448])
+                                            ("Init" function
+                                               (:prototype-flag t
+                                                :override-flag t
+                                                :arguments 
+                                                  ( ("params" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Params" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [464 485]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [454 495])
+                                            ("Process" function
+                                               (:prototype-flag t
+                                                :override-flag t
+                                                :arguments 
+                                                  ( ("iq" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Common::Buffer" type
+                                                             (:template-specifier 
+                                                                ( ("Complex16" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [514 550]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [501 560])
+                                            ("Process" function
+                                               (:prototype-flag t
+                                                :override-flag t
+                                                :arguments 
+                                                  ( ("iq" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("Common::Buffer" type
+                                                             (:template-specifier 
+                                                                ( ("Complex32" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [578 614]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [565 624])
+                                            ("private" label nil (reparse-symbol classsubparts) [626 634])
+                                            ("FormResult" function
+                                               (:prototype-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [639 657])
+                                            ("ModulationGlobal" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("modLocal" variable (:type ("signal::Modulation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [690 718]))                                                  
+                                                :type ("Modulation" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [662 719])
+                                            ("SystemsGlobal" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("sysLocal" variable (:type ("systems::Standard" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [753 780]))                                                  
+                                                :type ("Systems::Types" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [724 781])
+                                            ("EquipGlobal" function
+                                               (:prototype-flag t
+                                                :arguments 
+                                                  ( ("eqLocal" variable (:type ("systems::Equipment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [817 844]))                                                  
+                                                :type ("Systems::Equipment" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [786 845])
+                                            ("lib" variable
+                                               (:pointer 1
+                                                :default-value "nullptr"
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [851 871])
+                                            ("implementation" variable (:type ("std::map" type
+                                                 (:template-specifier 
+                                                    ( ("Classifier::AnalysisTypes" type nil nil nil)
+                                                      ("jetson::JetsonClassifier" type (:pointer 1) nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [876 954]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [321 957]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [301 960]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [285 975]))                  
+                :type "namespace")
+                nil [269 987]))          
+      :file "Classifier.h"
+      :pointmax 1040
+      :fsize 1039
+      :lastmodtime '(24526 10345 767213 846000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CSC_DIV_JETSON_CLASSIFIER_H")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Include!csc!Classifiers!Div!Jetson!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

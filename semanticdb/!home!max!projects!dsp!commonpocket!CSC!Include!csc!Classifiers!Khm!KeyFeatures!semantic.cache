@@ -1,0 +1,169 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_KHM_KEYFEATURECOMPUTER_H_" variable (:constant-flag t) nil [128 157])
+            ("csc/Classifiers/Khm/KeyFeatures/KeyFeatures.h" include (:system-flag t) nil [159 215])
+            ("Common/Buffer.h" include (:system-flag t) nil [216 242])
+            ("IntMath/Complex.h" include (:system-flag t) nil [243 271])
+            ("IntMath/Detrender.h" include (:system-flag t) nil [272 302])
+            ("IntMath/Fft32.h" include (:system-flag t) nil [303 329])
+            ("CSC" type
+               (:members 
+                  ( ("Khm" type
+                       (:members 
+                          ( ("KeyFeatureComputer" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [391 398])
+                                    ("KeyFeatureComputer" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :type ("KeyFeatureComputer" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [403 424])
+                                    ("KeyFeatureComputer" function
+                                       (:prototype-flag t
+                                        :destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [429 459])
+                                    ("Params" type
+                                       (:members 
+                                          ( ("fsHz" variable
+                                               (:default-value "0"
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [489 511])
+                                            ("lenFrame" variable
+                                               (:default-value "0"
+                                                :type ("uint32_t" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [520 542]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [465 549])
+                                    ("Init" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("params" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Params" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [565 586]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [555 587])
+                                    ("Process" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("iq" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Common::Buffer" type
+                                                     (:template-specifier 
+                                                        ( ("Complex16" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [605 641]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [592 642])
+                                    ("GetKeyFeatures" function
+                                       (:prototype-flag t
+                                        :methodconst-flag t
+                                        :constant-flag t
+                                        :type ("FeaturesMain" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [648 691])
+                                    ("private" label nil (reparse-symbol classsubparts) [693 701])
+                                    ("ComputeSubFeatures" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("iq" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Common::Buffer" type
+                                                     (:template-specifier 
+                                                        ( ("Complex16" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [730 766]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [706 767])
+                                    ("ComputeGammaMax" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [772 795])
+                                    ("ComputeSigmas" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [800 821])
+                                    ("ClearFeatures" function
+                                       (:prototype-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [826 847])
+                                    ("params" variable (:type ("Params" type (:type "class") nil nil)) (reparse-symbol classsubparts) [853 869])
+                                    ("isInit" variable (:type "bool") (reparse-symbol classsubparts) [874 890])
+                                    ("lenSegment" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [895 915])
+                                    ("numFrameCurr" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [920 942])
+                                    ("fMeanSum" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [947 965])
+                                    ("kf" variable (:type ("KeyFeatures" type (:type "class") nil nil)) (reparse-symbol classsubparts) [971 986])
+                                    ("envelope" variable (:type ("Common::Buffer" type
+                                         (:template-specifier 
+                                            ( ("int32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [992 1027])
+                                    ("envDetrended" variable (:type ("Common::Buffer" type
+                                         (:template-specifier 
+                                            ( ("int32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1032 1071])
+                                    ("phase" variable (:type ("Common::Buffer" type
+                                         (:template-specifier 
+                                            ( ("int32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1076 1108])
+                                    ("phJumps" variable (:type ("Common::Buffer" type
+                                         (:template-specifier 
+                                            ( ("int32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1113 1147])
+                                    ("iqFrame" variable (:type ("Common::Buffer" type
+                                         (:template-specifier 
+                                            ( ("Complex16" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1152 1186])
+                                    ("envComplex" variable (:type ("Common::Buffer" type
+                                         (:template-specifier 
+                                            ( ("Complex32" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1191 1228])
+                                    ("envSpectrum" variable (:type ("Common::Buffer" type
+                                         (:template-specifier 
+                                            ( ("Complex32" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1233 1271])
+                                    ("detrender" variable (:type ("IntMath::Detrender" type
+                                         (:template-specifier 
+                                            ( ("int32_t" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1277 1315])
+                                    ("fft" variable
+                                       (:pointer 1
+                                        :type ("IntMath::Fft32" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1321 1341]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [364 1344]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [347 1347]))                  
+                :type "namespace")
+                nil [331 1359]))          
+      :file "KeyFeatureComputer.h"
+      :pointmax 1414
+      :fsize 1413
+      :lastmodtime '(24484 5677 115667 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CSC_KHM_KEYFEATURECOMPUTER_H_")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Include!csc!Classifiers!Khm!KeyFeatures!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

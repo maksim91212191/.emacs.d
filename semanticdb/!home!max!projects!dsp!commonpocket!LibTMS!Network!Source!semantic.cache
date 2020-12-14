@@ -1,0 +1,102 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [34 53])
+            ("arpa/inet.h" include (:system-flag t) nil [54 76])
+            ("sys/socket.h" include (:system-flag t) nil [77 100])
+            ("netinet/in.h" include (:system-flag t) nil [101 124])
+            ("netinet/ip.h" include (:system-flag t) nil [125 148])
+            ("Common/assert.h" include (:system-flag t) nil [150 176])
+            ("Bios/Semaphore.h" include (:system-flag t) nil [177 204])
+            ("TcpClient.h" include (:system-flag t) nil [205 227])
+            ("System/DebugInfo.h" include (:system-flag t) nil [228 257])
+            ("cstring" include (:system-flag t) nil [258 276])
+            ("iostream" include (:system-flag t) nil [277 296])
+            ("sstream" include (:system-flag t) nil [297 315])
+            ("cstdlib" include (:system-flag t) nil [316 334])
+            ("cstdio" include (:system-flag t) nil [335 352])
+            ("cerrno" include (:system-flag t) nil [353 370])
+            ("Network" type
+               (:members 
+                  ( ("TcpClient" function
+                       (:constructor-flag t
+                        :parent "TcpClient"
+                        :arguments 
+                          ( ("ipServer" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("IpAddress" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [418 444])
+                            ("portServer" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [445 465])
+                            ("portClient" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [466 486])
+                            ("direction" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [487 505]))                          
+                        :type ("TcpClient" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [397 820])
+                    ("TcpClient" function
+                       (:destructor-flag t
+                        :parent "TcpClient"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [826 858])
+                    ("CreateSocket" function
+                       (:parent "TcpClient"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [864 1706])
+                    ("Start" function
+                       (:parent "TcpClient"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1712 1863])
+                    ("Stop" function
+                       (:parent "TcpClient"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1869 2042])
+                    ("Read" function
+                       (:parent "TcpClient"
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2072 2082])
+                            ("size" variable
+                               (:reference 1
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2083 2098]))                          
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2048 2293])
+                    ("Write" function
+                       (:parent "TcpClient"
+                        :arguments 
+                          ( ("ptr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2324 2340])
+                            ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2341 2355]))                          
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2299 2747])
+                    ("Prolog" function
+                       (:parent "TcpClient"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2753 2821])
+                    ("Connect" function
+                       (:parent "TcpClient"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [2827 3463])
+                    ("Loop" function
+                       (:parent "TcpClient"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3473 4589]))                  
+                :type "namespace")
+                nil [372 4592]))          
+      :file "TcpClientPosix.cpp"
+      :pointmax 4617
+      :fsize 4699
+      :lastmodtime '(24483 57734 0 0)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!Network!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

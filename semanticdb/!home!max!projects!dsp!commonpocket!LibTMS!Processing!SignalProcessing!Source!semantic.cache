@@ -1,0 +1,54 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("cstring" include (:system-flag t) nil [76 94])
+            ("Common/Allocator.h" include (:system-flag t) nil [95 124])
+            ("Buffer.h" include nil nil [125 144])
+            ("IntMath" type
+               (:members 
+                  ( ("SignalProcessing" type
+                       (:members 
+                          ( ("Buffer" function
+                               (:constructor-flag t
+                                :parent "Buffer"
+                                :arguments 
+                                  ( ("bufferSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [211 231]))                                  
+                                :type ("Buffer" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [196 550])
+                            ("Buffer" function
+                               (:destructor-flag t
+                                :parent "Buffer"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [552 746])
+                            ("Push" function
+                               (:parent "Buffer"
+                                :arguments 
+                                  ( ("data" variable
+                                       (:pointer 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [769 783])
+                                    ("size" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [784 797]))                                  
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [748 1252])
+                            ("Pop" function
+                               (:pointer 1
+                                :parent "Buffer"
+                                :type ("uint8_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1254 1349]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [166 1352]))                  
+                :type "namespace")
+                nil [146 1384]))          
+      :file "Buffer.cpp"
+      :pointmax 1406
+      :fsize 1405
+      :lastmodtime '(24382 18272 0 0)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!Processing!SignalProcessing!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

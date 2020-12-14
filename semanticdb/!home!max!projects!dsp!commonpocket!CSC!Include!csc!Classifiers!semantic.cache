@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_CLASSIFIER_H_" variable (:constant-flag t) nil [108 125])
+            ("csc/Modulations.h" include (:system-flag t) nil [127 155])
+            ("csc/Systems.h" include (:system-flag t) nil [156 180])
+            ("csc/Signal.h" include (:system-flag t) nil [181 204])
+            ("Common/Buffer.h" include (:system-flag t) nil [205 231])
+            ("IntMath/Complex.h" include (:system-flag t) nil [232 260])
+            ("CSC" type
+               (:members 
+                  ( ("Classifier" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [298 305])
+                            ("Classifier" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Classifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [310 323])
+                            ("Classifier" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [328 350])
+                            ("uint32_t" variable (:type "int") (reparse-symbol classsubparts) [369 434])
+                            ("uint32_t" variable (:type "int") (reparse-symbol classsubparts) [461 548])
+                            ("Params" type
+                               (:members 
+                                  ( ("fsHz" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [578 598])
+                                    ("lenFrame" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [607 631])
+                                    ("bandHz" variable (:type ("Signal::BandHz" type (:type "class") nil nil)) (reparse-symbol classsubparts) [640 662])
+                                    ("analysisTypeMask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [671 703]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [554 710])
+                            ("Init" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("params" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Params" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [734 755]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [716 756])
+                            ("Process" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("iq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Common::Buffer" type
+                                             (:template-specifier 
+                                                ( ("Complex16" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [783 819]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [762 824])
+                            ("Process" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("iq" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Common::Buffer" type
+                                             (:template-specifier 
+                                                ( ("Complex32" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [850 886]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [829 891])
+                            ("Result" type
+                               (:members 
+                                  ( ("confidenceMod" variable (:type "float") (reparse-symbol classsubparts) [943 963])
+                                    ("confidenceSys" variable (:type "float") (reparse-symbol classsubparts) [972 992])
+                                    ("modulation" variable (:type ("Modulation" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1001 1023])
+                                    ("systems" variable (:type ("Systems::Types" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1032 1055])
+                                    ("equip" variable (:type ("Systems::Equipment" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1064 1089]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [919 1096])
+                            ("IsInit" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1120 1148])
+                            ("GetResult" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type ("Result" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1153 1193])
+                            ("protected" label nil (reparse-symbol classsubparts) [1195 1205])
+                            ("isInit" variable (:type "bool") (reparse-symbol classsubparts) [1210 1222])
+                            ("result" variable (:type ("Result" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1227 1241]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [279 1244])
+                    ("ClassifierFactory" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1272 1279])
+                            ("Create" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("type" variable (:type ("Classifier::Types" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1310 1333]))                                  
+                                :type ("Classifier" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1284 1334])
+                            ("Release" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("classifier" variable
+                                       (:pointer 1
+                                        :type ("Classifier" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1359 1382]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1339 1383]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1246 1386]))                  
+                :type "namespace")
+                nil [262 1389]))          
+      :file "Classifier.h"
+      :pointmax 1432
+      :fsize 1431
+      :lastmodtime '(24531 26613 0 0)
+      :unmatched-syntax '((semantic-list 1109 . 1114) (symbol 1105 . 1109) (symbol 1098 . 1104) (punctuation 1097 . 1098) (semantic-list 905 . 914) (symbol 901 . 905) (number 912 . 913) (symbol 894 . 900) (number 912 . 913) (punctuation 893 . 894) (punctuation 459 . 460) (symbol 445 . 458) (ENUM 440 . 444) (punctuation 367 . 368) (symbol 361 . 366) (ENUM 356 . 360))
+      :lexical-table 
+        '(("CSC_CLASSIFIER_H_")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Include!csc!Classifiers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

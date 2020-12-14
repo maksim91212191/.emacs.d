@@ -1,0 +1,197 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Common/Process.h" include (:system-flag t) nil [79 106])
+            ("Common/assert.h" include (:system-flag t) nil [107 133])
+            ("Common/Allocator.h" include (:system-flag t) nil [134 163])
+            ("unnamed" type
+               (:members 
+                  ( ("AllocatorCachedMemory" type
+                       (:superclasses 
+                          ( ("Common::Allocator" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [239 246])
+                            ("Locate" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("Allocator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [249 276])
+                            ("Allocate" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [303 317]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [280 354])
+                            ("Free" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [426 436])
+                                    ("" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [437 447]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [407 495])
+                            ("Free" function
+                               (:typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [516 526]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [498 574])
+                            ("Stat" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Common::MemStat" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [595 613]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [577 622]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [178 626])
+                    ("Locate" function
+                       (:parent "AllocatorCachedMemory"
+                        :type ("Common::Allocator" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [629 735]))                  
+                :type "namespace")
+                nil [165 738])
+            ("Common" type
+               (:members 
+                  ( ("Message" function
+                       (:constructor-flag t
+                        :parent "Process::Message"
+                        :arguments 
+                          ( ("event" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [786 798]))                          
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [760 919])
+                    ("Message" function
+                       (:constructor-flag t
+                        :parent "Process::Message"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [948 971]))                          
+                        :type ("Message" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [922 1057])
+                    ("=" function
+                       (:operator-flag t
+                        :parent "Process::Message"
+                        :arguments 
+                          ( ("message" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Message" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1110 1133]))                          
+                        :type ("Process::Message" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1061 1193])
+                    ("Message" function
+                       (:destructor-flag t
+                        :parent "Process::Message"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1198 1233])
+                    ("Serialize" function
+                       (:methodconst-flag t
+                        :parent "Process::Message"
+                        :arguments 
+                          ( ("packets" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Common::Packet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1269 1306]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1236 1413])
+                    ("ReserveMemory" function
+                       (:parent "Process::Message"
+                        :arguments 
+                          ( ("size" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1455 1469]))                          
+                        :type ("Packet" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1416 1672])
+                    ("SetPid" function
+                       (:parent "Process"
+                        :arguments 
+                          ( ("val" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1697 1710]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1675 1728])
+                    ("GetPid" function
+                       (:methodconst-flag t
+                        :parent "Process"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1731 1782])
+                    ("MessageContainer" function
+                       (:constructor-flag t
+                        :parent "Process::MessageContainer"
+                        :arguments 
+                          ( ("event" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1832 1844]))                          
+                        :type ("MessageContainer" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1788 1946])
+                    ("MessageContainer" function
+                       (:constructor-flag t
+                        :parent "Process::MessageContainer"
+                        :arguments 
+                          ( ("msg" variable (:type ("SmartPtr" type
+                                 (:template-specifier 
+                                    ( ("Message" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1996 2018]))                          
+                        :type ("MessageContainer" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1952 2517])
+                    ("SerializeLocal" function
+                       (:methodconst-flag t
+                        :parent "Process::MessageContainer"
+                        :arguments 
+                          ( ("packets" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Common::Packet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2570 2607]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2523 2959])
+                    ("AddMessage" function
+                       (:parent "Process::MessageContainer"
+                        :arguments 
+                          ( ("msg" variable (:type ("SmartPtr" type
+                                 (:template-specifier 
+                                    ( ("Process::Message" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [3008 3039]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2965 3159])
+                    ("GetMessage" function
+                       (:parent "Process::MessageContainer"
+                        :type ("SmartPtr" type
+                             (:template-specifier 
+                                ( ("Common::Process::Message" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [3165 3944]))                  
+                :type "namespace")
+                nil [740 3947]))          
+      :file "Process.cpp"
+      :pointmax 3974
+      :fsize 3973
+      :lastmodtime '(24382 18272 0 0)
+      :unmatched-syntax '((punctuation 402 . 403) (DEFAULT 395 . 402) (punctuation 393 . 394) (semantic-list 390 . 392) (symbol 369 . 390) (punctuation 368 . 369) (VIRTUAL 360 . 367))))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!Common!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

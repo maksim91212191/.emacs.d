@@ -1,0 +1,845 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("LIBTMS_BIOS_SERVICE_H_" variable (:constant-flag t) nil [115 137])
+            ("Bios/Process.h" include (:system-flag t) nil [139 164])
+            ("Common/StateMachineDelegate.h" include (:system-flag t) nil [165 205])
+            ("memory" include (:system-flag t) nil [206 223])
+            ("Bios" type
+               (:members 
+                  ( ("Service" type
+                       (:superclasses 
+                          ( ("Bios::Process" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [284 291])
+                            ("StateMachine" type
+                               (:typedef ("Common::StateMachineDelegate2" type
+                                     (:template-specifier 
+                                        ( ("Msg" type nil nil nil)
+                                          ("Msg" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [294 354])
+                            ("ActionOwner" type
+                               (:typedef ("StateMachine::ActionOwner" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [357 416])
+                            ("SafeActionOwner" type
+                               (:typedef ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("ActionOwner" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [419 482])
+                            ("Service" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("actionOwner" variable
+                                       (:default-value "SafeActionOwner()"
+                                        :type ("SafeActionOwner" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [503 550])
+                                    ("state" variable
+                                       (:default-value "StateMachine::State()"
+                                        :type ("StateMachine::State" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [559 608])
+                                    ("name" variable
+                                       (:default-value "\"\""
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [617 638])
+                                    ("priority" variable
+                                       (:default-value "Thread"
+                                        :type "int")
+                                        (reparse-symbol arg-sub-list) [665 686])
+                                    ("" variable (:type ("priProcHighLo" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [688 702])
+                                    ("messageSize" variable
+                                       (:default-value "128"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [728 754])
+                                    ("mailboxSize" variable
+                                       (:default-value "128"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [781 807])
+                                    ("stackSize" variable
+                                       (:default-value "0x1000"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [834 861]))                                  
+                                :type ("Service" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [495 863])
+                            ("Service" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [866 885])
+                            ("GetHandler" function
+                               (:prototype-flag t
+                                :type ("StateMachine::ActionOwner" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [889 929])
+                            ("SetState" function
+                               (:prototype-flag t
+                                :typemodifiers ("inline")
+                                :arguments 
+                                  ( ("state" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [959 974]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [938 975])
+                            ("SetHooks" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [999 1013])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [1013 1022])
+                                    ("" variable (:type ("in" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1024 1027])
+                                    ("" variable (:type ("std::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1050 1064])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [1064 1078])
+                                    ("" variable (:type ("out" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1080 1084]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [985 1085])
+                            ("Events" type
+                               (:members 
+                                  ( ("value" variable (:type "int") (reparse-symbol classsubparts) [1317 1323]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1088 1328])
+                            ("Common::Process::BasicMsg" variable (:type "int") (reparse-symbol classsubparts) [1354 1463])
+                            ("protected" label nil (reparse-symbol classsubparts) [1465 1475])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1505 1514])
+                            ("override" variable (:type "int") (reparse-symbol classsubparts) [1559 1568])
+                            ("protected" label nil (reparse-symbol classsubparts) [1570 1580])
+                            ("actionOwner" variable (:type ("SafeActionOwner" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1583 1611])
+                            ("sm" variable (:type ("StateMachine" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1614 1633])
+                            ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1642 1659])
+                            ("handleIn" variable (:type "int") (reparse-symbol classsubparts) [1714 1723])
+                            ("handleOut" variable (:type "int") (reparse-symbol classsubparts) [1762 1772])
+                            ("actionsReceived" variable
+                               (:default-value "0"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1781 1810]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [243 1814])
+                    ("SetState" function
+                       (:parent "Service"
+                        :arguments 
+                          ( ("state" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1843 1858]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1820 1898]))                  
+                :type "namespace")
+                nil [225 1900]))          
+      :file "Service.h"
+      :pointmax 1962
+      :fsize 1988
+      :lastmodtime '(24344 28618 0 0)
+      :unmatched-syntax '((punctuation 1760 . 1761) (semantic-list 1750 . 1760) (VOID 1746 . 1750) (punctuation 1745 . 1746) (symbol 1737 . 1745) (punctuation 1736 . 1737) (punctuation 1735 . 1736) (symbol 1732 . 1735) (punctuation 1712 . 1713) (semantic-list 1707 . 1712) (VOID 1703 . 1707) (punctuation 1702 . 1703) (symbol 1694 . 1702) (punctuation 1693 . 1694) (punctuation 1692 . 1693) (symbol 1689 . 1692) (semantic-list 1533 . 1558) (symbol 1522 . 1533) (VOID 1517 . 1521) (semantic-list 1495 . 1504) (symbol 1482 . 1495) (symbol 1478 . 1481) (punctuation 1352 . 1353) (symbol 1344 . 1351) (USING 1338 . 1343) (semantic-list 1128 . 1316) (UNSIGNED 1116 . 1124) (punctuation 1114 . 1115) (ENUM 1109 . 1113) (semantic-list 1128 . 1316) (UNSIGNED 1116 . 1124) (punctuation 1114 . 1115) (ENUM 1109 . 1113) (punctuation 1078 . 1079) (semantic-list 1068 . 1078) (punctuation 1063 . 1064) (punctuation 1022 . 1023) (semantic-list 1017 . 1022) (punctuation 1012 . 1013) (punctuation 687 . 688) (punctuation 686 . 687) (EXPLICIT 486 . 494) (punctuation 1702 . 1703) (symbol 1694 . 1702) (punctuation 1693 . 1694) (punctuation 1692 . 1693) (symbol 1689 . 1692) (semantic-list 1533 . 1558) (symbol 1522 . 1533) (VOID 1517 . 1521) (semantic-list 1495 . 1504) (symbol 1482 . 1495) (symbol 1478 . 1481) (punctuation 1352 . 1353) (symbol 1344 . 1351) (USING 1338 . 1343) (semantic-list 1128 . 1316) (UNSIGNED 1116 . 1124) (punctuation 1114 . 1115) (ENUM 1109 . 1113) (semantic-list 1128 . 1316) (UNSIGNED 1116 . 1124) (punctuation 1114 . 1115) (ENUM 1109 . 1113) (punctuation 1078 . 1079) (semantic-list 1068 . 1078) (punctuation 1063 . 1064) (punctuation 1022 . 1023) (semantic-list 1017 . 1022) (punctuation 1012 . 1013) (punctuation 687 . 688) (punctuation 686 . 687) (EXPLICIT 486 . 494))
+      :lexical-table 
+        '(("LIBTMS_BIOS_SERVICE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("PROCESS_H_" variable (:constant-flag t) nil [107 117])
+            ("Common/Process.h" include (:system-flag t) nil [119 146])
+            ("Bios/Thread.h" include (:system-flag t) nil [147 171])
+            ("Bios/Mail.h" include (:system-flag t) nil [172 194])
+            ("Bios/Lock.h" include (:system-flag t) nil [195 217])
+            ("Bios/Event.h" include (:system-flag t) nil [218 241])
+            ("string" include (:system-flag t) nil [242 259])
+            ("map" include (:system-flag t) nil [260 274])
+            ("Bios" type
+               (:members 
+                  ( ("Process" type
+                       (:superclasses 
+                          ( ("Common::Process" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("Bios::Thread" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [395 402])
+                            ("Process" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("priority" variable
+                                       (:default-value "12"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [428 449])
+                                    ("messageSize" variable
+                                       (:default-value "128"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [451 477])
+                                    ("mailboxSize" variable
+                                       (:default-value "128"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [479 505])
+                                    ("stackSize" variable
+                                       (:default-value "0x1000"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [532 559])
+                                    ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"noname\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [561 589]))                                  
+                                :type ("Process" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [420 591])
+                            ("Process" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [617 641])
+                                    ("priority" variable
+                                       (:default-value "12"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [642 663]))                                  
+                                :type ("Process" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [609 665])
+                            ("Process" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [674 693])
+                            ("Cast" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("msg" variable (:type ("Common::SmartPtr" type
+                                         (:template-specifier 
+                                            ( ("Message" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [721 751])
+                                    ("timeout" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [752 772]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [703 774])
+                            ("Call" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("msg" variable (:type ("Common::SmartPtr" type
+                                         (:template-specifier 
+                                            ( ("Message" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [823 853])
+                                    ("executor" variable
+                                       (:pointer 1
+                                        :type ("Common::Process" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [903 929])
+                                    ("timeout" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [979 999]))                                  
+                                :type ("Common::SmartPtr" type
+                                     (:template-specifier 
+                                        ( ("Message" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [783 1001])
+                            ("Call" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("msg" variable (:type ("Common::SmartPtr" type
+                                         (:template-specifier 
+                                            ( ("Message" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [1050 1080])
+                                    ("timeout" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1130 1150]))                                  
+                                :type ("Common::SmartPtr" type
+                                     (:template-specifier 
+                                        ( ("Message" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1010 1152])
+                            ("CastLocal" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1180 1199]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1157 1200])
+                            ("CastLocalAllocated" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1267 1273])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1277 1282]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1243 1283])
+                            ("ReceiveCall" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type ("Common::SmartPtr" type
+                                     (:template-specifier 
+                                        ( ("Message" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1292 1341])
+                            ("CallAnswer" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("msg" variable (:type ("Common::SmartPtr" type
+                                         (:template-specifier 
+                                            ( ("Message" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [1374 1404])
+                                    ("timeout" variable
+                                       (:default-value "0"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1437 1457]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1350 1459])
+                            ("SameCore" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1466 1490])
+                            ("GetNumFree" function
+                               (:prototype-flag t
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1497 1519])
+                            ("Self" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :type ("Bios::Process" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1528 1558])
+                            ("protected" label nil (reparse-symbol classsubparts) [1563 1573])
+                            ("HandleMessage" function
+                               (:pure-virtual-flag t
+                                :prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("msg" variable (:type ("Common::SmartPtr" type
+                                         (:template-specifier 
+                                            ( ("Message" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [1631 1661]))                                  
+                                :type ("Common::SmartPtr" type
+                                     (:template-specifier 
+                                        ( ("Message" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1582 1666])
+                            ("Loop" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1676 1696])
+                            ("GetProcLevel" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [1705 1757])
+                            ("private" label nil (reparse-symbol classsubparts) [1763 1771])
+                            ("ProcessInternalMain" type
+                               (:members 
+                                  ( ("msg" variable (:type ("Common::SmartPtr" type
+                                         (:template-specifier 
+                                            ( ("Process::Message" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1812 1851]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1776 1858])
+                            ("lmSize" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "128"
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1864 1897])
+                            ("LocalMessage" type
+                               (:members 
+                                  ( ("data" variable
+                                       (:dereference 1
+                                        :type ("uint8_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1930 1951]))                                  
+                                :type "union")
+                                (reparse-symbol classsubparts) [1902 1958])
+                            ("event" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1965 1977])
+                            ("castLock" variable (:type ("Bios::Lock" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1986 2007])
+                            ("inputCast" variable (:type ("Bios::MailBox" type
+                                 (:template-specifier 
+                                    ( ("ProcessInternalMain" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2016 2061])
+                            ("inputCastLocal" variable (:type ("Bios::MailBox" type
+                                 (:template-specifier 
+                                    ( ("LocalMessage" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2070 2113])
+                            ("inputCall" variable (:type ("Bios::MailBox" type
+                                 (:template-specifier 
+                                    ( ("ProcessInternalMain" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2122 2167])
+                            ("msgCounter" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2177 2197])
+                            ("wakeupPeriod" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2206 2228])
+                            ("procLevel" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "2"
+                                :type "int")
+                                (reparse-symbol classsubparts) [2237 2268]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [298 2275])
+                    ("CastLocalAllocated" function
+                       (:parent "Process"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :type ("Args" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2352 2358])
+                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2362 2367]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [2319 2786]))                  
+                :type "namespace")
+                nil [276 2789]))          
+      :file "Process.h"
+      :pointmax 2836
+      :fsize 2835
+      :lastmodtime '(24236 9615 0 0)
+      :unmatched-syntax '((punctuation 2360 . 2361) (punctuation 2359 . 2360) (punctuation 2358 . 2359) (punctuation 2357 . 2358) (punctuation 2313 . 2314) (symbol 2309 . 2313) (punctuation 2307 . 2308) (punctuation 2306 . 2307) (punctuation 2305 . 2306) (CLASS 2300 . 2305) (punctuation 2298 . 2299) (symbol 2297 . 2298) (CLASS 2291 . 2296) (punctuation 2290 . 2291) (TEMPLATE 2281 . 2289) (punctuation 1275 . 1276) (punctuation 1274 . 1275) (punctuation 1273 . 1274) (punctuation 1272 . 1273) (punctuation 1237 . 1238) (symbol 1233 . 1237) (punctuation 1231 . 1232) (punctuation 1230 . 1231) (punctuation 1229 . 1230) (CLASS 1224 . 1229) (punctuation 1222 . 1223) (symbol 1221 . 1222) (CLASS 1215 . 1220) (punctuation 1214 . 1215) (TEMPLATE 1205 . 1213) (EXPLICIT 600 . 608) (EXPLICIT 411 . 419))
+      :lexical-table 
+        '(("PROCESS_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BIOS_TASK_H_" variable (:constant-flag t) nil [105 117])
+            ("stdlib.h" include (:system-flag t) nil [119 138])
+            ("stdint.h" include (:system-flag t) nil [139 158])
+            ("map" include (:system-flag t) nil [159 173])
+            ("Bios/Semaphore.h" include (:system-flag t) nil [175 202])
+            ("Common/Callback.h" include (:system-flag t) nil [203 231])
+            ("Bios" type
+               (:members 
+                  ( ("ThreadImpl" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [251 268])
+                    ("Thread" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [311 318])
+                            ("Priority" type
+                               (:members 
+                                  ( ("priIdle" variable
+                                       (:constant-flag t
+                                        :default-value (348 349)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [338 349])
+                                    ("priProcLowLo" variable
+                                       (:constant-flag t
+                                        :default-value (368 369)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [353 369])
+                                    ("priProcLowHi" variable
+                                       (:constant-flag t
+                                        :default-value (388 389)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [373 389])
+                                    ("priDmaLow" variable
+                                       (:constant-flag t
+                                        :default-value (405 406)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [393 406])
+                                    ("priProcMediumLo" variable
+                                       (:constant-flag t
+                                        :default-value (428 429)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [410 429])
+                                    ("priProcMediumHi" variable
+                                       (:constant-flag t
+                                        :default-value (451 452)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [433 452])
+                                    ("priDmaMedium" variable
+                                       (:constant-flag t
+                                        :default-value (471 472)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [456 472])
+                                    ("priProcHighLo" variable
+                                       (:constant-flag t
+                                        :default-value (492 493)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [476 493])
+                                    ("priProcHighHi" variable
+                                       (:constant-flag t
+                                        :default-value (513 514)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [497 514])
+                                    ("priDmaHigh" variable
+                                       (:constant-flag t
+                                        :default-value (531 532)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [518 532])
+                                    ("priProcUrgentLo" variable
+                                       (:constant-flag t
+                                        :default-value (554 556)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [536 556])
+                                    ("priProcUrgentHi" variable
+                                       (:constant-flag t
+                                        :default-value (578 580)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [560 580])
+                                    ("priDmaUrgent" variable
+                                       (:constant-flag t
+                                        :default-value (599 601)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [584 601])
+                                    ("priReserved" variable
+                                       (:constant-flag t
+                                        :default-value (619 621)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [605 621])
+                                    ("priControl" variable
+                                       (:constant-flag t
+                                        :default-value (638 640)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [625 640]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [320 644])
+                            ("Stat" type
+                               (:members 
+                                  ( ("usedStack" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [694 711]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [678 715])
+                            ("Thread" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("priority" variable
+                                       (:default-value "priProcLowLo"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [845 876])
+                                    ("stackSize" variable
+                                       (:default-value "0x1000"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [878 905])
+                                    ("name" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :default-value "\"TSK\""
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [907 931]))                                  
+                                :type ("Thread" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [838 933])
+                            ("Thread" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [935 953])
+                            ("Enable" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "void")
+                                (reparse-symbol classsubparts) [993 1014])
+                            ("Disable" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1054 1076])
+                            ("Start" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [1150 1162])
+                            ("StartSync" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("timeout" variable
+                                       (:default-value "waitForever"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1243 1273]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1229 1275])
+                            ("StopSync" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("timeout" variable
+                                       (:default-value "waitForever"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1413 1443]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1400 1445])
+                            ("Stop" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [1476 1488])
+                            ("SetPriority" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("newPriority" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1590 1610]))                                  
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1570 1611])
+                            ("SetPrioritySelf" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("newPriority" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1736 1756]))                                  
+                                :type ("int32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1705 1757])
+                            ("Sleep" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("ticks" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1835 1850]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1817 1851])
+                            ("Yield" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1920 1940])
+                            ("IsThread" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2027 2050])
+                            ("IsReady" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2124 2145])
+                            ("IsStopped" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2212 2235])
+                            ("Break" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2296 2309])
+                            ("Suspend" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2388 2403])
+                            ("GetStatus" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("Stat" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2466 2489])
+                            ("GetName" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2493 2521])
+                            ("Self" function
+                               (:prototype-flag t
+                                :pointer 1
+                                :typemodifiers ("static")
+                                :type ("Thread" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2523 2546])
+                            ("protected" label nil (reparse-symbol classsubparts) [2547 2557])
+                            ("ThreadImpl" friend nil (reparse-symbol classsubparts) [2559 2582])
+                            ("Exec" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :arguments 
+                                  ( ("thread" variable
+                                       (:pointer 1
+                                        :type ("Thread" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2602 2617]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2585 2618])
+                            ("Prolog" function
+                               (:typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2620 2652])
+                            ("Loop" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2654 2676])
+                            ("Epilog" function
+                               (:typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2678 2702])
+                            ("Run" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2704 2715])
+                            ("IsInterrupt" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [2815 2840])
+                            ("GetProcLevel" function
+                               (:methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :type "int")
+                                (reparse-symbol classsubparts) [2843 2895])
+                            ("SelfInfo" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("std::pair" type
+                                     (:template-specifier 
+                                        ( ("Bios::Thread" type (:pointer 1) nil nil)
+                                          ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2897 2946])
+                            ("private" label nil (reparse-symbol classsubparts) [2947 2955])
+                            ("Thread" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("thread" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Thread" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2964 2985]))                                  
+                                :type ("Thread" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2957 2986])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("thread" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Thread" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3006 3027]))                                  
+                                :type ("Thread" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2988 3028])
+                            ("readyFlag" variable (:type "bool") (reparse-symbol classsubparts) [3031 3067])
+                            ("breakFlag" variable (:type "bool") (reparse-symbol classsubparts) [3031 3067])
+                            ("stopFlag" variable (:type "bool") (reparse-symbol classsubparts) [3031 3067])
+                            ("priority" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3069 3086])
+                            ("stackSize" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3088 3107])
+                            ("nameMaxLen" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "64"
+                                :type "int")
+                                (reparse-symbol classsubparts) [3109 3142])
+                            ("name" variable
+                               (:dereference 1
+                                :type "char")
+                                (reparse-symbol classsubparts) [3144 3166])
+                            ("implementation" variable
+                               (:pointer 1
+                                :type ("ThreadImpl" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3168 3195])
+                            ("procLevel" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "1"
+                                :type "int")
+                                (reparse-symbol classsubparts) [3197 3228])
+                            ("startSem" variable (:type ("Bios::Semaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3230 3273])
+                            ("stopSem" variable (:type ("Bios::Semaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3230 3273])
+                            ("initSem" variable (:type ("Bios::Semaphore" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3230 3273]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [296 3276])
+                    ("OneShotThread" type
+                       (:superclasses 
+                          ( ("Bios::Thread" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3821 3828])
+                            ("Callback" type
+                               (:typedef ("Common::Callback" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3833 3867])
+                            ("Event" type
+                               (:typedef ("Callback::Event" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [3872 3903])
+                            ("OneShotThread" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cb" variable
+                                       (:pointer 1
+                                        :type ("Callback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3929 3942])
+                                    ("evt" variable
+                                       (:default-value "Callback"
+                                        :type ("Event" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3943 3963])
+                                    ("" variable (:type ("defaultEvent" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3965 3978])
+                                    ("data" variable
+                                       (:pointer 1
+                                        :default-value "0"
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [3979 3993])
+                                    ("priority" variable
+                                       (:default-value "priProcLowLo"
+                                        :type ("int32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3996 4027]))                                  
+                                :type ("OneShotThread" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3915 4029])
+                            ("OneShotThread" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [4031 4056])
+                            ("Prolog" function
+                               (:prototype-flag t
+                                :type "int")
+                                (reparse-symbol classsubparts) [4058 4071])
+                            ("Epilog" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4073 4087])
+                            ("private" label nil (reparse-symbol classsubparts) [4088 4096])
+                            ("cb" variable
+                               (:pointer 1
+                                :type ("Common::Callback" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4098 4119])
+                            ("event" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4121 4133])
+                            ("data" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [4135 4146]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3778 4149]))                  
+                :type "namespace")
+                nil [233 4152]))          
+      :file "Thread.h"
+      :pointmax 4194
+      :fsize 4493
+      :lastmodtime '(24236 9615 0 0)
+      :unmatched-syntax '((punctuation 3964 . 3965) (punctuation 3963 . 3964) (EXPLICIT 3906 . 3914) (punctuation 2582 . 2583) (EXPLICIT 829 . 837))
+      :lexical-table 
+        '(("BIOS_TASK_H_")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!Bios!Include!Bios!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

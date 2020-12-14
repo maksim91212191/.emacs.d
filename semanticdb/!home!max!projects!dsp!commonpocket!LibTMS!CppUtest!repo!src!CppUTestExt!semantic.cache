@@ -1,0 +1,985 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CppUTest/TestHarness.h" include nil nil [1605 1638])
+            ("CppUTestExt/MockCheckedActualCall.h" include nil nil [1639 1685])
+            ("CppUTestExt/MockCheckedExpectedCall.h" include nil nil [1686 1734])
+            ("CppUTestExt/MockFailure.h" include nil nil [1735 1771])
+            ("CppUTest/PlatformSpecificFunctions.h" include nil nil [1772 1819])
+            ("MockActualCall" function
+               (:constructor-flag t
+                :parent "MockActualCall"
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [1821 1857])
+            ("MockActualCall" function
+               (:destructor-flag t
+                :parent "MockActualCall"
+                :type "void")
+                nil [1859 1896])
+            ("setName" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1934 1959]))                  
+                :type "void")
+                nil [1898 1989])
+            ("getName" function
+               (:methodconst-flag t
+                :parent "MockCheckedActualCall"
+                :type ("SimpleString" type (:type "class") nil nil))
+                nil [1991 2072])
+            ("MockCheckedActualCall" function
+               (:constructor-flag t
+                :parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("callOrder" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2119 2142])
+                    ("reporter" variable
+                       (:pointer 1
+                        :type ("MockFailureReporter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2143 2173])
+                    ("allExpectations" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MockExpectedCallsList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2174 2219]))                  
+                :type ("MockCheckedActualCall" type (:type "class") nil nil))
+                nil [2074 2524])
+            ("MockCheckedActualCall" function
+               (:destructor-flag t
+                :parent "MockCheckedActualCall"
+                :type "void")
+                nil [2526 2611])
+            ("setMockFailureReporter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("reporter" variable
+                       (:pointer 1
+                        :type ("MockFailureReporter" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2664 2694]))                  
+                :type "void")
+                nil [2613 2724])
+            ("getTest" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "MockCheckedActualCall"
+                :type ("UtestShell" type (:type "class") nil nil))
+                nil [2726 2819])
+            ("failTest" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("failure" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MockFailure" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2858 2885]))                  
+                :type "void")
+                nil [2821 2988])
+            ("copyOutputParameters" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("expectedCall" variable
+                       (:pointer 1
+                        :type ("MockCheckedExpectedCall" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3039 3077]))                  
+                :type "void")
+                nil [2990 3999])
+            ("completeCallWhenMatchIsFound" function
+               (:parent "MockCheckedActualCall"
+                :type "void")
+                nil [4001 4698])
+            ("callHasSucceeded" function
+               (:parent "MockCheckedActualCall"
+                :type "void")
+                nil [4700 4778])
+            ("discardCurrentlyMatchingExpectations" function
+               (:parent "MockCheckedActualCall"
+                :type "void")
+                nil [4780 5065])
+            ("withName" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5115 5140]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [5067 5521])
+            ("withCallOrder" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5576 5589]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [5523 5611])
+            ("checkInputParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("actualParameter" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MockNamedValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5661 5699]))                  
+                :type "void")
+                nil [5613 6258])
+            ("checkOutputParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("outputParameter" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("MockNamedValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6309 6347]))                  
+                :type "void")
+                nil [6260 6914])
+            ("withBoolParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6973 6998])
+                    ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [6999 7010]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [6916 7153])
+            ("withUnsignedIntParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7219 7244])
+                    ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7245 7264]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [7155 7407])
+            ("withIntParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7465 7490])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [7491 7501]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [7409 7644])
+            ("withUnsignedLongIntParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7714 7739])
+                    ("value" variable (:type "unsigned long int") (reparse-symbol arg-sub-list) [7740 7764]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [7646 7907])
+            ("withLongIntParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7969 7994])
+                    ("value" variable (:type "long int") (reparse-symbol arg-sub-list) [7995 8010]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [7909 8153])
+            ("withUnsignedLongLongIntParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8792 8812])
+                    ("" variable (:type ("cpputest_ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8813 8832]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [8720 8908])
+            ("withLongLongIntParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8974 8994])
+                    ("" variable (:type ("cpputest_longlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8995 9013]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [8910 9080])
+            ("withDoubleParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9149 9174])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [9175 9188]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [9090 9331])
+            ("withStringParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9392 9417])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9418 9436]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [9333 9579])
+            ("withPointerParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9641 9666])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9667 9679]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [9581 9822])
+            ("withConstPointerParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9889 9914])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [9915 9933]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [9824 10076])
+            ("withFunctionPointerParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10146 10171])
+                    ("value" function
+                       (:function-pointer t
+                        :arguments "void"
+                        :type "void")
+                        nil nil))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [10078 10331])
+            ("withMemoryBufferParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10398 10423])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [10424 10451])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10452 10464]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [10333 10620])
+            ("withParameterOfType" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10681 10706])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10707 10732])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10733 10751]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [10622 11093])
+            ("withOutputParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11154 11179])
+                    ("output" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11180 11193]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [11095 11387])
+            ("withOutputParameterOfType" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11454 11479])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11480 11505])
+                    ("output" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [11506 11519]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [11389 11729])
+            ("isFulfilled" function
+               (:methodconst-flag t
+                :parent "MockCheckedActualCall"
+                :type "bool")
+                nil [11731 11817])
+            ("hasFailed" function
+               (:methodconst-flag t
+                :parent "MockCheckedActualCall"
+                :type "bool")
+                nil [11819 11902])
+            ("checkExpectations" function
+               (:parent "MockCheckedActualCall"
+                :type "void")
+                nil [11904 13246])
+            ("setState" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("state" variable (:type ("ActualCallState" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13285 13307]))                  
+                :type "void")
+                nil [13248 13331])
+            ("returnValue" function
+               (:parent "MockCheckedActualCall"
+                :type ("MockNamedValue" type (:type "class") nil nil))
+                nil [13333 13541])
+            ("returnBoolValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type "bool") (reparse-symbol arg-sub-list) [13596 13615]))                  
+                :type "bool")
+                nil [13543 13714])
+            ("returnBoolValue" function
+               (:parent "MockCheckedActualCall"
+                :type "bool")
+                nil [13716 13806])
+            ("returnIntValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type "int") (reparse-symbol arg-sub-list) [13859 13877]))                  
+                :type "int")
+                nil [13808 13975])
+            ("returnIntValue" function
+               (:parent "MockCheckedActualCall"
+                :type "int")
+                nil [13977 14064])
+            ("returnUnsignedLongIntValue" function
+               (:parent "MockCheckedActualCall"
+                :type "unsigned long int")
+                nil [14066 14191])
+            ("returnUnsignedLongIntValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type "unsigned long int") (reparse-symbol arg-sub-list) [14270 14302]))                  
+                :type "unsigned long int")
+                nil [14193 14412])
+            ("returnLongIntValue" function
+               (:parent "MockCheckedActualCall"
+                :type "long int")
+                nil [14414 14514])
+            ("returnLongIntValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type "long int") (reparse-symbol arg-sub-list) [14576 14599]))                  
+                :type "long int")
+                nil [14516 14701])
+            ("returnUnsignedLongLongIntValue" function
+               (:parent "MockCheckedActualCall"
+                :type ("cpputest_ulonglong" type (:type "class") nil nil))
+                nil [15440 15606])
+            ("returnUnsignedLongLongIntValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type ("cpputest_ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15690 15723]))                  
+                :type ("cpputest_ulonglong" type (:type "class") nil nil))
+                nil [15608 15807])
+            ("returnLongLongIntValue" function
+               (:parent "MockCheckedActualCall"
+                :type ("cpputest_longlong" type (:type "class") nil nil))
+                nil [15809 15956])
+            ("returnLongLongIntValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type ("cpputest_longlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16031 16063]))                  
+                :type ("cpputest_longlong" type (:type "class") nil nil))
+                nil [15958 16138])
+            ("returnDoubleValue" function
+               (:parent "MockCheckedActualCall"
+                :type "double")
+                nil [16148 16244])
+            ("returnDoubleValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type "double") (reparse-symbol arg-sub-list) [16303 16324]))                  
+                :type "double")
+                nil [16246 16425])
+            ("returnUnsignedIntValue" function
+               (:parent "MockCheckedActualCall"
+                :type "unsigned int")
+                nil [16427 16539])
+            ("returnUnsignedIntValueOrDefault" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16609 16636]))                  
+                :type "unsigned int")
+                nil [16541 16742])
+            ("returnPointerValueOrDefault" function
+               (:pointer 1
+                :parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("default_value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16802 16823]))                  
+                :type "void")
+                nil [16744 16925])
+            ("returnPointerValue" function
+               (:pointer 1
+                :parent "MockCheckedActualCall"
+                :type "void")
+                nil [16927 17025])
+            ("returnConstPointerValue" function
+               (:pointer 1
+                :parent "MockCheckedActualCall"
+                :constant-flag t
+                :type "void")
+                nil [17027 17141])
+            ("returnConstPointerValueOrDefault" function
+               (:pointer 1
+                :parent "MockCheckedActualCall"
+                :constant-flag t
+                :arguments 
+                  ( ("default_value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [17212 17239]))                  
+                :type "void")
+                nil [17143 17346])
+            ("returnStringValueOrDefault" function
+               (:pointer 1
+                :parent "MockCheckedActualCall"
+                :constant-flag t
+                :arguments 
+                  ( ("default_value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17735 17762]))                  
+                :type "char")
+                nil [17672 17863])
+            ("returnStringValue" function
+               (:pointer 1
+                :parent "MockCheckedActualCall"
+                :constant-flag t
+                :type "char")
+                nil [17865 17967])
+            ("hasReturnValue" function
+               (:parent "MockCheckedActualCall"
+                :type "bool")
+                nil [17969 18065])
+            ("onObject" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("objectPtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18115 18137]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [18067 18806])
+            ("addOutputParameter" function
+               (:parent "MockCheckedActualCall"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18855 18880])
+                    ("type" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18881 18906])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18907 18917]))                  
+                :type "void")
+                nil [18808 19305])
+            ("cleanUpOutputParameterList" function
+               (:parent "MockCheckedActualCall"
+                :type "void")
+                nil [19307 19651])
+            ("MockActualCallTrace" function
+               (:constructor-flag t
+                :parent "MockActualCallTrace"
+                :type ("MockActualCallTrace" type (:type "class") nil nil))
+                nil [19654 19700])
+            ("MockActualCallTrace" function
+               (:destructor-flag t
+                :parent "MockActualCallTrace"
+                :type "void")
+                nil [19702 19749])
+            ("withName" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19797 19822]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [19751 19910])
+            ("withCallOrder" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("callOrder" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19963 19986]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [19912 20090])
+            ("addParameterName" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20135 20160]))                  
+                :type "void")
+                nil [20092 20240])
+            ("withBoolParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20297 20322])
+                    ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [20323 20334]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [20242 20423])
+            ("withUnsignedIntParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20487 20512])
+                    ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [20513 20532]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [20425 20667])
+            ("withIntParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20723 20748])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [20749 20759]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [20669 20894])
+            ("withUnsignedLongIntParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20962 20987])
+                    ("value" variable (:type "unsigned long int") (reparse-symbol arg-sub-list) [20988 21012]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [20896 21147])
+            ("withLongIntParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21207 21232])
+                    ("value" variable (:type "long int") (reparse-symbol arg-sub-list) [21233 21248]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [21149 21383])
+            ("withUnsignedLongLongIntParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22000 22020])
+                    ("" variable (:type ("cpputest_ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22021 22040]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [21930 22116])
+            ("withLongLongIntParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22180 22200])
+                    ("" variable (:type ("cpputest_longlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22201 22219]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [22118 22286])
+            ("withDoubleParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22353 22378])
+                    ("value" variable (:type "double") (reparse-symbol arg-sub-list) [22379 22392]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [22296 22481])
+            ("withStringParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22540 22565])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22566 22584]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [22483 22673])
+            ("withPointerParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22733 22758])
+                    ("value" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22759 22771]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [22675 22860])
+            ("withConstPointerParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22925 22950])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22951 22969]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [22862 23058])
+            ("withFunctionPointerParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23126 23151])
+                    ("value" function
+                       (:function-pointer t
+                        :arguments "void"
+                        :type "void")
+                        nil nil))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [23060 23257])
+            ("withMemoryBufferParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23322 23347])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [23348 23375])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23376 23388]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [23259 23503])
+            ("withParameterOfType" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("typeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23562 23591])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23592 23617])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23618 23636]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [23505 23780])
+            ("withOutputParameter" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23839 23864])
+                    ("output" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23865 23878]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [23782 23968])
+            ("withOutputParameterOfType" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("typeName" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24033 24062])
+                    ("name" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimpleString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24063 24088])
+                    ("output" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24089 24102]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [23970 24247])
+            ("hasReturnValue" function
+               (:parent "MockActualCallTrace"
+                :type "bool")
+                nil [24249 24313])
+            ("returnValue" function
+               (:parent "MockActualCallTrace"
+                :type ("MockNamedValue" type (:type "class") nil nil))
+                nil [24315 24399])
+            ("returnLongIntValue" function
+               (:parent "MockActualCallTrace"
+                :type "long int")
+                nil [24401 24469])
+            ("returnUnsignedLongIntValue" function
+               (:parent "MockActualCallTrace"
+                :type "unsigned long int")
+                nil [24471 24556])
+            ("returnUnsignedLongIntValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [24633 24647]))                  
+                :type "unsigned long int")
+                nil [24558 24665])
+            ("returnLongIntValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type "long int") (reparse-symbol arg-sub-list) [24725 24734]))                  
+                :type "long int")
+                nil [24667 24752])
+            ("returnLongLongIntValue" function
+               (:parent "MockActualCallTrace"
+                :type ("cpputest_longlong" type (:type "class") nil nil))
+                nil [25195 25340])
+            ("returnUnsignedLongLongIntValue" function
+               (:parent "MockActualCallTrace"
+                :type ("cpputest_ulonglong" type (:type "class") nil nil))
+                nil [25342 25506])
+            ("returnUnsignedLongLongIntValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type ("cpputest_ulonglong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25588 25607]))                  
+                :type ("cpputest_ulonglong" type (:type "class") nil nil))
+                nil [25508 25699])
+            ("returnLongLongIntValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type ("cpputest_longlong" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25772 25790]))                  
+                :type ("cpputest_longlong" type (:type "class") nil nil))
+                nil [25701 25872])
+            ("returnBoolValue" function
+               (:parent "MockActualCallTrace"
+                :type "bool")
+                nil [25882 25947])
+            ("returnBoolValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [26000 26005]))                  
+                :type "bool")
+                nil [25949 26027])
+            ("returnIntValue" function
+               (:parent "MockActualCallTrace"
+                :type "int")
+                nil [26029 26088])
+            ("returnDoubleValue" function
+               (:parent "MockActualCallTrace"
+                :type "double")
+                nil [26090 26157])
+            ("returnDoubleValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [26214 26221]))                  
+                :type "double")
+                nil [26159 26257])
+            ("returnUnsignedIntValue" function
+               (:parent "MockActualCallTrace"
+                :type "unsigned int")
+                nil [26259 26335])
+            ("returnPointerValue" function
+               (:pointer 1
+                :parent "MockActualCallTrace"
+                :type "void")
+                nil [26337 26409])
+            ("returnConstPointerValue" function
+               (:pointer 1
+                :parent "MockActualCallTrace"
+                :constant-flag t
+                :type "void")
+                nil [26411 26494])
+            ("returnConstPointerValueOrDefault" function
+               (:pointer 1
+                :parent "MockActualCallTrace"
+                :constant-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26648 26661]))                  
+                :type "void")
+                nil [26581 26703])
+            ("returnPointerValueOrDefault" function
+               (:pointer 1
+                :parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [26761 26768]))                  
+                :type "void")
+                nil [26705 26805])
+            ("returnStringValue" function
+               (:pointer 1
+                :parent "MockActualCallTrace"
+                :constant-flag t
+                :type "char")
+                nil [26932 27004])
+            ("returnStringValueOrDefault" function
+               (:pointer 1
+                :parent "MockActualCallTrace"
+                :constant-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27067 27080]))                  
+                :type "char")
+                nil [27006 27116])
+            ("returnIntValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [27167 27171]))                  
+                :type "int")
+                nil [27118 27189])
+            ("returnUnsignedIntValueOrDefault" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [27257 27270]))                  
+                :type "unsigned int")
+                nil [27191 27311])
+            ("onObject" function
+               (:parent "MockActualCallTrace"
+                :arguments 
+                  ( ("objectPtr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [27359 27381]))                  
+                :type ("MockActualCall" type (:type "class") nil nil))
+                nil [27313 27480])
+            ("clear" function
+               (:parent "MockActualCallTrace"
+                :type "void")
+                nil [27482 27542])
+            ("getTraceOutput" function
+               (:pointer 1
+                :parent "MockActualCallTrace"
+                :constant-flag t
+                :type "char")
+                nil [27544 27637])
+            ("MockActualCallTrace::instance_" variable
+               (:pointer 1
+                :default-value "NULLPTR"
+                :type ("MockActualCallTrace" type (:type "class") nil nil))
+                nil [27639 27701])
+            ("instance" function
+               (:parent "MockActualCallTrace"
+                :type ("MockActualCallTrace" type (:type "class") nil nil))
+                nil [27703 27857])
+            ("clearInstance" function
+               (:parent "MockActualCallTrace"
+                :type "void")
+                nil [27859 27951])
+            ("instance" function
+               (:parent "MockIgnoredActualCall"
+                :type ("MockIgnoredActualCall" type (:type "class") nil nil))
+                nil [27953 28069]))          
+      :file "MockActualCall.cpp"
+      :pointmax 28071
+      :fsize 28070
+      :lastmodtime '(24443 16972 0 0)
+      :unmatched-syntax '((semantic-list 26886 . 26930) (semantic-list 26883 . 26885) (semantic-list 26812 . 26883) (VOID 26807 . 26811) (semantic-list 26556 . 26579) (semantic-list 26553 . 26555) (semantic-list 26501 . 26553) (VOID 26496 . 26500) (semantic-list 17561 . 17670) (semantic-list 17558 . 17560) (semantic-list 17472 . 17558) (VOID 17467 . 17471) (semantic-list 17410 . 17465) (semantic-list 17407 . 17409) (semantic-list 17353 . 17407) (VOID 17348 . 17352))))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!CppUtest!repo!src!CppUTestExt!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

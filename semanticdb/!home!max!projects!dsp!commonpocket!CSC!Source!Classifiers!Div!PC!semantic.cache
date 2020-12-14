@@ -1,0 +1,172 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Classifiers/Div/PC/Classifier.h" include (:system-flag t) nil [76 122])
+            ("dlfcn.h" include (:system-flag t) nil [123 141])
+            ("iostream" include (:system-flag t) nil [142 161])
+            ("unistd.h" include (:system-flag t) nil [162 181])
+            ("CSC" type
+               (:members 
+                  ( ("Div" type
+                       (:members 
+                          ( ("PC" type
+                               (:members 
+                                  ( ("unnamed" type
+                                       (:members 
+                                          ( ("wavclassifier::AnalysisType" variable (:type "int") (reparse-symbol namespacesubparts) [254 282])
+                                            ("wavclassifier::AnalysisQuality" variable (:type "int") (reparse-symbol namespacesubparts) [294 325])
+                                            ("wavclassifier::LocalizationType" variable (:type "int") (reparse-symbol namespacesubparts) [337 369])
+                                            ("wavclassifier::LocalizationOptions" variable (:type "int") (reparse-symbol namespacesubparts) [381 416])
+                                            ("systems::RadioBand" variable (:type "int") (reparse-symbol namespacesubparts) [428 447])
+                                            ("systems::SourceType" variable (:type "int") (reparse-symbol namespacesubparts) [459 479]))                                          
+                                        :type "namespace")
+                                        (reparse-symbol namespacesubparts) [231 481])
+                                    ("Classifier" function
+                                       (:constructor-flag t
+                                        :parent "Classifier"
+                                        :arguments 
+                                          ( ("libname" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [506 533]))                                          
+                                        :type ("Classifier" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [483 821])
+                                    ("Classifier" function
+                                       (:destructor-flag t
+                                        :parent "Classifier"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [823 1133])
+                                    ("Init" function
+                                       (:parent "Classifier"
+                                        :arguments 
+                                          ( ("params" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Params" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1157 1178]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1135 4703])
+                                    ("Process" function
+                                       (:parent "Classifier"
+                                        :arguments 
+                                          ( ("iq" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Common::Buffer" type
+                                                     (:template-specifier 
+                                                        ( ("Complex16" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4730 4766]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [4705 4876])
+                                    ("Process" function
+                                       (:parent "Classifier"
+                                        :arguments 
+                                          ( ("iq" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Common::Buffer" type
+                                                     (:template-specifier 
+                                                        ( ("Complex32" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4903 4939]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [4878 5433])
+                                    ("FormResult" function
+                                       (:parent "Classifier"
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [5435 7130]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [215 7130])
+                            ("SystemsGlobal" function
+                               (:parent "Classifier"
+                                :arguments 
+                                  ( ("sysLocal" variable (:type ("systems::Standard" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7173 7200]))                                  
+                                :type ("Systems::Types" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7132 9138])
+                            ("EquipGlobal" function
+                               (:parent "Classifier"
+                                :arguments 
+                                  ( ("eqLocal" variable (:type ("systems::Equipment" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9183 9210]))                                  
+                                :type ("Systems::Equipment" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [9140 10089])
+                            ("ModulationGlobal" function
+                               (:parent "Classifier"
+                                :arguments 
+                                  ( ("modLocal" variable (:type ("dsp::Modulation" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10131 10156]))                                  
+                                :type ("Modulation" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [10091 11418]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [199 11421]))                  
+                :type "namespace")
+                nil [183 11432]))          
+      :file "Classifier.cpp"
+      :pointmax 11455
+      :fsize 11454
+      :lastmodtime '(24531 29499 499107 260000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Classifiers/Div/PC/modulation_defs.h" include (:system-flag t) nil [1 52])
+            ("to_string" function
+               (:parent "dsp"
+                :arguments 
+                  ( ("modulation_id" variable
+                       (:constant-flag t
+                        :type ("Modulation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [82 114]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [54 2973]))          
+      :file "modulation_defs.cpp"
+      :pointmax 2976
+      :fsize 2975
+      :lastmodtime '(24507 48457 0 0)
+      :unmatched-syntax '((punctuation 2973 . 2974)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Classifiers/Div/PC/defs_standard.h" include (:system-flag t) nil [1 50])
+            ("to_string" function
+               (:parent "systems"
+                :arguments 
+                  ( ("standard_id" variable
+                       (:constant-flag t
+                        :type ("Standard" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [83 110]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [52 1566]))          
+      :file "defs_standard.cpp"
+      :pointmax 1567
+      :fsize 1445
+      :lastmodtime '(24507 55111 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Classifiers/Div/PC/defs_accesstype.h" include (:system-flag t) nil [1 52])
+            ("to_string" function
+               (:parent "systems"
+                :arguments 
+                  ( ("accesstype_id" variable
+                       (:constant-flag t
+                        :type ("AccessType" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [85 116]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [54 1139]))          
+      :file "defs_accesstype.cpp"
+      :pointmax 1140
+      :fsize 1139
+      :lastmodtime '(24507 54148 0 0)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Source!Classifiers!Div!PC!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

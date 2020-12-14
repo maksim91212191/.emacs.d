@@ -100,7 +100,6 @@
 
 ;;HotKeys
 (global-set-key [f12] 'helm-gtags-find-files)
-(global-set-key (kbd "C-x C-g") 'git-command)
 
 ;;GDB windows
 (setq

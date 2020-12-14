@@ -1,0 +1,269 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("SUPERVISOR_H_" variable (:constant-flag t) nil [111 124])
+            ("Bios/Process.h" include (:system-flag t) nil [126 151])
+            ("deque" include (:system-flag t) nil [152 168])
+            ("string" include (:system-flag t) nil [169 186])
+            ("memory" include (:system-flag t) nil [187 204])
+            ("functional" include (:system-flag t) nil [205 226])
+            ("System" type
+               (:members 
+                  ( ("Supervisor" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [270 277])
+                            ("Supervisor" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Supervisor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [280 293])
+                            ("Supervisor" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [296 318])
+                            ("RegisterProcess" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [349 373])
+                                    ("process" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("Bios::Process" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [406 445])
+                                    ("nsRegister" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [446 469]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [321 471])
+                            ("RegisterProcess" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("process" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("Bios::Process" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol arg-sub-list) [504 543])
+                                    ("nsRegister" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [544 567]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [476 569])
+                            ("UnregisterProcess" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [629 653]))                                  
+                                :type ("std::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("Bios::Process" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [572 654])
+                            ("StartProcess" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [682 706])
+                                    ("timeout" variable
+                                       (:default-value "Bios"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [706 729])
+                                    ("" variable (:type ("waitForever" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [731 743]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [657 744])
+                            ("StopProcess" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [771 795])
+                                    ("timeout" variable
+                                       (:default-value "Bios"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [796 819])
+                                    ("" variable (:type ("waitForever" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [821 833]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [747 834])
+                            ("StartAll" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("timeout" variable
+                                       (:default-value "Bios"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [858 881])
+                                    ("" variable (:type ("waitForever" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [883 895]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [837 896])
+                            ("StopAll" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("timeout" variable
+                                       (:default-value "Bios"
+                                        :type ("uint32_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [919 942])
+                                    ("" variable (:type ("waitForever" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [944 956]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [899 957])
+                            ("KillProcess" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [984 1008]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [960 1009])
+                            ("KillAll" function
+                               (:prototype-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1012 1035])
+                            ("GetProcess" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1089 1113]))                                  
+                                :type ("std::weak_ptr" type
+                                     (:template-specifier 
+                                        ( ("Bios::Process" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1040 1120])
+                            ("Error" type
+                               (:members 
+                                  ( ("errNotexist" variable
+                                       (:constant-flag t
+                                        :default-value (1153 1155)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1139 1155])
+                                    ("errAlready" variable
+                                       (:constant-flag t
+                                        :default-value (1173 1175)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1160 1175])
+                                    ("errInval" variable
+                                       (:constant-flag t
+                                        :default-value (1191 1193)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1180 1193])
+                                    ("errTimeout" variable
+                                       (:constant-flag t
+                                        :default-value (1211 1213)
+                                        :type "int")
+                                        (reparse-symbol enumsubparts) [1198 1213]))                                  
+                                :type "enum")
+                                (reparse-symbol classsubparts) [1123 1218])
+                            ("protected" label nil (reparse-symbol classsubparts) [1220 1230])
+                            ("ProcessHandle" type
+                               (:members 
+                                  ( ("process" variable (:type ("std::shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("Bios::Process" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1262 1301])
+                                    ("name" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1305 1322])
+                                    ("nsRegister" variable (:type "bool") (reparse-symbol classsubparts) [1326 1342]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [1233 1347])
+                            ("GetProcessHandle" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1398 1422]))                                  
+                                :type ("ProcessHandle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1351 1429])
+                            ("private" label nil (reparse-symbol classsubparts) [1431 1439])
+                            ("pHash" variable (:type ("std::hash" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1442 1471])
+                            ("ProcMap" type
+                               (:typedef ("std::deque" type
+                                     (:template-specifier 
+                                        ( ("std::pair" type (:template-specifier 
+                                            ( ("uint32_t" type nil nil nil)
+                                              ("ProcessHandle" type nil nil nil))                                            ) nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [1476 1539])
+                            ("procMap" variable (:type ("ProcMap" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1542 1558]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [249 1562])
+                    ("SupervisorGlobal" type
+                       (:superclasses 
+                          ( ("Supervisor" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("Locate" function
+                               (:prototype-flag t
+                                :typemodifiers ("static")
+                                :type ("Supervisor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1612 1641])
+                            ("protected" label nil (reparse-symbol classsubparts) [1643 1653])
+                            ("SupervisorGlobal" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("SupervisorGlobal" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1656 1675]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1565 1679]))                  
+                :type "namespace")
+                nil [228 1681]))          
+      :file "Supervisor.h"
+      :pointmax 1731
+      :fsize 1734
+      :lastmodtime '(24236 9615 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SUPERVISOR_H_")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!System!Generic!Include!System!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

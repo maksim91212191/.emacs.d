@@ -1,0 +1,124 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("D_CircularBuffer_H" variable (:constant-flag t) nil [1640 1658])
+            ("Printer" type
+               (:prototype t
+                :type "class")
+                nil [1892 1906])
+            ("CircularBuffer" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1931 1938])
+                    ("CircularBuffer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("capacity" variable
+                               (:default-value "CAPACITY"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1967 1990]))                          
+                        :type ("CircularBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1952 1992])
+                    ("CircularBuffer" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [1997 2023])
+                    ("Put" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [2038 2042]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2029 2043])
+                    ("Get" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2048 2058])
+                    ("IsEmpty" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2063 2078])
+                    ("IsFull" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [2083 2097])
+                    ("Capacity" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [2102 2117])
+                    ("Next" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2131 2137]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2122 2138])
+                    ("Print" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("Printer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2154 2163]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2143 2164])
+                    ("private" label nil (reparse-symbol classsubparts) [2166 2174])
+                    ("index" variable (:type "int") (reparse-symbol classsubparts) [2180 2190])
+                    ("outdex" variable (:type "int") (reparse-symbol classsubparts) [2195 2206])
+                    ("buffer" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [2211 2223])
+                    ("capacity" variable (:type "int") (reparse-symbol classsubparts) [2228 2241])
+                    ("" type
+                       (:members 
+                          ( ("CAPACITY" variable
+                               (:constant-flag t
+                                :default-value (2276 2277)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2265 2277]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [2246 2284])
+                    ("empty" variable (:type "bool") (reparse-symbol classsubparts) [2289 2300])
+                    ("full" variable (:type "bool") (reparse-symbol classsubparts) [2305 2315])
+                    ("CircularBuffer" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CircularBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2336 2358]))                          
+                        :type ("CircularBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2321 2359])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("CircularBuffer" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2390 2412]))                          
+                        :type ("CircularBuffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2364 2413]))                  
+                :type "class")
+                nil [1908 2417]))          
+      :file "CircularBuffer.h"
+      :pointmax 2449
+      :fsize 2448
+      :lastmodtime '(23310 46254 0 0)
+      :unmatched-syntax '((EXPLICIT 1943 . 1951))
+      :lexical-table 
+        '(("D_CircularBuffer_H")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!LibTMS!CppUtest!repo!examples!ApplicationLib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

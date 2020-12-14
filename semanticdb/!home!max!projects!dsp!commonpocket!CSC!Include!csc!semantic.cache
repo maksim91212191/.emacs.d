@@ -1,0 +1,260 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_MESSAGES_H" variable (:constant-flag t) nil [103 117])
+            ("csc/Classifiers/Classifier.h" include (:system-flag t) nil [119 158])
+            ("csc/Signal.h" include (:system-flag t) nil [159 182])
+            ("Bios/Service.h" include (:system-flag t) nil [183 208])
+            ("CSC" type
+               (:members 
+                  ( ("QueryId" variable
+                       (:default-value "uint32_t"
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [233 252])
+                    ("Events" type
+                       (:members 
+                          ( ("Common" type (:type "struct") (reparse-symbol classsubparts) [274 452]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [254 455])
+                    ("Request" type
+                       (:members 
+                          ( ("ParamsQueryAdd" type
+                               (:members 
+                                  ( ("id" variable (:type ("QueryId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [528 540])
+                                    ("typesClassifierMask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [545 574])
+                                    ("fsHz" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [579 593])
+                                    ("lenFrame" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [598 616])
+                                    ("bandHz" variable (:type ("Signal::BandHz::Pod" type (:type "class") nil nil)) (reparse-symbol classsubparts) [621 648])
+                                    ("analysisTypeMask" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [653 679]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [500 682])
+                            ("ParamsQueryDel" type
+                               (:members 
+                                  ( ("id" variable (:type ("QueryId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [752 763]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [724 766])
+                            ("Common::Process::BasicMsg" variable (:type "int") (reparse-symbol namespacesubparts) [806 874])
+                            ("Common::Process::BasicMsg" variable (:type "int") (reparse-symbol namespacesubparts) [895 963])
+                            ("MsgData" type
+                               (:superclasses 
+                                  ( ("Common::Process::Message" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("Params" type
+                                       (:members 
+                                          ( ("id" variable (:type ("QueryId" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1066 1078])
+                                            ("sizeofIQ" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1087 1105]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [1042 1112])
+                                    ("MsgData" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("params" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Params" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1126 1147])
+                                            ("eventAnswer" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1148 1166])
+                                            ("pid" variable (:type ("Common::Process::Pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1167 1192])
+                                            ("data" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Common::Packet" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1193 1220]))                                          
+                                        :type ("MsgData" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1118 1221])
+                                    ("MsgData" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("Common::Process::Message" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1234 1264]))                                          
+                                        :type ("MsgData" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1226 1265])
+                                    ("final" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [1329 1341])
+                                    ("params" variable (:type ("Params" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1347 1361])
+                                    ("data" variable (:type ("Common::Packet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1366 1386]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [987 1389]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [457 1410])
+                    ("Answer" type
+                       (:members 
+                          ( ("MsgResult" type
+                               (:superclasses 
+                                  ( ("Common::Process::Message" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("Params" type
+                                       (:members 
+                                          ( ("uint32_t" variable (:type "int") (reparse-symbol classsubparts) [1567 1626])
+                                            ("uint32_t" variable (:type "int") (reparse-symbol classsubparts) [1653 1731])
+                                            ("id" variable (:type ("Signal::Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1741 1755])
+                                            ("typeResult" variable (:type ("TypeResult" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1764 1786])
+                                            ("typeError" variable (:type ("TypeError" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1795 1816])
+                                            ("typeClassifier" variable (:type ("Classifier::Types" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1825 1858])
+                                            ("result" variable (:type ("Classifier::Result" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1867 1893]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [1525 1900])
+                                    ("MsgResult" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("params" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("Params" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1916 1937])
+                                            ("event" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1938 1953])
+                                            ("pid" variable (:type ("Common::Process::Pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1954 1979]))                                          
+                                        :type ("MsgResult" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1906 1980])
+                                    ("MsgResult" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("msg" variable
+                                               (:reference 1
+                                                :type ("Common::Process::Message" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1995 2025]))                                          
+                                        :type ("MsgResult" type (:type "struct") nil nil))
+                                        (reparse-symbol classsubparts) [1985 2026])
+                                    ("final" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [2090 2102])
+                                    ("params" variable (:type ("Params" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2108 2122]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1468 2125]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1426 2146]))                  
+                :type "namespace")
+                nil [210 2161]))          
+      :file "Messages.h"
+      :pointmax 2201
+      :fsize 2200
+      :lastmodtime '(24525 62853 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CSC_MESSAGES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_SYSTEMS_H" variable (:constant-flag t) nil [101 114])
+            ("string" include (:system-flag t) nil [116 133])
+            ("map" include (:system-flag t) nil [134 148])
+            ("cstdint" include (:system-flag t) nil [149 167])
+            ("CSC" type
+               (:members 
+                  ( ("Systems" type
+                       (:members 
+                          ( ("uint32_t" variable (:type "int") (reparse-symbol classsubparts) [220 738])
+                            ("Equipment" type
+                               (:superclasses 
+                                  ( ("uint64_t" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol classsubparts) [753 1112])
+                            ("names_sys" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("Types" type nil nil nil)
+                                          ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1118 1170])
+                            ("names_equip" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :type ("std::map" type
+                                     (:template-specifier 
+                                        ( ("Equipment" type nil nil nil)
+                                          ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [1175 1233]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [186 1237]))                  
+                :type "namespace")
+                nil [169 1240]))          
+      :file "Systems.h"
+      :pointmax 1279
+      :fsize 1151
+      :lastmodtime '(24531 26731 0 0)
+      :unmatched-syntax '((punctuation 1099 . 1100) (number 1094 . 1099) (punctuation 1092 . 1093) (symbol 1078 . 1086) (punctuation 1060 . 1061) (number 1055 . 1060) (punctuation 1053 . 1054) (symbol 1039 . 1046) (punctuation 1021 . 1022) (number 1016 . 1021) (punctuation 1014 . 1015) (symbol 1000 . 1007) (punctuation 982 . 983) (number 977 . 982) (punctuation 975 . 976) (symbol 960 . 969) (punctuation 942 . 943) (number 937 . 942) (punctuation 935 . 936) (symbol 923 . 928) (punctuation 905 . 906) (number 900 . 905) (punctuation 898 . 899) (symbol 883 . 892) (punctuation 865 . 866) (number 860 . 865) (punctuation 858 . 859) (symbol 846 . 851) (punctuation 827 . 828) (number 826 . 827) (punctuation 824 . 825) (symbol 806 . 823) (punctuation 1099 . 1100) (number 1094 . 1099) (punctuation 1092 . 1093) (symbol 1078 . 1086) (punctuation 1060 . 1061) (number 1055 . 1060) (punctuation 1053 . 1054) (symbol 1039 . 1046) (punctuation 1021 . 1022) (number 1016 . 1021) (punctuation 1014 . 1015) (symbol 1000 . 1007) (punctuation 982 . 983) (number 977 . 982) (punctuation 975 . 976) (symbol 960 . 969) (punctuation 942 . 943) (number 937 . 942) (punctuation 935 . 936) (symbol 923 . 928) (punctuation 905 . 906) (number 900 . 905) (punctuation 898 . 899) (symbol 883 . 892) (punctuation 865 . 866) (number 860 . 865) (punctuation 858 . 859) (symbol 846 . 851) (punctuation 827 . 828) (number 826 . 827) (punctuation 824 . 825) (symbol 806 . 823) (ENUM 748 . 752) (punctuation 218 . 219) (symbol 212 . 217) (ENUM 207 . 211))
+      :lexical-table 
+        '(("CSC_SYSTEMS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("CSC_SIGNAL_H" variable (:constant-flag t) nil [99 111])
+            ("Common/Buffer.h" include (:system-flag t) nil [113 139])
+            ("Common/Range.h" include (:system-flag t) nil [140 165])
+            ("IntMath/Complex.h" include (:system-flag t) nil [166 194])
+            ("vector" include (:system-flag t) nil [195 212])
+            ("CSC" type
+               (:members 
+                  ( ("Signal" type
+                       (:members 
+                          ( ("Id" variable
+                               (:default-value "uint64_t"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [256 274])
+                            ("TimeNs" variable
+                               (:default-value "int64_t"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [281 298])
+                            ("FreqHz" variable
+                               (:default-value "int64_t"
+                                :type "int")
+                                (reparse-symbol namespacesubparts) [305 322])
+                            ("Common::Range" variable (:type "int") (reparse-symbol namespacesubparts) [338 360])
+                            ("Descriptor" type
+                               (:members 
+                                  ( ("id" variable (:type ("Id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [408 420])
+                                    ("fsHz" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [425 439])
+                                    ("bandHz" variable (:type ("BandHz" type (:type "class") nil nil)) (reparse-symbol classsubparts) [444 460])
+                                    ("tStartNs" variable (:type ("TimeNs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [465 483])
+                                    ("tDurationNs" variable (:type ("TimeNs" type (:type "class") nil nil)) (reparse-symbol classsubparts) [488 509])
+                                    ("snrdB" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [514 529]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [384 532]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [230 553]))                  
+                :type "namespace")
+                nil [214 568]))          
+      :file "Signal.h"
+      :pointmax 606
+      :fsize 605
+      :lastmodtime '(24279 60288 0 0)
+      :unmatched-syntax '((semantic-list 545 . 550) (symbol 541 . 545) (symbol 534 . 540) (punctuation 533 . 534) (semantic-list 374 . 383) (symbol 370 . 374) (number 381 . 382) (symbol 363 . 369) (number 381 . 382) (punctuation 362 . 363) (punctuation 336 . 337) (symbol 329 . 335) (USING 323 . 328) (USING 299 . 304) (USING 275 . 280) (USING 250 . 255) (symbol 370 . 374) (number 381 . 382) (symbol 363 . 369) (number 381 . 382) (punctuation 362 . 363) (punctuation 336 . 337) (symbol 329 . 335) (USING 323 . 328) (USING 299 . 304) (USING 275 . 280) (USING 250 . 255))
+      :lexical-table 
+        '(("CSC_SIGNAL_H")
+          )
+))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Include!csc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

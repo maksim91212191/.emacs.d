@@ -1,0 +1,159 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Router/Adapter.h" include (:system-flag t) nil [73 104])
+            ("iostream" include (:system-flag t) nil [105 124])
+            ("CSC" type
+               (:members 
+                  ( ("AdapterRx" function
+                       (:constructor-flag t
+                        :parent "AdapterRx"
+                        :type ("AdapterRx" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [143 223])
+                    ("AdapterRx" function
+                       (:destructor-flag t
+                        :parent "AdapterRx"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [225 253])
+                    ("Push" function
+                       (:parent "AdapterRx"
+                        :arguments 
+                          ( ("packet" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Common::Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [279 308]))                          
+                        :type ("uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [255 2344])
+                    ("Pop" function
+                       (:parent "AdapterRx"
+                        :type ("Common::Process::Msg" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2346 2451])
+                    ("Free" function
+                       (:parent "AdapterRx"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2453 2538])
+                    ("AdapterTx" function
+                       (:constructor-flag t
+                        :parent "AdapterTx"
+                        :type ("AdapterTx" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2540 2647])
+                    ("AdapterTx" function
+                       (:destructor-flag t
+                        :parent "AdapterTx"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2649 2677])
+                    ("GetNumSend" function
+                       (:methodconst-flag t
+                        :parent "AdapterTx"
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [2679 2783])
+                    ("Push" function
+                       (:parent "AdapterTx"
+                        :arguments 
+                          ( ("_packets" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Common::Packet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2806 2850]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2785 3257])
+                    ("FillData" function
+                       (:parent "AdapterTx"
+                        :arguments 
+                          ( ("buffer" variable (:type ("Common::Packet" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3284 3306]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3259 4767]))                  
+                :type "namespace")
+                nil [126 4770]))          
+      :file "Adapter.cpp"
+      :pointmax 4781
+      :fsize 4780
+      :lastmodtime '(24236 9657 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Router/EthInterface.h" include (:system-flag t) nil [78 114])
+            ("iostream" include (:system-flag t) nil [115 134])
+            ("CSC" type
+               (:members 
+                  ( ("EthInterface" function
+                       (:constructor-flag t
+                        :parent "EthInterface"
+                        :arguments 
+                          ( ("protocol" variable (:type ("System::EthInterface::ProtocolType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [180 224])
+                            ("portLocal" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [252 271])
+                            ("direction" variable (:type ("uint8_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [272 290])
+                            ("ipRemote" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Network::IpAddress" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [318 353])
+                            ("portRemote" variable (:type ("uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [354 374])
+                            ("handler" variable
+                               (:reference 1
+                                :type ("CSC::MessageHandler" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [402 431]))                          
+                        :type ("EthInterface" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [153 587])
+                    ("EthInterface" function
+                       (:destructor-flag t
+                        :parent "EthInterface"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [589 643])
+                    ("HandleMessage" function
+                       (:parent "EthInterface"
+                        :arguments 
+                          ( ("packet" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Common::Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [677 706]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [645 930])
+                    ("Send" function
+                       (:parent "EthInterface"
+                        :arguments 
+                          ( ("packet" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Common::Packet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [955 984])
+                            ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [985 1002]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [932 1113])
+                    ("Send" function
+                       (:parent "EthInterface"
+                        :arguments 
+                          ( ("packets" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Common::Packet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1138 1181])
+                            ("timeout" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1182 1199]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1115 1842]))                  
+                :type "namespace")
+                nil [136 1845]))          
+      :file "EthInterface.cpp"
+      :pointmax 1856
+      :fsize 1857
+      :lastmodtime '(24236 9657 0 0)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Source!Router!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

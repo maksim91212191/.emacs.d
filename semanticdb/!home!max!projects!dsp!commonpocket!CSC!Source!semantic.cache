@@ -1,0 +1,273 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Server.h" include (:system-flag t) nil [72 91])
+            ("Messages.h" include (:system-flag t) nil [92 113])
+            ("Ipc/NameServer.h" include (:system-flag t) nil [114 141])
+            ("cmath" include (:system-flag t) nil [142 158])
+            ("iostream" include (:system-flag t) nil [159 178])
+            ("CSC" type
+               (:members 
+                  ( ("Server::name" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [207 233])
+                    ("Server" function
+                       (:constructor-flag t
+                        :parent "Server"
+                        :type ("Server" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [235 473])
+                    ("Server" function
+                       (:destructor-flag t
+                        :parent "Server"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [475 497])
+                    ("Action" function
+                       (:type ("Server::Msg" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("msg" variable (:type ("Msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [581 589]))                          
+                        :parent "Server"
+                        :template-specifier 
+                          ( ("Bios::Service::Events::evtProcessRegistred" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [499 645])
+                    ("Action" function
+                       (:type ("Server::Msg" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("msg" variable (:type ("Msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [711 719]))                          
+                        :parent "Server"
+                        :template-specifier 
+                          ( ("Events::Common::QueryAdd" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [647 1794])
+                    ("Action" function
+                       (:type ("Server::Msg" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("msg" variable (:type ("Msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1860 1868]))                          
+                        :parent "Server"
+                        :template-specifier 
+                          ( ("Events::Common::QueryDel" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1796 2129])
+                    ("Action" function
+                       (:type ("Server::Msg" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("msg" variable (:type ("Msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2191 2199]))                          
+                        :parent "Server"
+                        :template-specifier 
+                          ( ("Events::Common::Data" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2131 4596]))                  
+                :type "namespace")
+                nil [180 4599]))          
+      :file "Server.cpp"
+      :pointmax 4610
+      :fsize 4609
+      :lastmodtime '(24525 63227 131215 352000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Messages.h" include (:system-flag t) nil [74 99])
+            ("CSC" type
+               (:members 
+                  ( ("Request" type
+                       (:members 
+                          ( ("MsgData" function
+                               (:constructor-flag t
+                                :parent "MsgData"
+                                :arguments 
+                                  ( ("params" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Params" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [155 176])
+                                    ("eventAnswer" variable (:type ("Event" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [177 195])
+                                    ("pid" variable (:type ("Common::Process::Pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [196 221])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Common::Packet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [222 249]))                                  
+                                :type ("MsgData" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [138 430])
+                            ("MsgData" function
+                               (:constructor-flag t
+                                :parent "MsgData"
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("Common::Process::Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [453 483]))                                  
+                                :type ("MsgData" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [436 903])
+                            ("SerializeLocal" function
+                               (:methodconst-flag t
+                                :parent "MsgData"
+                                :arguments 
+                                  ( ("packets" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Common::Packet" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [934 971]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [905 1057]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [117 1060])
+                    ("Answer" type
+                       (:members 
+                          ( ("MsgResult" function
+                               (:constructor-flag t
+                                :parent "MsgResult"
+                                :arguments 
+                                  ( ("params" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Params" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1117 1138])
+                                    ("event" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1139 1154])
+                                    ("pid" variable (:type ("Common::Process::Pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1155 1180]))                                  
+                                :type ("MsgResult" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1096 1293])
+                            ("MsgResult" function
+                               (:constructor-flag t
+                                :parent "MsgResult"
+                                :arguments 
+                                  ( ("msg" variable
+                                       (:reference 1
+                                        :type ("Common::Process::Message" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1317 1347]))                                  
+                                :type ("MsgResult" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1296 1596])
+                            ("SerializeLocal" function
+                               (:methodconst-flag t
+                                :parent "MsgResult"
+                                :arguments 
+                                  ( ("packets" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Common::Packet" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1629 1666]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1598 1723]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1076 1726]))                  
+                :type "namespace")
+                nil [101 1741]))          
+      :file "Messages.cpp"
+      :pointmax 1752
+      :fsize 1751
+      :lastmodtime '(24502 24410 376461 116000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Client.h" include (:system-flag t) nil [72 95])
+            ("csc/Messages.h" include (:system-flag t) nil [96 121])
+            ("iostream" include (:system-flag t) nil [122 141])
+            ("CSC" type
+               (:members 
+                  ( ("Client::name" variable
+                       (:dereference 1
+                        :typemodifiers ("constexpr")
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol namespacesubparts) [160 196])
+                    ("Client" function
+                       (:constructor-flag t
+                        :parent "Client"
+                        :type ("Client" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [198 277])
+                    ("Client" function
+                       (:destructor-flag t
+                        :parent "Client"
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [279 301])
+                    ("Action" function
+                       (:type ("Client::Msg" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("msg" variable (:type ("Client::Msg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [375 391]))                          
+                        :parent "Client"
+                        :template-specifier 
+                          ( ("Client::Events::ClassifierAnswer" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [303 2104]))                  
+                :type "namespace")
+                nil [143 2107]))          
+      :file "Client.cpp"
+      :pointmax 2118
+      :fsize 2117
+      :lastmodtime '(24526 15255 723213 262000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Systems.h" include (:system-flag t) nil [73 97])
+            ("CSC" type
+               (:members 
+                  ( ("Systems::names_sys" variable
+                       (:constant-flag t
+                        :default-value "{
+    {Systems::Types::kUnknown, \"Unknown\"},
+    {Systems::Types::kTETRA, \"TETRA\"},
+    {Systems::Types::kDVBS2, \"DVBS2\"},
+    {Systems::Types::kDVBS2x, \"DVBS2x\"},
+    {Systems::Types::kDVB_RCS, \"DVB_RCS\"},
+    {Systems::Types::kWiFi_agn, \"WiFi_agn\"},
+    {Systems::Types::kWiFi_b, \"WiFi_b\"},
+    {Systems::Types::kGSM, \"GSM\"},
+    {Systems::Types::kDECT, \"DECT\"},
+    {Systems::Types::kUMTS, \"UMTS\"},
+    {Systems::Types::kLTE, \"LTE\"},
+    {Systems::Types::kCDMA, \"CDMA\"},
+    {Systems::Types::kWiMAX_e, \"WiMAX_e\"},
+    {Systems::Types::kWiMAX_d, \"WiMAX_d\"},
+    {Systems::Types::kABS_S, \"ABS_S\"},
+    {Systems::Types::kAPCO25, \"APCO25\"},
+    {Systems::Types::kDVB_T, \"DVB_T\"},
+    {Systems::Types::kEDACS, \"EDACS\"},
+    {Systems::Types::kTETRAPOL, \"TETRAPOL\"}
+}"
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("Systems::Types" type nil nil nil)
+                                  ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [116 945])
+                    ("Systems::names_equip" variable
+                       (:constant-flag t
+                        :default-value "{
+    { Systems::Equipment::kUnknownEquipment, \"Unknown\" },
+    { Systems::Equipment::kR419, \"R419\" },
+    { Systems::Equipment::kPasolink, \"Pasolink\" },
+    { Systems::Equipment::kNera, \"Nera\" },
+    { Systems::Equipment::kMinilink, \"Minilink\" },
+    { Systems::Equipment::kMicran, \"Micran\" },
+    { Systems::Equipment::kHuawei, \"Huawei\" },
+    { Systems::Equipment::kFibeAir, \"FibeAir\" }
+}"
+                        :type ("std::map" type
+                             (:template-specifier 
+                                ( ("Systems::Equipment" type nil nil nil)
+                                  ("std::string" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [947 1410]))                  
+                :type "namespace")
+                nil [99 1412]))          
+      :file "Systems.cpp"
+      :pointmax 1424
+      :fsize 1423
+      :lastmodtime '(24526 18462 7212 881000)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

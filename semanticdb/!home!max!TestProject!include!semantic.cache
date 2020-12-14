@@ -1,0 +1,29 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("Foo" type
+               (:members 
+                  ( ("a" variable
+                       (:default-value "5"
+                        :type "int")
+                        (reparse-symbol classsubparts) [32 42])
+                    ("b" variable
+                       (:default-value "7"
+                        :type "int")
+                        (reparse-symbol classsubparts) [47 57])
+                    ("GetA" function (:type "int") (reparse-symbol classsubparts) [62 99]))                  
+                :type "struct")
+                nil [15 102]))          
+      :file "foo.h"
+      :pointmax 103
+      :fsize 102
+      :lastmodtime '(24530 18607 524028 931000)
+      :unmatched-syntax '((symbol 9 . 13) (symbol 2 . 8) (punctuation 1 . 2))))
+  :file "!home!max!TestProject!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

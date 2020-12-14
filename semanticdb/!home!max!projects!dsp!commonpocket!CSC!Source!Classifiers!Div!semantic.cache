@@ -1,0 +1,41 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("csc/Classifiers/Div/Classifier.h" include (:system-flag t) nil [76 119])
+            ("CSC" type
+               (:members 
+                  ( ("Div" type
+                       (:members 
+                          ( ("Classifier" function
+                               (:constructor-flag t
+                                :parent "Classifier"
+                                :arguments 
+                                  ( ("libname" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [177 204]))                                  
+                                :type ("Classifier" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [154 232])
+                            ("Classifier" function
+                               (:destructor-flag t
+                                :parent "Classifier"
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [234 264]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [137 267]))                  
+                :type "namespace")
+                nil [121 279]))          
+      :file "Classifier.cpp"
+      :pointmax 290
+      :fsize 289
+      :lastmodtime '(24484 5677 625208 0)
+      :unmatched-syntax nil))
+  :file "!home!max!projects!dsp!commonpocket!CSC!Source!Classifiers!Div!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
