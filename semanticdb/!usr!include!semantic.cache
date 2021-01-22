@@ -8596,6 +8596,2038 @@
         '(("basename" . ((symbol "__xpg_basename" 1336 . 1350)))
           ("_LIBGEN_H" . ((number "1" 827 . 828)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_STDIO_H" variable (:constant-flag t) nil [920 928])
+            ("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION" variable (:constant-flag t) nil [940 987])
+            ("bits/libc-header-start.h" include (:system-flag t) nil [988 1023])
+            ("__overflow" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29556 29563])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [29564 29568]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29533 29569])
+            ("__uflow" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29524 29531]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [29504 29532])
+            ("obstack_vprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__obstack" variable
+                       (:pointer 1
+                        :type ("obstack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28567 28604])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28612 28644])
+                    ("__args" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28652 28674]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28539 28738])
+            ("obstack_printf" function
+               (:type "int"
+                :arguments 
+                  ( ("__obstack" variable
+                       (:pointer 1
+                        :type ("obstack" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28393 28430])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28437 28469])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [28470 28474]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28366 28538])
+            ("obstack" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [28278 28293])
+            ("cuserid" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28204 28214]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [28182 28215])
+            ("ctermid" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28018 28028]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27996 28037])
+            ("pclose" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27899 27914]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27880 27915])
+            ("popen" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__command" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27661 27683])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [27684 27704]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27641 27711])
+            ("fileno_unlocked" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27414 27429]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27386 27444])
+            ("fileno" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [27259 27274]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [27240 27289])
+            ("bits/sys_errlist.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [27136 27165])
+            ("perror" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [26873 26889]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26853 26890])
+            ("ferror_unlocked" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26651 26666]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26623 26681])
+            ("feof_unlocked" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26592 26607]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26566 26622])
+            ("clearerr_unlocked" function
+               (:type "void"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26541 26556]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26510 26565])
+            ("ferror" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26407 26422]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26388 26437])
+            ("feof" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26311 26326]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26294 26341])
+            ("clearerr" function
+               (:type "void"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26225 26240]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26203 26249])
+            ("fsetpos64" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26101 26116])
+                    ("__pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fpos64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26117 26139]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26079 26140])
+            ("fgetpos64" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26023 26049])
+                    ("__pos" variable
+                       (:pointer 1
+                        :type ("fpos64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26050 26077]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [26001 26078])
+            ("ftello64" function
+               (:type ("__off64_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25978 25993]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25951 26000])
+            ("fseeko64" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25903 25918])
+                    ("__off" variable (:type ("__off64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25919 25935])
+                    ("__whence" variable (:type "int") (reparse-symbol arg-sub-list) [25936 25949]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25882 25950])
+            ("fsetpos" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25519 25534])
+                    ("__pos" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("fpos_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25535 25555]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25499 25556])
+            ("fgetpos" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25322 25348])
+                    ("__pos" variable
+                       (:pointer 1
+                        :type ("fpos_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25349 25374]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [25302 25375])
+            ("ftello" function
+               (:type ("__off_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24839 24854]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24816 24861])
+            ("fseeko" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24631 24646])
+                    ("__off" variable (:type ("__off_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24647 24661])
+                    ("__whence" variable (:type "int") (reparse-symbol arg-sub-list) [24662 24675]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24612 24676])
+            ("rewind" function
+               (:type "void"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24100 24115]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [24080 24116])
+            ("ftell" function
+               (:type "long int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23922 23937]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23899 23944])
+            ("fseek" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23713 23728])
+                    ("__off" variable (:type "long int") (reparse-symbol arg-sub-list) [23729 23744])
+                    ("__whence" variable (:type "int") (reparse-symbol arg-sub-list) [23745 23758]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23695 23759])
+            ("fwrite_unlocked" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23453 23482])
+                    ("__size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23483 23497])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23508 23519])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23520 23546]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23422 23547])
+            ("fread_unlocked" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [23328 23351])
+                    ("__size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23352 23366])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23376 23387])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23388 23414]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [23298 23421])
+            ("fputs_unlocked" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [22915 22942])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22949 22975]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22888 22976])
+            ("fwrite" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__ptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22470 22499])
+                    ("__size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22500 22514])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22523 22534])
+                    ("__s" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22535 22556]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22448 22557])
+            ("fread" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22216 22239])
+                    ("__size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22240 22254])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22262 22273])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22274 22300]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22195 22307])
+            ("ungetc" function
+               (:type "int"
+                :arguments 
+                  ( ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [22026 22034])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22035 22050]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [22007 22051])
+            ("puts" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21832 21848]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21815 21849])
+            ("fputs" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21608 21635])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21636 21662]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21590 21663])
+            ("getline" function
+               (:type ("__ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__lineptr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [21316 21344])
+                    ("__n" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21371 21394])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21421 21447]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [21290 21454])
+            ("getdelim" function
+               (:type ("__ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__lineptr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20844 20872])
+                    ("__n" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20900 20923])
+                    ("__delimiter" variable (:type "int") (reparse-symbol arg-sub-list) [20924 20940])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20968 20994]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [20817 21001])
+            ("__getdelim" function
+               (:type ("__ssize_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__lineptr" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20655 20683])
+                    ("__n" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20713 20736])
+                    ("__delimiter" variable (:type "int") (reparse-symbol arg-sub-list) [20737 20753])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20783 20809]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [20626 20816])
+            ("fgets_unlocked" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19921 19942])
+                    ("__n" variable (:type "int") (reparse-symbol arg-sub-list) [19943 19951])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19960 19986]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [19892 19993])
+            ("fgets" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [18960 18981])
+                    ("__n" variable (:type "int") (reparse-symbol arg-sub-list) [18982 18990])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18991 19017]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18940 19029])
+            ("putw" function
+               (:type "int"
+                :arguments 
+                  ( ("__w" variable (:type "int") (reparse-symbol arg-sub-list) [18743 18751])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18752 18767]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18726 18768])
+            ("getw" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18671 18686]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18654 18687])
+            ("fputc_unlocked" function
+               (:type "int"
+                :arguments 
+                  ( ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [18206 18214])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18215 18230]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [18179 18231])
+            ("putchar" function
+               (:type "int"
+                :arguments 
+                  ( ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [17861 17869]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17841 17870])
+            ("putc" function
+               (:type "int"
+                :arguments 
+                  ( ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [17685 17693])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17694 17709]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17668 17710])
+            ("fputc" function
+               (:type "int"
+                :arguments 
+                  ( ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [17642 17650])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17651 17666]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17624 17667])
+            ("fgetc_unlocked" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17355 17370]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [17328 17371])
+            ("getchar" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16746 16751]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16726 16752])
+            ("getc" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16579 16594]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16562 16595])
+            ("fgetc" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16545 16560]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [16527 16561])
+            ("__asm__" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("__isoc99_vsscanf" variable (:type ("__USER_LABEL_PREFIX__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15651 15851])
+            ("__asm__" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("__isoc99_vscanf" variable (:type ("__USER_LABEL_PREFIX__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15483 15639])
+            ("__asm__" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("__isoc99_vfscanf" variable (:type ("__USER_LABEL_PREFIX__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15274 15471])
+            ("vsscanf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14967 14994])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15001 15033])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15034 15055]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14947 15116])
+            ("vscanf" function
+               (:type "int"
+                :arguments 
+                  ( ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14773 14805])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14806 14827]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14754 14886])
+            ("vfscanf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14455 14476])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14477 14509])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14516 14537]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14435 14596])
+            ("__asm__" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("__isoc99_sscanf" variable (:type ("__USER_LABEL_PREFIX__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13730 13853])
+            ("__asm__" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("__isoc99_scanf" variable (:type ("__USER_LABEL_PREFIX__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13628 13718])
+            ("__asm__" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("__isoc99_fscanf" variable (:type ("__USER_LABEL_PREFIX__" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13493 13616])
+            ("sscanf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13135 13162])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13168 13200])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [13201 13205]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13116 13214])
+            ("scanf" function
+               (:type "int"
+                :arguments 
+                  ( ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13035 13067])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [13068 13072]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [13017 13079])
+            ("fscanf" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12807 12833])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12839 12871])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [12872 12876]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12788 12883])
+            ("dprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [12546 12555])
+                    ("__fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12556 12585])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [12586 12590]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12526 12644])
+            ("vdprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [12403 12412])
+                    ("__fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12413 12442])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12450 12471]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [12382 12525])
+            ("vsnprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11481 11502])
+                    ("__maxlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11503 11519])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11528 11560])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11561 11582]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11459 11646])
+            ("snprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11310 11331])
+                    ("__maxlen" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11332 11348])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11356 11388])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [11389 11393]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11289 11457])
+            ("vsprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11093 11114])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11115 11147])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11155 11176]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [11072 11187])
+            ("vprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10957 10989])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10990 11011]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10937 11012])
+            ("vfprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10695 10716])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10717 10749])
+                    ("__arg" variable (:type ("__gnuc_va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10757 10778]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10674 10779])
+            ("sprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10444 10465])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10472 10504])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10505 10509]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10424 10520])
+            ("printf" function
+               (:type "int"
+                :arguments 
+                  ( ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10349 10381])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10382 10386]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10330 10387])
+            ("fprintf" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10124 10150])
+                    ("__format" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10157 10189])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [10190 10194]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [10104 10195])
+            ("setlinebuf" function
+               (:type "void"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9936 9951]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9912 9960])
+            ("setbuffer" function
+               (:type "void"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9793 9819])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9820 9843])
+                    ("__size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9853 9867]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9770 9876])
+            ("setvbuf" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9560 9586])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9587 9610])
+                    ("__modes" variable (:type "int") (reparse-symbol arg-sub-list) [9617 9629])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9630 9641]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9540 9650])
+            ("setbuf" function
+               (:type "void"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9330 9356])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9357 9380]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9310 9389])
+            ("open_memstream" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__bufloc" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9155 9171])
+                    ("__sizeloc" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9172 9190]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [9126 9205])
+            ("fmemopen" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8850 8860])
+                    ("__len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8861 8874])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8875 8895]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8827 8912])
+            ("fopencookie" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__magic_cookie" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8583 8615])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8621 8652])
+                    ("__io_funcs" variable (:type ("cookie_io_functions_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8658 8691]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8557 8706])
+            ("fdopen" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__fd" variable (:type "int") (reparse-symbol arg-sub-list) [8366 8375])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8376 8396]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8345 8411])
+            ("freopen64" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8133 8167])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8171 8202])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8206 8232]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8109 8239])
+            ("fopen64" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8027 8061])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8070 8101]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8005 8108])
+            ("freopen" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7476 7510])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7519 7550])
+                    ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7559 7585]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7454 7592])
+            ("fopen" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7223 7257])
+                    ("__modes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7264 7295]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7203 7302])
+            ("fcloseall" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7015 7020]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6993 7021])
+            ("fflush_unlocked" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6689 6704]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6661 6705])
+            ("fflush" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6336 6351]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6317 6352])
+            ("fclose" function
+               (:type "int"
+                :arguments 
+                  ( ("__stream" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6152 6167]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6133 6168])
+            ("tempnam" function
+               (:type "char"
+                :arguments 
+                  ( ("__dir" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5931 5949])
+                    ("__pfx" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5950 5968]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5909 6009])
+            ("tmpnam_r" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5360 5370]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5337 5385])
+            ("tmpnam" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5178 5188]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5157 5203])
+            ("tmpfile64" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5098 5103]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5074 5110])
+            ("tmpfile" function
+               (:type ("FILE" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4900 4905]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4878 4912])
+            ("renameat2" function
+               (:type "int"
+                :arguments 
+                  ( ("__oldfd" variable (:type "int") (reparse-symbol arg-sub-list) [4591 4603])
+                    ("__old" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4604 4622])
+                    ("__newfd" variable (:type "int") (reparse-symbol arg-sub-list) [4623 4635])
+                    ("__new" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4644 4662])
+                    ("__flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4663 4684]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4569 4693])
+            ("RENAME_WHITEOUT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4450 4465])
+            ("RENAME_EXCHANGE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4416 4431])
+            ("RENAME_NOREPLACE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4381 4397])
+            ("renameat" function
+               (:type "int"
+                :arguments 
+                  ( ("__oldfd" variable (:type "int") (reparse-symbol arg-sub-list) [4239 4251])
+                    ("__old" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4252 4270])
+                    ("__newfd" variable (:type "int") (reparse-symbol arg-sub-list) [4271 4283])
+                    ("__new" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4291 4309]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4218 4318])
+            ("rename" function
+               (:type "int"
+                :arguments 
+                  ( ("__old" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4083 4101])
+                    ("__new" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4102 4120]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4064 4129])
+            ("remove" function
+               (:type "int"
+                :arguments 
+                  ( ("__filename" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4000 4023]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3981 4032])
+            ("stderr" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3937 3943])
+            ("stdout" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3915 3921])
+            ("stdin" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3895 3900])
+            ("stderr" variable
+               (:type ("FILE" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3775 3795])
+            ("stdout" variable
+               (:type ("FILE" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3722 3742])
+            ("stdin" variable
+               (:type ("FILE" type (:type "class") nil nil)
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1)
+                (reparse-symbol extern-c-contents) [3671 3690])
+            ("bits/stdio_lim.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [3616 3643])
+            ("P_tmpdir" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3123 3131])
+            ("SEEK_HOLE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2966 2975])
+            ("SEEK_DATA" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2919 2928])
+            ("SEEK_END" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2852 2860])
+            ("SEEK_CUR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2798 2806])
+            ("SEEK_SET" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2743 2751])
+            ("EOF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2625 2628])
+            ("BUFSIZ" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2510 2516])
+            ("_IONBF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2441 2447])
+            ("_IOLBF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2401 2407])
+            ("_IOFBF" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2360 2366])
+            ("fpos64_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__fpos64_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [2253 2281])
+            ("fpos_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__fpos_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [2163 2187])
+            ("__ssize_t_defined" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2034 2051])
+            ("ssize_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__ssize_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1998 2024])
+            ("__off64_t_defined" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1915 1932])
+            ("off64_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__off64_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1879 1905])
+            ("__off_t_defined" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1794 1809])
+            ("off_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__off_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1722 1744])
+            ("_VA_LIST_DEFINED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1547 1563])
+            ("va_list" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__gnuc_va_list" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [1504 1535])
+            ("bits/types/cookie_io_functions_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1355 1401])
+            ("bits/types/struct_FILE.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1301 1336])
+            ("bits/types/FILE.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1272 1300])
+            ("bits/types/__FILE.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1241 1271])
+            ("bits/types/__fpos64_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1206 1240])
+            ("bits/types/__fpos_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1173 1205])
+            ("bits/types.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1149 1172])
+            ("stdarg.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1128 1147])
+            ("__need___va_list" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1111 1127])
+            ("stddef.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1082 1101])
+            ("__need_NULL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1070 1081])
+            ("__need_size_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1048 1061]))          
+      :file "stdio.h"
+      :pointmax 29951
+      :fsize 29950
+      :lastmodtime '(24378 57964 0 0)
+      :unmatched-syntax '((semantic-list 18569 . 18616) (punctuation 18567 . 18568) (punctuation 18566 . 18567) (semantic-list "(const char *__restrict __s,
+			    const char *__restrict __format,
+			    __gnuc_va_list __arg)" 15651 . 15798) (symbol "vsscanf" 15651 . 15798) (INT 15647 . 15650) (EXTERN 15640 . 15646) (semantic-list "(const char *__restrict __format,
+				__gnuc_va_list __arg)" 15483 . 15580) (symbol "vscanf" 15483 . 15580) (INT 15479 . 15482) (EXTERN 15472 . 15478) (semantic-list "(FILE *__restrict __s,
+			const char *__restrict __format, __gnuc_va_list __arg)" 15274 . 15412) (symbol "vfscanf" 15274 . 15412) (INT 15270 . 15273) (EXTERN 15263 . 15269) (semantic-list "(const char *__restrict __s,
+				    const char *__restrict __format, ...)" 13730 . 13852) (symbol "sscanf" 13730 . 13852) (INT 13726 . 13729) (EXTERN 13719 . 13725) (semantic-list "(const char *__restrict __format, ...)" 13628 . 13711) (symbol "scanf" 13628 . 13711) (INT 13624 . 13627) (EXTERN 13617 . 13623) (semantic-list "(FILE *__restrict __stream,
+				const char *__restrict __format, ...)" 13493 . 13609) (symbol "fscanf" 13493 . 13609) (INT 13489 . 13492) (EXTERN 13482 . 13488))
+      :lexical-table 
+        '(("_VA_LIST_DEFINED")
+          ("P_tmpdir" . ((string "\"/tmp\"" 3132 . 3138)))
+          ("stderr" . ((symbol "stderr" 3944 . 3950)))
+          ("SEEK_CUR" . ((number "1" 2807 . 2808)))
+          ("SEEK_DATA" . ((number "3" 2929 . 2930)))
+          ("RENAME_WHITEOUT" . ((semantic-list "(1 << 2)" 4466 . 4474)))
+          ("__off64_t_defined")
+          ("RENAME_NOREPLACE" . ((semantic-list "(1 << 0)" 4398 . 4406)))
+          ("__off_t_defined")
+          ("_IONBF" . ((number "2" 2448 . 2449)))
+          ("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION")
+          ("EOF" . ((semantic-list "(-1)" 2629 . 2633)))
+          ("stdin" . ((symbol "stdin" 3901 . 3906)))
+          ("__need_size_t")
+          ("__ssize_t_defined")
+          ("SEEK_HOLE" . ((number "4" 2976 . 2977)))
+          ("SEEK_SET" . ((number "0" 2752 . 2753)))
+          ("_IOFBF" . ((number "0" 2367 . 2368)))
+          ("__need_NULL")
+          ("SEEK_END" . ((number "2" 2861 . 2862)))
+          ("stdout" . ((symbol "stdout" 3922 . 3928)))
+          ("_STDIO_H" . ((number "1" 929 . 930)))
+          ("__need___va_list")
+          ("_IOLBF" . ((number "1" 2408 . 2409)))
+          ("BUFSIZ" . ((number "8192" 2517 . 2521)))
+          ("RENAME_EXCHANGE" . ((semantic-list "(1 << 1)" 4432 . 4440)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_STRING_H" variable (:constant-flag t) nil [878 887])
+            ("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION" variable (:constant-flag t) nil [899 946])
+            ("bits/libc-header-start.h" include (:system-flag t) nil [947 982])
+            ("strings.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [15156 15177])
+            ("strndupa" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7091 7099])
+            ("strdupa" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [6716 6723])
+            ("strxfrm_l" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5884 5897])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5898 5916])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5917 5928])
+                    ("__l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5933 5946]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5859 5974])
+            ("strcoll_l" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5653 5670])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5671 5688])
+                    ("__l" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5689 5702]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5631 5757])
+            ("bits/types/locale_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [5520 5553])
+            ("strxfrm" function
+               (:type ("size_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5329 5353])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5363 5392])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5393 5404]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5306 5434])
+            ("strcoll" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5148 5165])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5166 5183]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5128 5235])
+            ("strncmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4979 4996])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4997 5014])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5015 5026]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4959 5078])
+            ("strcmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4829 4846])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4847 4864]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4810 4916])
+            ("strncat" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4680 4704])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4705 4734])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4743 4754]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4658 4782])
+            ("strcat" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4510 4534])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4535 4564]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4489 4597])
+            ("strncpy" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4351 4375])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4384 4413])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4414 4425]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4329 4458])
+            ("strcpy" function
+               (:type "char"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4187 4211])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4212 4241]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4166 4274])
+            ("memrchr" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4036 4052])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [4053 4061])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4062 4073]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4014 4123])
+            ("rawmemchr" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3556 3572])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [3573 3581]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3532 3630])
+            ("memchr" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3033 3049])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [3050 3058])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3059 3070]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3012 3120])
+            ("memcmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2269 2286])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2287 2304])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2305 2316]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2250 2368])
+            ("memset" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2155 2165])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [2166 2174])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2175 2186]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2134 2211])
+            ("memccpy" function
+               (:type "void"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1955 1979])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1980 2009])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [2018 2026])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2027 2038]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1933 2071])
+            ("memmove" function
+               (:type "void"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1585 1598])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1599 1617])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1618 1629]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1563 1662])
+            ("memcpy" function
+               (:type "void"
+                :arguments 
+                  ( ("__dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1367 1391])
+                    ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1392 1421])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1429 1440]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1346 1468])
+            ("stddef.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1085 1104])
+            ("__need_NULL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1073 1084])
+            ("__need_size_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1051 1064]))          
+      :file "string.h"
+      :pointmax 17661
+      :fsize 17660
+      :lastmodtime '(24378 57964 0 0)
+      :unmatched-syntax '((punctuation 17423 . 17424) (symbol 17388 . 17398) (punctuation 17387 . 17388) (CHAR 17382 . 17386) (CONST 17376 . 17381) (symbol 17366 . 17374) (punctuation 17365 . 17366) (CHAR 17360 . 17364) (EXTERN 17353 . 17359) (punctuation 16863 . 16864) (symbol 16835 . 16838) (symbol 16828 . 16834) (punctuation 16826 . 16827) (symbol 16823 . 16826) (punctuation 16822 . 16823) (VOID 16817 . 16821) (symbol 16808 . 16815) (punctuation 16807 . 16808) (VOID 16802 . 16806) (EXTERN 16795 . 16801) (punctuation 16760 . 16761) (symbol 16727 . 16735) (punctuation 16726 . 16727) (CHAR 16721 . 16725) (symbol 16713 . 16719) (punctuation 16712 . 16713) (CHAR 16707 . 16711) (EXTERN 16700 . 16706) (punctuation 16667 . 16668) (symbol 16611 . 16615) (punctuation 16610 . 16611) (CHAR 16605 . 16609) (CONST 16599 . 16604) (punctuation 16597 . 16598) (symbol 16593 . 16597) (punctuation 16592 . 16593) (CHAR 16587 . 16591) (CONST 16581 . 16586) (symbol 16569 . 16579) (INT 16565 . 16568) (EXTERN 16558 . 16564) (punctuation 16455 . 16456) (symbol 16419 . 16422) (symbol 16412 . 16418) (punctuation 16410 . 16411) (symbol 16405 . 16410) (punctuation 16393 . 16394) (CHAR 16388 . 16392) (CONST 16382 . 16387) (punctuation 16372 . 16373) (symbol 16366 . 16372) (punctuation 16354 . 16355) (CHAR 16349 . 16353) (symbol 16340 . 16347) (punctuation 16339 . 16340) (CHAR 16334 . 16338) (EXTERN 16327 . 16333) (punctuation 16325 . 16326) (symbol 16289 . 16292) (symbol 16282 . 16288) (punctuation 16280 . 16281) (symbol 16275 . 16280) (punctuation 16263 . 16264) (CHAR 16258 . 16262) (CONST 16252 . 16257) (punctuation 16247 . 16248) (symbol 16241 . 16247) (punctuation 16229 . 16230) (CHAR 16224 . 16228) (symbol 16213 . 16222) (punctuation 16212 . 16213) (CHAR 16207 . 16211) (EXTERN 16200 . 16206) (punctuation 16077 . 16078) (symbol 16039 . 16044) (punctuation 16027 . 16028) (CHAR 16022 . 16026) (CONST 16016 . 16021) (punctuation 16014 . 16015) (symbol 16008 . 16014) (punctuation 15996 . 15997) (CHAR 15991 . 15995) (symbol 15983 . 15989) (punctuation 15982 . 15983) (CHAR 15977 . 15981) (EXTERN 15970 . 15976) (punctuation 15968 . 15969) (symbol 15930 . 15935) (punctuation 15918 . 15919) (CHAR 15913 . 15917) (CONST 15907 . 15912) (punctuation 15905 . 15906) (symbol 15899 . 15905) (punctuation 15887 . 15888) (CHAR 15882 . 15886) (symbol 15872 . 15880) (punctuation 15871 . 15872) (CHAR 15866 . 15870) (EXTERN 15859 . 15865) (punctuation 15776 . 15777) (symbol 15762 . 15767) (INT 15758 . 15761) (symbol 15747 . 15756) (punctuation 15746 . 15747) (CHAR 15741 . 15745) (EXTERN 15734 . 15740) (punctuation 15627 . 15628) (symbol 15587 . 15594) (punctuation 15575 . 15576) (CHAR 15570 . 15574) (CONST 15564 . 15569) (punctuation 15555 . 15556) (symbol 15546 . 15555) (punctuation 15534 . 15535) (punctuation 15533 . 15534) (CHAR 15528 . 15532) (symbol 15520 . 15526) (punctuation 15519 . 15520) (CHAR 15514 . 15518) (EXTERN 15507 . 15513) (punctuation 15375 . 15376) (symbol 15347 . 15350) (symbol 15340 . 15346) (punctuation 15338 . 15339) (symbol 15335 . 15338) (punctuation 15334 . 15335) (VOID 15329 . 15333) (symbol 15313 . 15327) (VOID 15308 . 15312) (EXTERN 15301 . 15307) (punctuation 15128 . 15129) (symbol 15116 . 15119) (symbol 15107 . 15115) (punctuation 15105 . 15106) (symbol 15097 . 15105) (INT 15093 . 15096) (symbol 15081 . 15091) (punctuation 15080 . 15081) (CHAR 15075 . 15079) (EXTERN 15068 . 15074) (punctuation 14961 . 14962) (symbol 14917 . 14925) (symbol 14910 . 14916) (punctuation 14908 . 14909) (symbol 14903 . 14908) (punctuation 14902 . 14903) (CHAR 14897 . 14901) (punctuation 14895 . 14896) (symbol 14887 . 14895) (INT 14883 . 14886) (symbol 14871 . 14881) (punctuation 14870 . 14871) (CHAR 14865 . 14869) (EXTERN 14858 . 14864) (punctuation 13911 . 13912) (symbol 13894 . 13902) (INT 13890 . 13893) (symbol 13880 . 13888) (punctuation 13879 . 13880) (CHAR 13874 . 13878) (EXTERN 13867 . 13873) (punctuation 13779 . 13780) (symbol 13722 . 13730) (symbol 13715 . 13721) (punctuation 13713 . 13714) (symbol 13705 . 13713) (punctuation 13704 . 13705) (CHAR 13699 . 13703) (CONST 13693 . 13698) (symbol 13684 . 13691) (symbol 13677 . 13683) (EXTERN 13670 . 13676) (punctuation 13501 . 13502) (symbol 13449 . 13452) (punctuation 13448 . 13449) (CHAR 13443 . 13447) (CONST 13437 . 13442) (symbol 13429 . 13435) (symbol 13422 . 13428) (EXTERN 13415 . 13421) (punctuation 13373 . 13374) (symbol 13337 . 13340) (symbol 13330 . 13336) (punctuation 13328 . 13329) (symbol 13323 . 13328) (punctuation 13311 . 13312) (VOID 13306 . 13310) (CONST 13300 . 13305) (punctuation 13290 . 13291) (symbol 13284 . 13290) (punctuation 13272 . 13273) (VOID 13267 . 13271) (symbol 13258 . 13265) (punctuation 13257 . 13258) (VOID 13252 . 13256) (EXTERN 13245 . 13251) (punctuation 13243 . 13244) (symbol 13207 . 13210) (symbol 13200 . 13206) (punctuation 13198 . 13199) (symbol 13193 . 13198) (punctuation 13181 . 13182) (VOID 13176 . 13180) (CONST 13170 . 13175) (punctuation 13165 . 13166) (symbol 13159 . 13165) (punctuation 13147 . 13148) (VOID 13142 . 13146) (symbol 13131 . 13140) (punctuation 13130 . 13131) (VOID 13125 . 13129) (EXTERN 13118 . 13124) (punctuation 13023 . 13024) (symbol 12960 . 12971) (symbol 12953 . 12959) (punctuation 12951 . 12952) (symbol 12943 . 12951) (punctuation 12942 . 12943) (VOID 12937 . 12941) (CONST 12931 . 12936) (punctuation 12922 . 12923) (symbol 12909 . 12922) (symbol 12902 . 12908) (punctuation 12900 . 12901) (symbol 12890 . 12900) (punctuation 12889 . 12890) (VOID 12884 . 12888) (CONST 12878 . 12883) (symbol 12870 . 12876) (punctuation 12869 . 12870) (VOID 12864 . 12868) (EXTERN 12857 . 12863) (punctuation 12692 . 12693) (symbol 12632 . 12640) (punctuation 12631 . 12632) (CHAR 12626 . 12630) (CONST 12620 . 12625) (punctuation 12618 . 12619) (symbol 12608 . 12618) (punctuation 12607 . 12608) (CHAR 12602 . 12606) (CONST 12596 . 12601) (symbol 12584 . 12594) (punctuation 12583 . 12584) (CHAR 12578 . 12582) (EXTERN 12571 . 12577) (punctuation 12108 . 12109) (symbol 12065 . 12075) (punctuation 12053 . 12054) (punctuation 12052 . 12053) (CHAR 12047 . 12051) (punctuation 12036 . 12037) (symbol 12029 . 12036) (punctuation 12017 . 12018) (CHAR 12012 . 12016) (CONST 12006 . 12011) (punctuation 12004 . 12005) (symbol 12001 . 12004) (punctuation 11989 . 11990) (CHAR 11984 . 11988) (symbol 11974 . 11982) (punctuation 11973 . 11974) (CHAR 11968 . 11972) (EXTERN 11961 . 11967) (punctuation 11940 . 11941) (symbol 11897 . 11907) (punctuation 11885 . 11886) (punctuation 11884 . 11885) (CHAR 11879 . 11883) (punctuation 11873 . 11874) (symbol 11866 . 11873) (punctuation 11854 . 11855) (CHAR 11849 . 11853) (CONST 11843 . 11848) (punctuation 11837 . 11838) (symbol 11834 . 11837) (punctuation 11822 . 11823) (CHAR 11817 . 11821) (symbol 11805 . 11815) (punctuation 11804 . 11805) (CHAR 11799 . 11803) (EXTERN 11792 . 11798) (punctuation 11666 . 11667) (symbol 11629 . 11636) (punctuation 11617 . 11618) (CHAR 11612 . 11616) (CONST 11606 . 11611) (punctuation 11604 . 11605) (symbol 11601 . 11604) (punctuation 11589 . 11590) (CHAR 11584 . 11588) (symbol 11576 . 11582) (punctuation 11575 . 11576) (CHAR 11570 . 11574) (EXTERN 11563 . 11569) (punctuation 11490 . 11491) (symbol 11430 . 11438) (punctuation 11429 . 11430) (CHAR 11424 . 11428) (CONST 11418 . 11423) (punctuation 11416 . 11417) (symbol 11406 . 11416) (punctuation 11405 . 11406) (CHAR 11400 . 11404) (CONST 11394 . 11399) (symbol 11386 . 11392) (punctuation 11385 . 11386) (CHAR 11380 . 11384) (EXTERN 11373 . 11379) (punctuation 10650 . 10651) (symbol 10590 . 10598) (punctuation 10589 . 10590) (CHAR 10584 . 10588) (CONST 10578 . 10583) (punctuation 10576 . 10577) (symbol 10573 . 10576) (punctuation 10572 . 10573) (CHAR 10567 . 10571) (CONST 10561 . 10566) (symbol 10552 . 10559) (punctuation 10551 . 10552) (CHAR 10546 . 10550) (EXTERN 10539 . 10545) (punctuation 9847 . 9848) (symbol 9787 . 9795) (punctuation 9786 . 9787) (CHAR 9781 . 9785) (CONST 9775 . 9780) (punctuation 9773 . 9774) (symbol 9770 . 9773) (punctuation 9769 . 9770) (CHAR 9764 . 9768) (CONST 9758 . 9763) (symbol 9750 . 9756) (symbol 9743 . 9749) (EXTERN 9736 . 9742) (punctuation 9629 . 9630) (symbol 9569 . 9577) (punctuation 9568 . 9569) (CHAR 9563 . 9567) (CONST 9557 . 9562) (punctuation 9555 . 9556) (symbol 9552 . 9555) (punctuation 9551 . 9552) (CHAR 9546 . 9550) (CONST 9540 . 9545) (symbol 9531 . 9538) (symbol 9524 . 9530) (EXTERN 9517 . 9523) (punctuation 9390 . 9391) (symbol 9338 . 9341) (INT 9334 . 9337) (punctuation 9332 . 9333) (symbol 9329 . 9332) (punctuation 9328 . 9329) (CHAR 9323 . 9327) (CONST 9317 . 9322) (symbol 9306 . 9315) (punctuation 9305 . 9306) (CHAR 9300 . 9304) (EXTERN 9293 . 9299) (punctuation 8841 . 8842) (symbol 8789 . 8792) (INT 8785 . 8788) (punctuation 8783 . 8784) (symbol 8780 . 8783) (punctuation 8779 . 8780) (CHAR 8774 . 8778) (CONST 8768 . 8773) (symbol 8759 . 8766) (punctuation 8758 . 8759) (CHAR 8753 . 8757) (EXTERN 8746 . 8752) (punctuation 8138 . 8139) (symbol 8086 . 8089) (INT 8082 . 8085) (punctuation 8080 . 8081) (symbol 8077 . 8080) (punctuation 8076 . 8077) (CHAR 8071 . 8075) (CONST 8065 . 8070) (symbol 8057 . 8063) (punctuation 8056 . 8057) (CHAR 8051 . 8055) (EXTERN 8044 . 8050) (punctuation 6595 . 6596) (symbol 6541 . 6544) (symbol 6534 . 6540) (punctuation 6532 . 6533) (symbol 6524 . 6532) (punctuation 6523 . 6524) (CHAR 6518 . 6522) (CONST 6512 . 6517) (symbol 6503 . 6510) (punctuation 6502 . 6503) (CHAR 6497 . 6501) (EXTERN 6490 . 6496) (punctuation 6248 . 6249) (symbol 6194 . 6197) (punctuation 6193 . 6194) (CHAR 6188 . 6192) (CONST 6182 . 6187) (symbol 6174 . 6180) (punctuation 6173 . 6174) (CHAR 6168 . 6172) (EXTERN 6161 . 6167) (symbol "__GLIBC_USE_ISOC2X" 6079 . 6099) (punctuation 6077 . 6078) (punctuation 6076 . 6077) (symbol "__GLIBC_USE_LIB_EXT2" 6053 . 6075) (punctuation 6051 . 6052) (punctuation 6050 . 6051))
+      :lexical-table 
+        '(("__GLIBC_INTERNAL_STARTING_HEADER_IMPLEMENTATION")
+          ("strdupa" (spp-arg-list ("s") 6723 . 6726) . ((semantic-list "(__extension__							      \\
+    ({									      \\
+      const char *__old = (s);						      \\
+      size_t __len = strlen (__old) + 1;				      \\
+      char *__new = (char *) __builtin_alloca (__len);			      \\
+      (char *) memcpy (__new, __old, __len);				      \\
+    }))" 6743 . 7019)))
+          ("__need_size_t")
+          ("_STRING_H" . ((number "1" 888 . 889)))
+          ("strndupa" (spp-arg-list ("s" "n") 7099 . 7105) . ((semantic-list "(__extension__							      \\
+    ({									      \\
+      const char *__old = (s);						      \\
+      size_t __len = strnlen (__old, (n));				      \\
+      char *__new = (char *) __builtin_alloca (__len + 1);		      \\
+      __new[__len] = '\\0';						      \\
+      (char *) memcpy (__new, __old, __len);				      \\
+    }))" 7122 . 7443)))
+          ("__need_NULL")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_STRINGS_H" variable (:constant-flag t) nil [818 828])
+            ("features.h" include (:system-flag t) nil [832 853])
+            ("__need_size_t" variable (:constant-flag t) nil [862 875])
+            ("stddef.h" include (:system-flag t) nil [876 895])
+            ("strncasecmp_l" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4354 4371])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4372 4389])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4395 4406])
+                    ("__loc" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4407 4422]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4328 4477])
+            ("strcasecmp_l" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4120 4137])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4138 4155])
+                    ("__loc" variable (:type ("locale_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4156 4171]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4095 4226])
+            ("bits/types/locale_t.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [3987 4020])
+            ("strncasecmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3802 3819])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3820 3837])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3838 3849]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3778 3901])
+            ("strcasecmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3624 3641])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3642 3659]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3601 3711])
+            ("ffsll" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "long long") (reparse-symbol arg-sub-list) [3497 3510])
+                    ("__ll" variable (:type "int") (reparse-symbol arg-sub-list) [3507 3516]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3479 3550])
+            ("ffsl" function
+               (:type "int"
+                :arguments 
+                  ( ("__l" variable (:type "long int") (reparse-symbol arg-sub-list) [3422 3435]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3405 3464])
+            ("ffs" function
+               (:type "int"
+                :arguments 
+                  ( ("__i" variable (:type "int") (reparse-symbol arg-sub-list) [3245 3253]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3229 3282])
+            ("rindex" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2914 2930])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [2931 2939]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2893 2988])
+            ("index" function
+               (:type "char"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2190 2206])
+                    ("__c" variable (:type "int") (reparse-symbol arg-sub-list) [2207 2215]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2170 2264])
+            ("bzero" function
+               (:type "void"
+                :arguments 
+                  ( ("__s" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1510 1520])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1521 1532]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1491 1557])
+            ("bcopy" function
+               (:type "void"
+                :arguments 
+                  ( ("__src" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1385 1403])
+                    ("__dest" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1404 1417])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1418 1429]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1366 1459])
+            ("bcmp" function
+               (:type "int"
+                :arguments 
+                  ( ("__s1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1195 1212])
+                    ("__s2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1213 1230])
+                    ("__n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1231 1242]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1178 1294]))          
+      :file "strings.h"
+      :pointmax 4754
+      :fsize 4753
+      :lastmodtime '(24378 57964 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_STRINGS_H" . ((number "1" 829 . 830)))
+          ("__need_size_t")
+          )
 ))
   :file "!usr!include!semantic.cache"
   :semantic-tag-version "2.0"

@@ -1,0 +1,788 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("wiringPiI2CSetup" function
+               (:type "int"
+                :arguments 
+                  ( ("devId" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1532 1548]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1494 1550])
+            ("wiringPiI2CSetupInterface" function
+               (:type "int"
+                :arguments 
+                  ( ("device" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1461 1480])
+                    ("devId" variable (:type "int") (reparse-symbol arg-sub-list) [1481 1491]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1423 1493])
+            ("wiringPiI2CWriteReg16" function
+               (:type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1393 1400])
+                    ("reg" variable (:type "int") (reparse-symbol arg-sub-list) [1401 1409])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [1410 1419]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1355 1421])
+            ("wiringPiI2CWriteReg8" function
+               (:type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1326 1333])
+                    ("reg" variable (:type "int") (reparse-symbol arg-sub-list) [1334 1342])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [1343 1352]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1288 1354])
+            ("wiringPiI2CWrite" function
+               (:type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1268 1275])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [1276 1285]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1230 1287])
+            ("wiringPiI2CReadReg16" function
+               (:type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1210 1217])
+                    ("reg" variable (:type "int") (reparse-symbol arg-sub-list) [1218 1226]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1172 1228])
+            ("wiringPiI2CReadReg8" function
+               (:type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1153 1160])
+                    ("reg" variable (:type "int") (reparse-symbol arg-sub-list) [1161 1169]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1115 1171])
+            ("wiringPiI2CRead" function
+               (:type "int"
+                :arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [1105 1112]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1067 1114]))          
+      :file "wiringPiI2C.h"
+      :pointmax 1580
+      :fsize 1579
+      :lastmodtime '(24552 59579 709592 548000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__WIRING_PI_H__" variable (:constant-flag t) nil [1075 1090])
+            ("TRUE" variable (:constant-flag t) nil [1296 1300])
+            ("FALSE" variable (:constant-flag t) nil [1318 1323])
+            ("UNU" variable (:constant-flag t) nil [1375 1378])
+            ("PI_GPIO_MASK" variable (:constant-flag t) nil [1527 1539])
+            ("WPI_MODE_PINS" variable (:constant-flag t) nil [1599 1612])
+            ("WPI_MODE_GPIO" variable (:constant-flag t) nil [1625 1638])
+            ("WPI_MODE_GPIO_SYS" variable (:constant-flag t) nil [1651 1668])
+            ("WPI_MODE_PHYS" variable (:constant-flag t) nil [1680 1693])
+            ("WPI_MODE_PIFACE" variable (:constant-flag t) nil [1706 1721])
+            ("WPI_MODE_UNINITIALISED" variable (:constant-flag t) nil [1734 1756])
+            ("INPUT" variable (:constant-flag t) nil [1783 1788])
+            ("OUTPUT" variable (:constant-flag t) nil [1802 1808])
+            ("PWM_OUTPUT" variable (:constant-flag t) nil [1822 1832])
+            ("GPIO_CLOCK" variable (:constant-flag t) nil [1845 1855])
+            ("SOFT_PWM_OUTPUT" variable (:constant-flag t) nil [1868 1883])
+            ("SOFT_TONE_OUTPUT" variable (:constant-flag t) nil [1896 1912])
+            ("PWM_TONE_OUTPUT" variable (:constant-flag t) nil [1924 1939])
+            ("LOW" variable (:constant-flag t) nil [1953 1956])
+            ("HIGH" variable (:constant-flag t) nil [1970 1974])
+            ("PUD_OFF" variable (:constant-flag t) nil [2011 2018])
+            ("PUD_DOWN" variable (:constant-flag t) nil [2032 2040])
+            ("PUD_UP" variable (:constant-flag t) nil [2053 2059])
+            ("PWM_MODE_MS" variable (:constant-flag t) nil [2082 2093])
+            ("PWM_MODE_BAL" variable (:constant-flag t) nil [2105 2117])
+            ("INT_EDGE_SETUP" variable (:constant-flag t) nil [2151 2165])
+            ("INT_EDGE_FALLING" variable (:constant-flag t) nil [2177 2193])
+            ("INT_EDGE_RISING" variable (:constant-flag t) nil [2204 2219])
+            ("INT_EDGE_BOTH" variable (:constant-flag t) nil [2231 2244])
+            ("PI_MODEL_A" variable (:constant-flag t) nil [2351 2361])
+            ("PI_MODEL_B" variable (:constant-flag t) nil [2374 2384])
+            ("PI_MODEL_AP" variable (:constant-flag t) nil [2397 2408])
+            ("PI_MODEL_BP" variable (:constant-flag t) nil [2421 2432])
+            ("PI_MODEL_2" variable (:constant-flag t) nil [2445 2455])
+            ("PI_ALPHA" variable (:constant-flag t) nil [2468 2476])
+            ("PI_MODEL_CM" variable (:constant-flag t) nil [2489 2500])
+            ("PI_MODEL_07" variable (:constant-flag t) nil [2513 2524])
+            ("PI_MODEL_3B" variable (:constant-flag t) nil [2537 2548])
+            ("PI_MODEL_ZERO" variable (:constant-flag t) nil [2561 2574])
+            ("PI_MODEL_CM3" variable (:constant-flag t) nil [2587 2599])
+            ("PI_MODEL_ZERO_W" variable (:constant-flag t) nil [2612 2627])
+            ("PI_MODEL_3BP" variable (:constant-flag t) nil [2640 2652])
+            ("PI_MODEL_3AP" variable (:constant-flag t) nil [2666 2678])
+            ("PI_MODEL_CM3P" variable (:constant-flag t) nil [2692 2705])
+            ("PI_MODEL_4B" variable (:constant-flag t) nil [2719 2730])
+            ("PI_MODEL_400" variable (:constant-flag t) nil [2744 2756])
+            ("PI_MODEL_CM4" variable (:constant-flag t) nil [2769 2781])
+            ("PI_VERSION_1" variable (:constant-flag t) nil [2795 2807])
+            ("PI_VERSION_1_1" variable (:constant-flag t) nil [2819 2833])
+            ("PI_VERSION_1_2" variable (:constant-flag t) nil [2845 2859])
+            ("PI_VERSION_2" variable (:constant-flag t) nil [2871 2883])
+            ("PI_MAKER_SONY" variable (:constant-flag t) nil [2896 2909])
+            ("PI_MAKER_EGOMAN" variable (:constant-flag t) nil [2921 2936])
+            ("PI_MAKER_EMBEST" variable (:constant-flag t) nil [2948 2963])
+            ("PI_MAKER_UNKNOWN" variable (:constant-flag t) nil [2975 2991])
+            ("piModelNames" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [2995 3036])
+            ("piRevisionNames" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3037 3078])
+            ("piMakerNames" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [3079 3120])
+            ("piMemorySize" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "int")
+                nil [3121 3162])
+            ("PI_THREAD" variable (:constant-flag t) nil [3241 3250])
+            ("WPI_FATAL" variable (:constant-flag t) nil [3307 3316])
+            ("WPI_ALMOST" variable (:constant-flag t) nil [3332 3342])
+            ("wiringPiNodeStruct" type
+               (:members 
+                  ( ("pinBase" variable (:type "int") (reparse-symbol classsubparts) [3716 3733])
+                    ("pinMax" variable (:type "int") (reparse-symbol classsubparts) [3736 3752])
+                    ("fd" variable (:type "int") (reparse-symbol classsubparts) [3756 3773])
+                    ("data0" variable (:type "unsigned int") (reparse-symbol classsubparts) [3793 3813])
+                    ("data1" variable (:type "unsigned int") (reparse-symbol classsubparts) [3826 3846])
+                    ("data2" variable (:type "unsigned int") (reparse-symbol classsubparts) [3859 3879])
+                    ("data3" variable (:type "unsigned int") (reparse-symbol classsubparts) [3892 3912])
+                    ("pinMode" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("wiringPiNodeStruct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3963 3995])
+                            ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [3996 4004])
+                            ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [4005 4014]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3935 4016])
+                    ("pullUpDnControl" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("wiringPiNodeStruct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4056 4088])
+                            ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [4089 4097])
+                            ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [4098 4107]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4028 4109])
+                    ("digitalRead" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("wiringPiNodeStruct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4149 4181])
+                            ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [4182 4190]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4121 4192])
+                    ("digitalWrite" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("wiringPiNodeStruct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4315 4347])
+                            ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [4348 4356])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [4357 4367]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4287 4369])
+                    ("pwmWrite" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("wiringPiNodeStruct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4503 4535])
+                            ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [4536 4544])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [4545 4555]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4475 4557])
+                    ("analogRead" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("wiringPiNodeStruct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4597 4629])
+                            ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [4630 4638]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4569 4640])
+                    ("analogWrite" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("node" variable
+                               (:pointer 1
+                                :type ("wiringPiNodeStruct" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4680 4712])
+                            ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [4713 4721])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [4722 4732]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4652 4734])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("wiringPiNodeStruct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [4738 4771]))                  
+                :type "struct")
+                nil [3686 4775])
+            ("wiringPiNodes" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("wiringPiNodeStruct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4777 4826])
+            ("_wiringPiGpio" variable
+               (:pointer 1
+                :typemodifiers ("extern" "volatile")
+                :type "unsigned int")
+                nil [4875 4920])
+            ("_wiringPiPwm" variable
+               (:pointer 1
+                :typemodifiers ("extern" "volatile")
+                :type "unsigned int")
+                nil [4921 4965])
+            ("_wiringPiClk" variable
+               (:pointer 1
+                :typemodifiers ("extern" "volatile")
+                :type "unsigned int")
+                nil [4966 5010])
+            ("_wiringPiPads" variable
+               (:pointer 1
+                :typemodifiers ("extern" "volatile")
+                :type "unsigned int")
+                nil [5011 5056])
+            ("_wiringPiTimer" variable
+               (:pointer 1
+                :typemodifiers ("extern" "volatile")
+                :type "unsigned int")
+                nil [5057 5103])
+            ("_wiringPiTimerIrqRaw" variable
+               (:pointer 1
+                :typemodifiers ("extern" "volatile")
+                :type "unsigned int")
+                nil [5104 5156])
+            ("micros" function
+               (:type "unsigned int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8225 8230]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8186 8232])
+            ("millis" function
+               (:type "unsigned int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8178 8183]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8139 8185])
+            ("delayMicroseconds" function
+               (:type "void"
+                :arguments 
+                  ( ("howLong" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8115 8136]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8076 8138])
+            ("delay" function
+               (:type "void"
+                :arguments 
+                  ( ("howLong" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8052 8073]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8013 8075])
+            ("piHiPri" function
+               (:type "int"
+                :arguments 
+                  ( ("pri" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7966 7980]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7946 7982])
+            ("piUnlock" function
+               (:type "void"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7909 7917]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7876 7919])
+            ("piLock" function
+               (:type "void"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [7865 7873]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7832 7875])
+            ("piThreadCreate" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [7809 7820]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7776 7831])
+            ("wiringPiISR" function
+               (:type "int"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [7718 7726])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [7727 7736])
+                    ("function" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7754 7759]))                          
+                        :type "void")
+                        nil nil))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7685 7762])
+            ("waitForInterrupt" function
+               (:type "int"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [7666 7674])
+                    ("mS" variable (:type "int") (reparse-symbol arg-sub-list) [7675 7682]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7633 7684])
+            ("digitalWriteByte2" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [7573 7583]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7531 7585])
+            ("digitalWriteByte" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [7518 7528]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7476 7530])
+            ("digitalReadByte2" function
+               (:type "unsigned int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7468 7473]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7426 7475])
+            ("digitalReadByte" function
+               (:type "unsigned int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7418 7423]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7376 7425])
+            ("gpioClockSet" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [7355 7363])
+                    ("freq" variable (:type "int") (reparse-symbol arg-sub-list) [7364 7373]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7313 7375])
+            ("pwmSetClock" function
+               (:type "void"
+                :arguments 
+                  ( ("divisor" variable (:type "int") (reparse-symbol arg-sub-list) [7298 7310]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7256 7312])
+            ("pwmSetRange" function
+               (:type "void"
+                :arguments 
+                  ( ("range" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [7234 7253]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7192 7255])
+            ("pwmSetMode" function
+               (:type "void"
+                :arguments 
+                  ( ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [7180 7189]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7138 7191])
+            ("pwmToneWrite" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [7117 7125])
+                    ("freq" variable (:type "int") (reparse-symbol arg-sub-list) [7126 7135]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7075 7137])
+            ("getAlt" function
+               (:type "int"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [7064 7072]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7022 7074])
+            ("setPadDrive" function
+               (:type "void"
+                :arguments 
+                  ( ("group" variable (:type "int") (reparse-symbol arg-sub-list) [6998 7008])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [7009 7019]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6956 7021])
+            ("physPinToGpio" function
+               (:type "int"
+                :arguments 
+                  ( ("physPin" variable (:type "int") (reparse-symbol arg-sub-list) [6941 6953]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6899 6955])
+            ("wpiPinToGpio" function
+               (:type "int"
+                :arguments 
+                  ( ("wpiPin" variable (:type "int") (reparse-symbol arg-sub-list) [6885 6896]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6843 6898])
+            ("piBoardId" function
+               (:type "void"
+                :arguments 
+                  ( ("model" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6780 6791])
+                    ("rev" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6792 6801])
+                    ("mem" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6802 6811])
+                    ("maker" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6812 6823])
+                    ("overVolted" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [6824 6840]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6738 6842])
+            ("piBoardRev" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6716 6721]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6674 6723])
+            ("piGpioLayout" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6666 6671]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6624 6673])
+            ("wiringPiSetupPiFaceForGpioProg" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6523 6528]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6479 6530])
+            ("wiringPiSetupPiFace" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6471 6476]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6438 6478])
+            ("analogWrite" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [6378 6386])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [6387 6397]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6336 6399])
+            ("analogRead" function
+               (:type "int"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [6325 6333]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6283 6335])
+            ("pwmWrite" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [6261 6269])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [6270 6280]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6219 6282])
+            ("digitalWrite8" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [6197 6205])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [6206 6216]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6155 6218])
+            ("digitalRead8" function
+               (:type "unsigned int"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [6144 6152]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6102 6154])
+            ("digitalWrite" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [6080 6088])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [6089 6099]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6038 6101])
+            ("digitalRead" function
+               (:type "int"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [6027 6035]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5985 6037])
+            ("pullUpDnControl" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [5965 5973])
+                    ("pud" variable (:type "int") (reparse-symbol arg-sub-list) [5974 5982]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5923 5984])
+            ("pinMode" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [5902 5910])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [5911 5920]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5860 5922])
+            ("pinModeAlt" function
+               (:type "void"
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [5839 5847])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [5848 5857]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5797 5859])
+            ("wiringPiSetupPhys" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5788 5793]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5755 5795])
+            ("wiringPiSetupGpio" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5747 5752]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5714 5754])
+            ("wiringPiSetupSys" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5706 5711]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5673 5713])
+            ("wiringPiSetup" function
+               (:type "int"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5665 5670]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5632 5672])
+            ("wiringPiVersion" function
+               (:type "void"
+                :arguments 
+                  ( ("major" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5606 5617])
+                    ("minor" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5618 5629]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5577 5631])
+            ("wiringPiNewNode" function
+               (:type ("wiringPiNodeStruct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("pinBase" variable (:type "int") (reparse-symbol arg-sub-list) [5548 5560])
+                    ("numPins" variable (:type "int") (reparse-symbol arg-sub-list) [5561 5573]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5496 5575])
+            ("wiringPiFindNode" function
+               (:type ("wiringPiNodeStruct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("pin" variable (:type "int") (reparse-symbol arg-sub-list) [5485 5493]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5433 5495])
+            ("wiringPiFailure" function
+               (:type "int"
+                :arguments 
+                  ( ("fatal" variable (:type "int") (reparse-symbol arg-sub-list) [5365 5375])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5376 5396])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5397 5401]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5337 5403]))          
+      :file "wiringPi.h"
+      :pointmax 8270
+      :fsize 8269
+      :lastmodtime '(24552 59579 709592 548000)
+      :unmatched-syntax '((semantic-list 7820 . 7828) (semantic-list 7815 . 7820))
+      :lexical-table 
+        '(("HIGH" . ((number "1" 1978 . 1979)))
+          ("PUD_DOWN" . ((number "1" 2043 . 2044)))
+          ("PI_MODEL_CM3" . ((number "10" 2601 . 2603)))
+          ("WPI_ALMOST" . ((semantic-list "(1==2)" 3343 . 3349)))
+          ("PWM_TONE_OUTPUT" . ((number "6" 1942 . 1943)))
+          ("INT_EDGE_FALLING" . ((number "1" 2194 . 2195)))
+          ("PI_MODEL_CM4" . ((number "20" 2783 . 2785)))
+          ("TRUE" . ((semantic-list "(1==1)" 1301 . 1307)))
+          ("INT_EDGE_SETUP" . ((number "0" 2167 . 2168)))
+          ("PI_MODEL_3B" . ((number "8" 2551 . 2552)))
+          ("PI_MODEL_CM3P" . ((number "16" 2708 . 2710)))
+          ("PI_VERSION_1_1" . ((number "1" 2835 . 2836)))
+          ("PI_MAKER_EGOMAN" . ((number "1" 2938 . 2939)))
+          ("FALSE" . ((semantic-list "(!TRUE)" 1324 . 1331)))
+          ("PI_GPIO_MASK" . ((semantic-list "(0xFFFFFFC0)" 1540 . 1552)))
+          ("OUTPUT" . ((number "1" 1812 . 1813)))
+          ("PUD_OFF" . ((number "0" 2022 . 2023)))
+          ("PI_VERSION_1_2" . ((number "2" 2861 . 2862)))
+          ("WPI_FATAL" . ((semantic-list "(1==1)" 3317 . 3323)))
+          ("INPUT" . ((number "0" 1792 . 1793)))
+          ("INT_EDGE_RISING" . ((number "2" 2221 . 2222)))
+          ("UNU" . ((symbol "__attribute__" 1379 . 1392) (semantic-list "((unused))" 1392 . 1402)))
+          ("PI_MODEL_3AP" . ((number "14" 2681 . 2683)))
+          ("PI_MODEL_4B" . ((number "17" 2733 . 2735)))
+          ("PI_VERSION_1" . ((number "0" 2809 . 2810)))
+          ("WPI_MODE_GPIO" . ((number "1" 1641 . 1642)))
+          ("PI_MODEL_AP" . ((number "2" 2411 . 2412)))
+          ("PI_MODEL_ZERO" . ((number "9" 2577 . 2578)))
+          ("PI_VERSION_2" . ((number "3" 2885 . 2886)))
+          ("LOW" . ((number "0" 1960 . 1961)))
+          ("WPI_MODE_PHYS" . ((number "3" 1696 . 1697)))
+          ("WPI_MODE_PIFACE" . ((number "4" 1724 . 1725)))
+          ("SOFT_TONE_OUTPUT" . ((number "5" 1914 . 1915)))
+          ("INT_EDGE_BOTH" . ((number "3" 2246 . 2247)))
+          ("PI_MODEL_2" . ((number "4" 2458 . 2459)))
+          ("PI_MODEL_07" . ((number "7" 2527 . 2528)))
+          ("PI_MODEL_3BP" . ((number "13" 2655 . 2657)))
+          ("PI_MAKER_EMBEST" . ((number "2" 2965 . 2966)))
+          ("PI_THREAD" (spp-arg-list ("X") 3250 . 3253) . 
+              ((VOID "void" 3254 . 3258) (punctuation "*" 3259 . 3260) (symbol "X" 3260 . 3261) (semantic-list "(UNU void *dummy)" 3262 . 3279)))
+          ("PWM_OUTPUT" . ((number "2" 1835 . 1836)))
+          ("PI_MODEL_BP" . ((number "3" 2435 . 2436)))
+          ("PI_ALPHA" . ((number "5" 2479 . 2480)))
+          ("PI_MODEL_CM" . ((number "6" 2503 . 2504)))
+          ("PI_MODEL_400" . ((number "19" 2758 . 2760)))
+          ("PI_MAKER_UNKNOWN" . ((number "3" 2992 . 2993)))
+          ("__WIRING_PI_H__")
+          ("WPI_MODE_PINS" . ((number "0" 1615 . 1616)))
+          ("GPIO_CLOCK" . ((number "3" 1858 . 1859)))
+          ("PUD_UP" . ((number "2" 2063 . 2064)))
+          ("PI_MODEL_A" . ((number "0" 2364 . 2365)))
+          ("PI_MODEL_ZERO_W" . ((number "12" 2629 . 2631)))
+          ("PI_MAKER_SONY" . ((number "0" 2911 . 2912)))
+          ("SOFT_PWM_OUTPUT" . ((number "4" 1886 . 1887)))
+          ("PWM_MODE_BAL" . ((number "1" 2119 . 2120)))
+          ("PI_MODEL_B" . ((number "1" 2387 . 2388)))
+          ("WPI_MODE_GPIO_SYS" . ((number "2" 1670 . 1671)))
+          ("WPI_MODE_UNINITIALISED" . ((punctuation "-" 1757 . 1758) (number "1" 1758 . 1759)))
+          ("PWM_MODE_MS" . ((number "0" 2095 . 2096)))
+          )
+))
+  :file "!usr!local!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

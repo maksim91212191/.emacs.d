@@ -22,6 +22,8 @@
 (when (not package-archive-contents)
     (package-refresh-contents))
 
+(setq make-backup-files nil)
+
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 
@@ -38,6 +40,7 @@
 
 (setq dir_run_csc "cd /home/max/projects/dsp/builds/commonpocket/CSC/x64/debug/Bin/")
 
+(desktop-save-mode 1)
 ;;-------------------Compile----------------------
 (defun my-compile ()
     (interactive)
@@ -65,6 +68,13 @@
     (comint-send-input))
 
 (global-set-key [f9] 'my-run)
+
+;;-----------------Open Project---------------
+(setq open_project "/home/max/projects/dsp/commonpocket/CSC/Test/Source/main.cpp")
+
+(defun load-project ()
+    (interactive)
+    (find-file open_project))
 
 ;;-----------------Company--------------------
 
@@ -99,8 +109,10 @@
 ;; --------------------------------------------------------
 
 ;;HotKeys
-(global-set-key [f12] 'helm-gtags-find-files)
-(global-set-key (kbd "C-x C-g") 'git-command)
+(global-set-key (kbd "C-x <C-up>") 'helm-gtags-find-files)
+(global-set-key (kbd "<M-right>") 'tabbar-forward-tab)
+(global-set-key (kbd "<M-left>") 'tabbar-backward-tab)
+(global-set-key (kbd "M-p") 'tabbar-local-mode)
 
 ;;GDB windows
 (setq
@@ -138,7 +150,7 @@
 (define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 
-;;TAB
+;;,,TAB
 (setq-default indent-tabs-mode t) ;; включить возможность ставить отступы TAB'ом
 (setq-default tab-width          4) ;; ширина табуляции - 4 пробельных символа
 (setq-default c-basic-offset     4)
@@ -179,6 +191,7 @@
  '(fci-rule-character-color "#202020")
  '(fci-rule-color "#202020")
  '(fringe-mode 4 nil (fringe))
+ '(helm-ff-lynx-style-map t)
  '(main-line-color1 "#1E1E1E")
  '(main-line-color2 "#111111")
  '(main-line-separator-style (quote chamfer))
@@ -187,13 +200,14 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (git-command git helm-navi cmake-ide cmake-font-lock cmake-mode company-irony company-irony-c-headers irony helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+    (tabbar magit clang-format format-all git-command git helm-navi cmake-ide cmake-font-lock cmake-mode company-irony company-irony-c-headers irony helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
  '(powerline-color1 "#1E1E1E")
  '(powerline-color2 "#111111")
  '(safe-local-variable-values
    (quote
     ((company-clang-arguments "-I/home/max/TestProject/include/")
      (company-clang-arguments "-I/home/max/projects/dsp/commonpocket/CSC/Include/" "-I/home/max/projects/dsp/commonpocket/CSC/JetServer/Include/" "-I/home/max/projects/dsp/commonpocket/CSC/Test/Include/"))))
+ '(tabbar-mode t nil (tabbar))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
    (quote
@@ -221,4 +235,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(tabbar-button ((t (:inherit tabbar-default :box (:line-width 1 :color "black" :style released-button)))))
+ '(tabbar-default ((t (:inherit variable-pitch :background "black" :foreground "deep sky blue" :height 0.8))))
+ '(tabbar-modified ((t (:inherit tabbar-default :foreground "red" :box (:line-width 1 :color "white" :style released-button)))))
+ '(tabbar-selected ((t (:inherit tabbar-default :foreground "gold" :box (:line-width 1 :color "white" :style pressed-button)))))
+ '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "green" :box (:line-width 1 :color "white" :style released-button))))))

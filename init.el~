@@ -66,6 +66,13 @@
 
 (global-set-key [f9] 'my-run)
 
+;;-----------------Open Project---------------
+(setq open_project "/home/max/projects/dsp/commonpocket/CSC/Test/Source/main.cpp")
+
+(defun load-project ()
+    (interactive)
+    (find-file open_project))
+
 ;;-----------------Company--------------------
 
 (use-package company
@@ -99,7 +106,8 @@
 ;; --------------------------------------------------------
 
 ;;HotKeys
-(global-set-key [f12] 'helm-gtags-find-files)
+(global-set-key (kbd "C-x <C-up>") 'helm-gtags-find-files)
+(global-set-key (kbd "C-x C-g") 'git-command)
 
 ;;GDB windows
 (setq
@@ -186,7 +194,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (git-command git helm-navi cmake-ide cmake-font-lock cmake-mode company-irony company-irony-c-headers irony helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+    (format-all git-command git helm-navi cmake-ide cmake-font-lock cmake-mode company-irony company-irony-c-headers irony helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
  '(powerline-color1 "#1E1E1E")
  '(powerline-color2 "#111111")
  '(safe-local-variable-values

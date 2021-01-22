@@ -6072,6 +6072,61 @@
           ("RTLD_LOCAL" . ((number "0" 1739 . 1740)))
           ("RTLD_NOW" . ((number "0x00002" 1095 . 1102)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys_nerr" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1061 1081])
+            ("sys_errlist" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [1082 1121])
+            ("_sys_nerr" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1147 1168])
+            ("_sys_errlist" variable
+               (:pointer 1
+                :dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type "char")
+                nil [1169 1209]))          
+      :file "sys_errlist.h"
+      :pointmax 1217
+      :fsize 1216
+      :lastmodtime '(24378 57964 0 0)
+      :unmatched-syntax '((string 892 . 961) (symbol 886 . 891) (punctuation 884 . 885)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_BITS_STDIO_LIM_H" variable (:constant-flag t) nil [825 842])
+            ("L_tmpnam" variable (:constant-flag t) nil [955 963])
+            ("TMP_MAX" variable (:constant-flag t) nil [975 982])
+            ("FILENAME_MAX" variable (:constant-flag t) nil [998 1010])
+            ("L_ctermid" variable (:constant-flag t) nil [1045 1054])
+            ("L_cuserid" variable (:constant-flag t) nil [1116 1125])
+            ("FOPEN_MAX" variable (:constant-flag t) nil [1170 1179]))          
+      :file "stdio_lim.h"
+      :pointmax 1214
+      :fsize 1213
+      :lastmodtime '(24378 57964 0 0)
+      :unmatched-syntax '((string 871 . 938) (symbol 865 . 870) (punctuation 863 . 864))
+      :lexical-table 
+        '(("FOPEN_MAX" . ((number "16" 1180 . 1182)))
+          ("_BITS_STDIO_LIM_H" . ((number "1" 843 . 844)))
+          ("L_cuserid" . ((number "9" 1126 . 1127)))
+          ("FILENAME_MAX" . ((number "4096" 1011 . 1015)))
+          ("TMP_MAX" . ((number "238328" 983 . 989)))
+          ("L_tmpnam" . ((number "20" 964 . 966)))
+          ("L_ctermid" . ((number "9" 1055 . 1056)))
+          )
 ))
   :file "!usr!include!x86_64-linux-gnu!bits!semantic.cache"
   :semantic-tag-version "2.0"

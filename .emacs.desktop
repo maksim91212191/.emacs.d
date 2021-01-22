@@ -1,0 +1,91 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Jan 22 23:26:51 2021
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24587 13579 412893 875000) (desktop . "208") "max@max-VivoBook" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "Monospace 11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#fff") (background-color . "#000") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 4) (right-fringe . 4) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#d96e26") (sticky) (environment) (frameset--id . "ED80-0F16-316B-4A2B") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (height . 58) (width . 210) (left . 1920) (top . 0)) ((min-height . 4) (min-width . 20) (min-height-ignore . 3) (min-width-ignore . 10) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 72) (min-pixel-width . 180) (min-pixel-height-ignore . 54) (min-pixel-width-ignore . 90) (min-pixel-height-safe . 18) (min-pixel-width-safe . 36)) hc (pixel-width . 1920) (pixel-height . 1028) (total-width . 213) (total-height . 57) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 957) (pixel-height . 1028) (total-width . 106) (total-height . 57) (normal-height . 1.0) (normal-width . 0.5) (buffer "magit-revision: buildscripts" (selected) (hscroll . 0) (fringes 4 4 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 427) (start . 1))) (leaf (last . t) (pixel-width . 963) (pixel-height . 1028) (total-width . 107) (total-height . 57) (normal-height . 1.0) (normal-width . 0.5) (buffer "magit: buildscripts" (selected . t) (hscroll . 0) (fringes 4 4 nil) (margins nil) (scroll-bars nil 2 t nil 0 t) (vscroll . 0) (dedicated) (point . 30) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/diploma/buildscripts/build" "~/.emacs.d/init.el" "~/projects/dsp/commonpocket/UHFv2/realization/Dsp/Source/Sound/Queries/Query.cpp"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/max/diploma/buildscripts/build"
+  "build"
+  'sh-mode
+  '(override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode yas-minor-mode auto-revert-mode)
+  680
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (tab-width . 4) (buffer-display-time 24587 13531 784688 791000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/max/projects/dsp/commonpocket/CSC/Include/csc/Messages.h"
+  "Messages.h"
+  'c++-mode
+  '(abbrev-mode eldoc-mode override-global-mode company-mode irony-mode projectile-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode yas-minor-mode auto-revert-mode)
+  1105
+  '(499 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24587 13305 573715 957000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1113 1105))))
+
+(desktop-create-buffer 208
+  "/home/max/projects/dsp/commonpocket/UHFv2/realization/Dsp/export/uhfv2/Sound/Managers/ManagerFront.h"
+  "ManagerFront.h"
+  'c++-mode
+  '(abbrev-mode eldoc-mode override-global-mode company-mode irony-mode projectile-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode yas-minor-mode auto-revert-mode)
+  1042
+  '(352 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24587 12950 319811 251000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (553))))
+
+(desktop-create-buffer 208
+  "/home/max/projects/dsp/commonpocket/UHFv2/realization/Dsp/Source/Sound/Queries/Query.cpp"
+  "Query.cpp"
+  'c++-mode
+  '(abbrev-mode eldoc-mode override-global-mode company-mode irony-mode projectile-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode yas-minor-mode auto-revert-mode)
+  539
+  '(1184 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24587 12947 570531 807000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1524 738 658 70))))
+
+(desktop-create-buffer 208
+  "/home/max/projects/dsp/commonpocket/CSC/Include/csc/Router/Router.h"
+  "Router.h"
+  'c++-mode
+  '(abbrev-mode eldoc-mode override-global-mode company-mode irony-mode projectile-mode helm-mode helm-gtags-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode yas-minor-mode auto-revert-mode)
+  733
+  '(1086 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24587 12947 407319 247000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (943 1459 138 112 906 571 733))))
+
+(desktop-create-buffer 208
+  "/home/max/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode override-global-mode company-mode projectile-mode helm-mode volatile-highlights-mode undo-tree-mode ws-butler-mode anzu-mode yas-minor-mode auto-revert-mode)
+  3225
+  '(1298 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-display-time 24587 13067 373031 584000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode))
+  '((mark-ring nil)))
+
