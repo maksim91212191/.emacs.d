@@ -35,46 +35,7 @@
 ;;Color themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
-;;-------------------Projects Dirs------------------
-(setq dir_compile_csc "/home/max/projects/dsp/buildscripts/build CSC x64 -m D")
-
-(setq dir_run_csc "cd /home/max/projects/dsp/builds/commonpocket/CSC/x64/debug/Bin/")
-
 (desktop-save-mode 1)
-;;-------------------Compile----------------------
-(defun my-compile ()
-    (interactive)
-    ;; Switch to `*shell*'
-    (shell)
-    ;; Goto last prompt, clear old input if any, and insert new one
-    (goto-char (point-max))
-    (comint-kill-input)
-    (insert dir_compile_csc)   ;; Changeable
-    ;; Execute
-    (comint-send-input))
-
-(global-set-key [f6] 'my-compile)
-
-;;-------------------Run----------------------
-(defun my-run ()
-    (interactive)
-    ;; Switch to `*shell*'
-    (shell)
-    ;; Goto last prompt, clear old input if any, and insert new one
-    (goto-char (point-max))
-    (comint-kill-input)
-    (insert dir_run_csc)     ;; Changeable
-    ;; Execute
-    (comint-send-input))
-
-(global-set-key [f9] 'my-run)
-
-;;-----------------Open Project---------------
-(setq open_project "/home/max/projects/dsp/commonpocket/CSC/Test/Source/main.cpp")
-
-(defun load-project ()
-    (interactive)
-    (find-file open_project))
 
 ;;-----------------Russian hotkeys off-------------
 (defun reverse-input-method (input-method)
@@ -102,43 +63,49 @@
 
 (reverse-input-method 'russian-computer)
 
-;;-----------------Company--------------------
-
-(use-package company
-    :ensure t
-    :config
-    (setq company-idle-delay 0)
-    (setq company-minimum-prefix-length 3))
-
-(global-company-mode t)
-
-(eval-after-load 'company '(add-to-list 'company-backends '(company-c-headers company-irony company-irony-c-headers)))
-
-(use-package company-irony
-    :ensure t
-    :config
-    (eval-after-load 'company
-        '(add-to-list 'company-backends 'company-irony)))
-
+;; == irony-mode ==
 (use-package irony
-    :ensure t
-    :config
-    (add-hook 'c++-mode-hook 'irony-mode)
-    (add-hook 'c-mode-hook 'irony-mode)
-    (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-    )
+  :ensure t
+  :defer t
+  :init
+  (add-hook 'c++-mode-hook 'irony-mode)
+  (add-hook 'c-mode-hook 'irony-mode)
+  (add-hook 'objc-mode-hook 'irony-mode)
+  :config
+  ;; replace the `completion-at-point' and `complete-symbol' bindings in
+  ;; irony-mode's buffers by irony-mode's function
+  (defun my-irony-mode-hook ()
+    (define-key irony-mode-map [remap completion-at-point]
+      'irony-completion-at-point-async)
+    (define-key irony-mode-map [remap complete-symbol]
+      'irony-completion-at-point-async))
+  (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+  (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+  )
 
-(use-package irony-eldoc
-    :ensure t
-    :config
-    (add-hook 'irony-mode-hook #'irony-eldoc))
-;; --------------------------------------------------------
+;; == company-mode ==
+(use-package company
+  :ensure t
+  :defer t
+  :init (add-hook 'after-init-hook 'global-company-mode)
+  :config
+  (use-package company-irony :ensure t :defer t)
+  (setq company-idle-delay              nil
+	company-minimum-prefix-length   2
+	company-show-numbers            t
+	company-tooltip-limit           20
+	company-dabbrev-downcase        nil
+	company-backends                '((company-irony company-gtags))
+	)
+  :bind ("C-'" . company-complete-common)
+  )
 
 ;;HotKeys
 (global-set-key (kbd "C-x <C-up>") 'helm-gtags-find-files)
 (global-set-key (kbd "<M-right>") 'tabbar-forward-tab)
 (global-set-key (kbd "<M-left>") 'tabbar-backward-tab)
 (global-set-key (kbd "M-p") 'tabbar-local-mode)
+(global-set-key (kbd "C-x n") 'split-window-right)
 
 ;;GDB windows
 (setq
@@ -164,18 +131,6 @@
 (setq load-path (cons (expand-file-name "/elpa/cmake-ide-20201027.1947/") load-path))
 (require 'cmake-mode)
 
-;; Enable helm-gtags-mode
-(add-hook 'dired-mode-hook 'helm-gtags-mode)
-(add-hook 'eshell-mode-hook 'helm-gtags-mode)
-(add-hook 'asm-mode-hook 'helm-gtags-mode)
-
-(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
-(define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
-(define-key helm-gtags-mode-map (kbd "M-.") 'helm-gtags-dwim)
-(define-key helm-gtags-mode-map (kbd "M-,") 'helm-gtags-pop-stack)
-(define-key helm-gtags-mode-map (kbd "C-c <") 'helm-gtags-previous-history)
-(define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
-
 ;;,,TAB
 (setq-default indent-tabs-mode t) ;; включить возможность ставить отступы TAB'ом
 (setq-default tab-width          4) ;; ширина табуляции - 4 пробельных символа
@@ -193,6 +148,8 @@
 ;; Electric-modes settings
 (electric-pair-mode    1) ;; автозакрытие {},[],() с переводом курсора внутрь скобок
 (electric-indent-mode -1) ;; отключить индентацию  electric-indent-mod'ом (default in Emacs-24.4)
+
+;; Custom lines, created automaticaly. Don't touch this shit
 
 ;; function-args
 ;; (require 'function-args)
@@ -217,7 +174,10 @@
  '(fci-rule-character-color "#202020")
  '(fci-rule-color "#202020")
  '(fringe-mode 4 nil (fringe))
+ '(gdb-many-windows t)
  '(gdb-non-stop-setting nil)
+ '(gdb-show-main t)
+ '(gud-gdb-command-name "gdb-multiarch -i=mi")
  '(helm-ff-lynx-style-map t)
  '(main-line-color1 "#1E1E1E")
  '(main-line-color2 "#111111")
@@ -267,3 +227,4 @@
  '(tabbar-modified ((t (:inherit tabbar-default :foreground "red" :box (:line-width 1 :color "white" :style released-button)))))
  '(tabbar-selected ((t (:inherit tabbar-default :foreground "gold" :box (:line-width 1 :color "white" :style pressed-button)))))
  '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "green" :box (:line-width 1 :color "white" :style released-button))))))
+(put 'set-goal-column 'disabled nil)
