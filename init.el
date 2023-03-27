@@ -167,6 +167,10 @@
  '(company-c-headers-path-user
    (quote
     ("/home/max/projects/dsp/commonpocket/CSC/Test/Include")))
+ '(company-idle-delay nil)
+ '(company-minimum-prefix-length 2)
+ '(company-show-numbers t)
+ '(company-tooltip-limit 20)
  '(custom-enabled-themes (quote (cherry-blossom)))
  '(custom-safe-themes
    (quote
@@ -177,6 +181,7 @@
  '(gdb-many-windows t)
  '(gdb-non-stop-setting nil)
  '(gdb-show-main t)
+ '(global-company-mode t)
  '(gud-gdb-command-name "gdb-multiarch -i=mi")
  '(helm-ff-lynx-style-map t)
  '(main-line-color1 "#1E1E1E")
@@ -222,6 +227,16 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(company-echo-common ((t (:foreground "magenta"))))
+ '(company-preview ((t (:background "yellow" :foreground "wheat"))))
+ '(company-preview-common ((t (:inherit company-preview :foreground "deep sky blue"))))
+ '(company-scrollbar-bg ((t (:background "azure4"))))
+ '(company-scrollbar-fg ((t (:background "blue"))))
+ '(company-template-field ((t (:background "yellow" :foreground "magenta"))))
+ '(company-tooltip ((t (:background "black" :foreground "yellow"))))
+ '(company-tooltip-annotation ((t (:foreground "steel blue"))))
+ '(company-tooltip-common ((t (:foreground "green"))))
+ '(company-tooltip-selection ((t (:background "midnight blue"))))
  '(tabbar-button ((t (:inherit tabbar-default :box (:line-width 1 :color "black" :style released-button)))))
  '(tabbar-default ((t (:inherit variable-pitch :background "black" :foreground "deep sky blue" :height 0.8))))
  '(tabbar-modified ((t (:inherit tabbar-default :foreground "red" :box (:line-width 1 :color "white" :style released-button)))))
