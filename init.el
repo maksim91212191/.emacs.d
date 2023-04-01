@@ -37,6 +37,30 @@
 
 (desktop-save-mode 1)
 
+;; Require packets
+(require 'setup-general)
+(if (version< emacs-version "24.4")
+    (require 'setup-ivy-counsel)
+    (require 'setup-helm)
+    (require 'setup-helm-gtags))
+;;(require 'setup-ggtags)
+(require 'setup-cedet)
+(require 'setup-editing)
+
+(require 'helm-gtags)
+
+;;Auto-insert
+(eval-after-load 'autoinsert
+    '(define-auto-insert
+      '("\\.\\(CC?\\|cc\\|h\\|cxx\\|cpp\\|c++\\)\\'" . "C++ skeleton")
+      '("*" \n
+        "/**\n * " (file-name-nondirectory (buffer-file-name)) \n
+        "*" \n
+        "* Date: " (format-time-string "%d.%m.%Y") \n
+        "* Author: Maxim Esikov" \n
+        "*" \n
+        "**/" \n)))
+
 ;;-----------------Russian hotkeys off-------------
 (defun reverse-input-method (input-method)
   "Build the reverse mapping of single letters from INPUT-METHOD."
@@ -64,41 +88,87 @@
 (reverse-input-method 'russian-computer)
 
 ;; == irony-mode ==
-(use-package irony
-  :ensure t
-  :defer t
-  :init
-  (add-hook 'c++-mode-hook 'irony-mode)
-  (add-hook 'c-mode-hook 'irony-mode)
-  (add-hook 'objc-mode-hook 'irony-mode)
-  :config
-  ;; replace the `completion-at-point' and `complete-symbol' bindings in
-  ;; irony-mode's buffers by irony-mode's function
-  (defun my-irony-mode-hook ()
-    (define-key irony-mode-map [remap completion-at-point]
-      'irony-completion-at-point-async)
-    (define-key irony-mode-map [remap complete-symbol]
-      'irony-completion-at-point-async))
-  (add-hook 'irony-mode-hook 'my-irony-mode-hook)
-  (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-  )
+;; (use-package irony
+;;   :ensure t
+;;   :defer t
+;;   :init
+;;   (add-hook 'c++-mode-hook 'irony-mode)
+;;   (add-hook 'c-mode-hook 'irony-mode)
+;;   (add-hook 'objc-mode-hook 'irony-mode)
+;;   :config
+;;   ;; replace the `completion-at-point' and `complete-symbol' bindings in
+;;   ;; irony-mode's buffers by irony-mode's function
+;;   (defun my-irony-mode-hook ()
+;;     (define-key irony-mode-map [remap completion-at-point]
+;;       'irony-completion-at-point-async)
+;;     (define-key irony-mode-map [remap complete-symbol]
+;;       'irony-completion-at-point-async))
+;;   (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+;;   (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;;   )
 
 ;; == company-mode ==
-(use-package company
-  :ensure t
-  :defer t
-  :init (add-hook 'after-init-hook 'global-company-mode)
-  :config
-  (use-package company-irony :ensure t :defer t)
-  (setq company-idle-delay              nil
-	company-minimum-prefix-length   2
-	company-show-numbers            t
-	company-tooltip-limit           20
-	company-dabbrev-downcase        nil
-	company-backends                '((company-irony company-gtags))
-	)
-  :bind ("C-'" . company-complete-common)
-  )
+;; (use-package company
+;;   :ensure t
+;;   :defer t
+;;   :init (add-hook 'after-init-hook 'global-company-mode)
+;;   :config
+;;   ;; (use-package company-irony :ensure t :defer t)
+;;   (setq company-idle-delay              nil
+;; 	company-minimum-prefix-length   2
+;; 	company-show-numbers            t
+;; 	company-tooltip-limit           20
+;; 	company-dabbrev-downcase        nil
+;; 	;; company-backends                '((company-irony company-gtags))
+;; 	)
+;;   :bind ("C-'" . company-complete-common)
+;;   )
+
+;;CEDET
+(require 'semantic/ia)
+(require 'semantic/bovine/gcc)
+
+; Install additional includes from other libs
+;; (setq qt4-base-dir "/usr/include/qt4")
+;; (semantic-add-system-include qt4-base-dir 'c++-mode)
+;; (add-to-list 'auto-mode-alist (cons qt4-base-dir 'c++-mode))
+;; (add-to-list 'semantic-lex-c-preprocessor-symbol-file (concat qt4-base-dir "/Qt/qconfig.h"))
+;; (add-to-list 'semantic-lex-c-preprocessor-symbol-file (concat qt4-base-dir "/Qt/qconfig-dist.h"))
+;; (add-to-list 'semantic-lex-c-preprocessor-symbol-file (concat qt4-base-dir "/Qt/qglobal.h"))
+
+; imenu integration
+(defun my-semantic-hook ()
+    (imenu-add-to-menubar "TAGS"))
+(add-hook 'semantic-init-hooks 'my-semantic-hook)
+
+(defun my-c-mode-cedet-hook ()
+    (add-to-list 'ac-sources 'ac-source-gtags)
+    (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
+
+;; если вы хотите включить поддержку gnu global
+(semanticdb-enable-gnu-global-databases 'c-mode)
+(semanticdb-enable-gnu-global-databases 'c++-mode)
+
+;; EDE Projects
+;; (ede-cpp-root-project "Station"
+;;                       :name "Station"
+;;                       :file "~/diploma/Station/CMakeLists.txt"
+;;                       :include-path '("/"
+;;                                       "/Include/station"
+;;                                       "/Interfaces"
+;;                                       "/Libs"
+;;                                       )
+                      ;; :system-include-path '("~/exp/include")
+                      ;; :spp-table '(("isUnix" . "")
+                      ;;              ("BOOST_TEST_DYN_LINK" . "")))
+                      ;; )
+
+(semantic-mode 1)
+
+; EDE using
+(global-ede-mode t)
+
 
 ;;HotKeys
 (global-set-key (kbd "C-x <C-up>") 'helm-gtags-find-files)
@@ -106,6 +176,8 @@
 (global-set-key (kbd "<M-left>") 'tabbar-backward-tab)
 (global-set-key (kbd "M-p") 'tabbar-local-mode)
 (global-set-key (kbd "C-x n") 'split-window-right)
+(global-set-key (kbd "<f6>") 'gdb)
+(global-set-key (kbd "C-'") 'semantic-ia-complete-sybmol-menu)
 
 ;;GDB windows
 (setq
@@ -116,22 +188,11 @@
  gdb-show-main t
  )
 
-(require 'setup-general)
-(if (version< emacs-version "24.4")
-    (require 'setup-ivy-counsel)
-  (require 'setup-helm)
-  (require 'setup-helm-gtags))
- ;;(require 'setup-ggtags)
-(require 'setup-cedet)
-(require 'setup-editing)
-
-(require 'helm-gtags)
-
 ;;Cmake
 (setq load-path (cons (expand-file-name "/elpa/cmake-ide-20201027.1947/") load-path))
 (require 'cmake-mode)
 
-;;,,TAB
+;;TAB
 (setq-default indent-tabs-mode t) ;; включить возможность ставить отступы TAB'ом
 (setq-default tab-width          4) ;; ширина табуляции - 4 пробельных символа
 (setq-default c-basic-offset     4)
@@ -162,11 +223,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(Linum-format "%7i ")
+ '(ac-use-menu-map t)
  '(ansi-color-names-vector
    ["#110F13" "#B13120" "#719F34" "#CEAE3E" "#7C9FC9" "#7868B5" "#009090" "#F4EAD5"])
- '(company-c-headers-path-user
-   (quote
-    ("/home/max/projects/dsp/commonpocket/CSC/Test/Include")))
  '(company-idle-delay nil)
  '(company-minimum-prefix-length 2)
  '(company-show-numbers t)
@@ -175,15 +234,30 @@
  '(custom-safe-themes
    (quote
     ("2aa073a18b2ba860d24d2cd857bcce34d7107b6967099be646d9c95f53ef3643" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "94146ac747852749e9444b184eb1e958f0e546072f66743929a05c3af62de473" "15492649746910860a155b296e94e18c94d48408079ced764165c47a1f78d2e7" default)))
+ '(ede-project-directories (quote ("/home/max/emacs_cpp_completion")))
  '(fci-rule-character-color "#202020")
  '(fci-rule-color "#202020")
  '(fringe-mode 4 nil (fringe))
- '(gdb-many-windows t)
+ '(gdb-many-windows t t)
  '(gdb-non-stop-setting nil)
- '(gdb-show-main t)
+ '(gdb-show-main t t)
  '(global-company-mode t)
+ '(global-semantic-decoration-mode t)
+ '(global-semantic-highlight-edits-mode nil)
+ '(global-semantic-highlight-func-mode t)
+ '(global-semantic-idle-breadcrumbs-mode t nil (semantic/idle))
+ '(global-semantic-idle-completions-mode t nil (semantic/idle))
+ '(global-semantic-idle-local-symbol-highlight-mode nil nil (semantic/idle))
+ '(global-semantic-idle-scheduler-mode t)
+ '(global-semantic-idle-summary-mode t)
+ '(global-semantic-mru-bookmark-mode t)
+ '(global-semantic-show-parser-state-mode t)
+ '(global-semantic-show-unmatched-syntax-mode nil)
+ '(global-semantic-stickyfunc-mode t)
+ '(global-semanticdb-minor-mode t)
  '(gud-gdb-command-name "gdb-multiarch -i=mi")
  '(helm-ff-lynx-style-map t)
+ '(helm-semantic-fuzzy-match t t)
  '(main-line-color1 "#1E1E1E")
  '(main-line-color2 "#111111")
  '(main-line-separator-style (quote chamfer))
@@ -192,13 +266,10 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (tabbar magit clang-format format-all git-command git helm-navi cmake-ide cmake-font-lock cmake-mode company-irony company-irony-c-headers irony helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+    (tabbar magit clang-format format-all git-command git helm-navi cmake-ide cmake-font-lock cmake-mode helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
  '(powerline-color1 "#1E1E1E")
  '(powerline-color2 "#111111")
- '(safe-local-variable-values
-   (quote
-    ((company-clang-arguments "-I/home/max/TestProject/include/")
-     (company-clang-arguments "-I/home/max/projects/dsp/commonpocket/CSC/Include/" "-I/home/max/projects/dsp/commonpocket/CSC/JetServer/Include/" "-I/home/max/projects/dsp/commonpocket/CSC/Test/Include/"))))
+ '(semantic-mode t)
  '(tabbar-mode t nil (tabbar))
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map
@@ -237,6 +308,7 @@
  '(company-tooltip-annotation ((t (:foreground "steel blue"))))
  '(company-tooltip-common ((t (:foreground "green"))))
  '(company-tooltip-selection ((t (:background "midnight blue"))))
+ '(semantic-tag-boundary-face ((t (:overline "saddle brown"))))
  '(tabbar-button ((t (:inherit tabbar-default :box (:line-width 1 :color "black" :style released-button)))))
  '(tabbar-default ((t (:inherit variable-pitch :background "black" :foreground "deep sky blue" :height 0.8))))
  '(tabbar-modified ((t (:inherit tabbar-default :foreground "red" :box (:line-width 1 :color "white" :style released-button)))))
