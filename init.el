@@ -87,88 +87,23 @@
 
 (reverse-input-method 'russian-computer)
 
-;; == irony-mode ==
-;; (use-package irony
-;;   :ensure t
-;;   :defer t
-;;   :init
-;;   (add-hook 'c++-mode-hook 'irony-mode)
-;;   (add-hook 'c-mode-hook 'irony-mode)
-;;   (add-hook 'objc-mode-hook 'irony-mode)
-;;   :config
-;;   ;; replace the `completion-at-point' and `complete-symbol' bindings in
-;;   ;; irony-mode's buffers by irony-mode's function
-;;   (defun my-irony-mode-hook ()
-;;     (define-key irony-mode-map [remap completion-at-point]
-;;       'irony-completion-at-point-async)
-;;     (define-key irony-mode-map [remap complete-symbol]
-;;       'irony-completion-at-point-async))
-;;   (add-hook 'irony-mode-hook 'my-irony-mode-hook)
-;;   (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
-;;   )
-
-;; == company-mode ==
-;; (use-package company
-;;   :ensure t
-;;   :defer t
-;;   :init (add-hook 'after-init-hook 'global-company-mode)
-;;   :config
-;;   ;; (use-package company-irony :ensure t :defer t)
-;;   (setq company-idle-delay              nil
-;; 	company-minimum-prefix-length   2
-;; 	company-show-numbers            t
-;; 	company-tooltip-limit           20
-;; 	company-dabbrev-downcase        nil
-;; 	;; company-backends                '((company-irony company-gtags))
-;; 	)
-;;   :bind ("C-'" . company-complete-common)
-;;   )
 
 ;;CEDET
-(require 'semantic/ia)
-(require 'semantic/bovine/gcc)
+(require 'cc-mode)
+(require 'semantic)
 
-; Install additional includes from other libs
-;; (setq qt4-base-dir "/usr/include/qt4")
-;; (semantic-add-system-include qt4-base-dir 'c++-mode)
-;; (add-to-list 'auto-mode-alist (cons qt4-base-dir 'c++-mode))
-;; (add-to-list 'semantic-lex-c-preprocessor-symbol-file (concat qt4-base-dir "/Qt/qconfig.h"))
-;; (add-to-list 'semantic-lex-c-preprocessor-symbol-file (concat qt4-base-dir "/Qt/qconfig-dist.h"))
-;; (add-to-list 'semantic-lex-c-preprocessor-symbol-file (concat qt4-base-dir "/Qt/qglobal.h"))
+;; Example for adding new libs
+;; (semantic-add-system-include "/usr/include/boost" 'c++-mode)
+;; (semantic-add-system-include "~/linux/kernel")
+;; (semantic-add-system-include "~/linux/include")
 
-; imenu integration
-(defun my-semantic-hook ()
-    (imenu-add-to-menubar "TAGS"))
-(add-hook 'semantic-init-hooks 'my-semantic-hook)
-
-(defun my-c-mode-cedet-hook ()
-    (add-to-list 'ac-sources 'ac-source-gtags)
-    (add-to-list 'ac-sources 'ac-source-semantic))
-(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-
-;; если вы хотите включить поддержку gnu global
-(semanticdb-enable-gnu-global-databases 'c-mode)
-(semanticdb-enable-gnu-global-databases 'c++-mode)
-
-;; EDE Projects
-;; (ede-cpp-root-project "Station"
-;;                       :name "Station"
-;;                       :file "~/diploma/Station/CMakeLists.txt"
-;;                       :include-path '("/"
-;;                                       "/Include/station"
-;;                                       "/Interfaces"
-;;                                       "/Libs"
-;;                                       )
-                      ;; :system-include-path '("~/exp/include")
-                      ;; :spp-table '(("isUnix" . "")
-                      ;;              ("BOOST_TEST_DYN_LINK" . "")))
-                      ;; )
+(global-semanticdb-minor-mode 1)
+(global-semantic-idle-scheduler-mode 1)
 
 (semantic-mode 1)
 
-; EDE using
-(global-ede-mode t)
-
+(require 'ede)
+(global-ede-mode)
 
 ;;HotKeys
 (global-set-key (kbd "C-x <C-up>") 'helm-gtags-find-files)
@@ -177,7 +112,8 @@
 (global-set-key (kbd "M-p") 'tabbar-local-mode)
 (global-set-key (kbd "C-x n") 'split-window-right)
 (global-set-key (kbd "<f6>") 'gdb)
-(global-set-key (kbd "C-'") 'semantic-ia-complete-sybmol-menu)
+(global-set-key (kbd "C-'") 'company-semantic)
+(global-set-key (kbd "C-x m") 'helm-imenu)
 
 ;;GDB windows
 (setq
@@ -234,7 +170,9 @@
  '(custom-safe-themes
    (quote
     ("2aa073a18b2ba860d24d2cd857bcce34d7107b6967099be646d9c95f53ef3643" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "94146ac747852749e9444b184eb1e958f0e546072f66743929a05c3af62de473" "15492649746910860a155b296e94e18c94d48408079ced764165c47a1f78d2e7" default)))
- '(ede-project-directories (quote ("/home/max/emacs_cpp_completion")))
+ '(ede-project-directories
+   (quote
+    ("/home/max/diploma/BME280/Include/bme" "/home/max/diploma/BME280/Source" "/home/max/diploma/BME280")))
  '(fci-rule-character-color "#202020")
  '(fci-rule-color "#202020")
  '(fringe-mode 4 nil (fringe))
@@ -242,7 +180,6 @@
  '(gdb-non-stop-setting nil)
  '(gdb-show-main t t)
  '(global-company-mode t)
- '(global-semantic-decoration-mode t)
  '(global-semantic-highlight-edits-mode nil)
  '(global-semantic-highlight-func-mode t)
  '(global-semantic-idle-breadcrumbs-mode t nil (semantic/idle))
