@@ -105,6 +105,16 @@
 (require 'ede)
 (global-ede-mode)
 
+;; Compile function
+(defun my-compile ()
+    (interactive)
+    ;; Switch to `*shell*'
+    (shell)
+    ;; Goto last prompt, clear old input if any, and insert new one
+    (goto-char (point-max))
+    (comint-kill-input)
+    (insert "~/buildscripts/build.sh "))
+
 ;;HotKeys
 (global-set-key (kbd "C-x <C-up>") 'helm-gtags-find-files)
 (global-set-key (kbd "<M-right>") 'tabbar-forward-tab)
@@ -119,6 +129,7 @@
 (global-set-key (kbd "C-x C-4")' hs-show-block)
 (global-set-key (kbd "C-x C-3")' hs-hide-block)
 (global-set-key (kbd "C-x C-9")' hs-minor-mode)
+(global-set-key (kbd "<f5>") 'my-compile)
 
 ;;GDB windows
 (setq
@@ -175,6 +186,7 @@
  '(custom-safe-themes
    (quote
     ("2aa073a18b2ba860d24d2cd857bcce34d7107b6967099be646d9c95f53ef3643" "7153b82e50b6f7452b4519097f880d968a6eaf6f6ef38cc45a144958e553fbc6" "5e3fc08bcadce4c6785fc49be686a4a82a356db569f55d411258984e952f194a" "04dd0236a367865e591927a3810f178e8d33c372ad5bfef48b5ce90d4b476481" "a0feb1322de9e26a4d209d1cfa236deaf64662bb604fa513cca6a057ddf0ef64" "ab04c00a7e48ad784b52f34aa6bfa1e80d0c3fcacc50e1189af3651013eb0d58" "94146ac747852749e9444b184eb1e958f0e546072f66743929a05c3af62de473" "15492649746910860a155b296e94e18c94d48408079ced764165c47a1f78d2e7" default)))
+ '(display-line-numbers t)
  '(ede-project-directories
    (quote
     ("/home/max/diploma/BME280/Include/bme" "/home/max/diploma/BME280/Source" "/home/max/diploma/BME280")))
@@ -188,7 +200,7 @@
  '(global-semantic-highlight-edits-mode nil)
  '(global-semantic-highlight-func-mode t)
  '(global-semantic-idle-breadcrumbs-mode t nil (semantic/idle))
- '(global-semantic-idle-completions-mode t nil (semantic/idle))
+ '(global-semantic-idle-completions-mode nil nil (semantic/idle))
  '(global-semantic-idle-local-symbol-highlight-mode nil nil (semantic/idle))
  '(global-semantic-idle-scheduler-mode t)
  '(global-semantic-idle-summary-mode t)
