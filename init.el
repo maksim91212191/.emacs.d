@@ -114,6 +114,11 @@
 (global-set-key (kbd "<f6>") 'gdb)
 (global-set-key (kbd "C-'") 'company-semantic)
 (global-set-key (kbd "C-x m") 'helm-imenu)
+(global-set-key (kbd "C-x C-1")' hs-show-all)
+(global-set-key (kbd "C-x C-2")' hs-hide-all)
+(global-set-key (kbd "C-x C-4")' hs-show-block)
+(global-set-key (kbd "C-x C-3")' hs-hide-block)
+(global-set-key (kbd "C-x C-9")' hs-minor-mode)
 
 ;;GDB windows
 (setq
@@ -203,7 +208,7 @@
     ("#CC9393" "#DFAF8F" "#F0DFAF" "#7F9F7F" "#BFEBBF" "#93E0E3" "#94BFF3" "#DC8CC3")))
  '(package-selected-packages
    (quote
-    (tabbar magit clang-format format-all git-command git helm-navi cmake-ide cmake-font-lock cmake-mode helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+    (hideshow-org tabbar magit clang-format format-all git-command git helm-navi cmake-ide cmake-font-lock cmake-mode helm-company company-go company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
  '(powerline-color1 "#1E1E1E")
  '(powerline-color2 "#111111")
  '(semantic-mode t)
